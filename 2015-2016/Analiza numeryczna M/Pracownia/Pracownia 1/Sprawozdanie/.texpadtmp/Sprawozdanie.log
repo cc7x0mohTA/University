@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.9)  11 NOV 2015 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.9)  13 NOV 2015 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -774,7 +774,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \c@ciekawostka=\count148
 \c@przyklad=\count149
 \c@homeworkProblemCounter=\count150
- (/Users/bbednarczyk/Desktop/Numerki/Sprawozdanie/.texpadtmp/Sprawozdanie.aux)
+ (/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.aux)
 \openout1 = `Sprawozdanie.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
@@ -833,11 +833,11 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 166.
 LaTeX Info: Redefining \pageref on input line 166.
 LaTeX Info: Redefining \nameref on input line 166.
- (/Users/bbednarczyk/Desktop/Numerki/Sprawozdanie/.texpadtmp/Sprawozdanie.out) (/Users/bbednarczyk/Desktop/Numerki/Sprawozdanie/.texpadtmp/Sprawozdanie.out)
+ (/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.out) (/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.out)
 \@outlinefile=\write4
 \openout4 = `Sprawozdanie.out'.
 
- ABD: EveryShipout initializing macros (/Users/bbednarczyk/Desktop/Numerki/Sprawozdanie/.texpadtmp/Sprawozdanie.toc
+ ABD: EveryShipout initializing macros (/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.toc
 LaTeX Font Info:    Try loading font information for OML+plm on input line 2.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
@@ -890,7 +890,7 @@ AED: lastpage setting LastPage
 [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
- (/Users/bbednarczyk/Desktop/Numerki/Sprawozdanie/.texpadtmp/Sprawozdanie.aux)
+ (/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
 Package rerunfilecheck Info: File `Sprawozdanie.out' has not changed.
@@ -899,14 +899,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
  20010 strings out of 493089
- 356702 string characters out of 6134842
+ 357523 string characters out of 6134842
  561465 words of memory out of 5000000
  23067 multiletter control sequences out of 15000+600000
  11598 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,54p,662b,2250s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plit.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plti10.pfb>
-Output written on /Users/bbednarczyk/Desktop/Numerki/Sprawozdanie/.texpadtmp/Sprawozdanie.pdf (4 pages, 110054 bytes).
+Output written on "/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.pdf" (4 pages, 110074 bytes).
 PDF statistics:
  197 PDF objects out of 1000 (max. 8388607)
  174 compressed objects within 2 object streams

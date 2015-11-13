@@ -1,0 +1,344 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template\
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{pdfpages}
+\usepackage{mathtools}
+\usepackage{amsthm}
+
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+
+\newtheorem{thm}{Twierdzenie}
+\newtheorem{remark}{Uwaga}
+\newtheorem{lemat}{Lemat}
+\newtheorem{wniosek}{Wniosek}
+\newtheorem{definicja}{Definicja}
+\newtheorem{ciekawostka}{Ciekawostka}
+\newtheorem{przyklad}{Przykład}
+
+
+\newenvironment{prooff}{\paragraph{Dowód:}}{\hfill$\square$}
+\newenvironment{rozw}{\paragraph{Rozwiązanie:}}{\hfill}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Zadanie \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\usepackage{listings} % Required for inserting code snippets
+\usepackage[usenames,dvipsnames]{color} % Required for specifying custom colors and referring to colors by name
+
+\definecolor{DarkGreen}{rgb}{0.0,0.4,0.0} % Comment color
+\definecolor{highlight}{RGB}{255,251,204} % Code highlight color
+
+\lstdefinestyle{Style1}{ % Define a style for your code snippet, multiple definitions can be made if, for example, you wish to insert multiple code snippets using different programming languages into one document
+language=Perl, % Detects keywords, comments, strings, functions, etc for the language specified
+backgroundcolor=\color{highlight}, % Set the background color for the snippet - useful for highlighting
+basicstyle=\footnotesize\ttfamily, % The default font size and style of the code
+breakatwhitespace=false, % If true, only allows line breaks at white space
+breaklines=true, % Automatic line breaking (prevents code from protruding outside the box)
+captionpos=b, % Sets the caption position: b for bottom; t for top
+commentstyle=\usefont{T1}{pcr}{m}{sl}\color{DarkGreen}, % Style of comments within the code - dark green courier font
+deletekeywords={}, % If you want to delete any keywords from the current language separate them by commas
+%escapeinside={\%}, % This allows you to escape to LaTeX using the character in the bracket
+firstnumber=1, % Line numbers begin at line 1
+frame=single, % Frame around the code box, value can be: none, leftline, topline, bottomline, lines, single, shadowbox
+frameround=tttt, % Rounds the corners of the frame for the top left, top right, bottom left and bottom right positions
+keywordstyle=\color{Blue}\bf, % Functions are bold and blue
+morekeywords={}, % Add any functions no included by default here separated by commas
+numbers=left, % Location of line numbers, can take the values of: none, left, right
+numbersep=10pt, % Distance of line numbers from the code box
+numberstyle=\tiny\color{Gray}, % Style used for line numbers
+rulecolor=\color{black}, % Frame border color
+showstringspaces=false, % Don't put marks in string spaces
+showtabs=false, % Display tabs in the code as lines
+stepnumber=5, % The step distance between line numbers, i.e. how often will lines be numbered
+stringstyle=\color{Purple}, % Strings are purple
+tabsize=2, % Number of spaces per tab in the code
+}
+
+% Create a command to cleanly insert a snippet with the style above anywhere in the document
+\newcommand{\insertcode}[2]{\begin{itemize}\item[]\lstinputlisting[caption=#2,label=#1,style=Style1]{#1}\end{itemize}} % The first argument is the script location/filename and the second is a caption for the listing
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Pracownia 1} % Assignment title
+\newcommand{\hmwkDueDate}{} % Due date
+\newcommand{\hmwkClass}{Analiza numeryczna} % Course/class
+\newcommand{\hmwkClassTime}{} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Bartosz Bednarczyk, Jan Góra} % Your name
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\tableofcontents
+
+\section{Przegląd podstawowych zagadnień związanych z wielomianami}
+
+\subsection{Postawowe definicje}
+
+\begin{definicja}
+Wielomianem stopnia $n \in \mathbb{N}$ nad ciałem $\mathbb{K}$ będziemy nazywać przekształcenie $\mathbb{K}^n \mapsto \mathbb{K}$ zadane wzorem $W(x) = a_0 + a_1x + \ldots + a_n x^n$, gdzie $a_i$ to pewne  współczynniki z ciała $\mathbb{K}$.
+\end{definicja}
+
+\begin{definicja}
+Niech $W$ będzie pewnym wielomianem (nad ciałem $\mathbb{K}$). Liczbę $a$, taką że $W(a) = 0$, będziemy nazywać pierwiastkiem wielomianu.
+\end{definicja}
+
+\begin{remark}
+Z faktu, że wielomian $W$ ma współczynniki z ciała $\mathbb{K}$, nie wynika fakt, że jego pierwiastki również będą należeć do $\mathbb{K}$. Klasycznym przykładem jest wielomian $x^2 + 1$, który ma współczynniki rzeczywiste, a jego pierwiastkami są liczby zespolone.
+\end{remark}
+
+\begin{remark}
+Istnieją takie ciała $\mathbb{K}$, że dla dowolnego wielomianu stopnia większego od $0$ wszystkie jego pierwiastki należą do $\mathbb{K}$. Ciała takie będziemy nazywać algebraicznie domkniętymi. Przykładem takiego ciała jest $\mathbb{C}$, czego nie będziemy dowodzić. 
+\end{remark}
+
+Podczas całego tego sprawozdania będziemy zajmować się następującym problemem:
+
+\begin{center}
+\begin{tikzpicture}
+\node [draw={black}, fill=black!10, very thick, rectangle, rounded corners, inner sep=12pt, inner ysep=12pt] (box){%
+    \begin{minipage}{.9\textwidth}
+
+	Niech $W$ będzie wielomianem. Celem jest znaleźć zbiór $ker(W) = \lbrace a \ | \ W(a) = 0 \rbrace $.
+    \end{minipage}
+};
+\node[fill={black}, text=white, rounded corners, right=10pt] at (box.north west) {Problem znajdowania miejsc zerowych wielomianu};
+\end{tikzpicture}
+\end{center}
+
+Powyższy problem, choć pozornie prosty, jest sformułowany bardzo ogólnie. Na potrzeby tej pracy od tej pory ograniczymy się tylko do $\mathbb{R}$ oraz $\mathbb{C}$, choć nic nie staje na przeszkodzie by poeksperymentować z innymi ciałami. Aktualnie nie wiemy czy każdy wielomian ma pierwiastki, a jeśli ma to czy ich zbiór jest skończony. Nie znamy również żadnych metod rozwiązywania $W(x) = 0$. By lepiej zrozumieć podane zagadnienie przejdźmy przez ciąg różnych definicji, algorytmów, twierdzeń i lematów związanych z wielomianami (warto je zrozumieć, gdyż kolejne rozdziały będą z nich korzystać).
+
+\begin{thm}
+Każdy wielomian $W(x)$ nad $\mathbb{C}$ stopnia $n \in \mathbb{N}_+$ ma co najmniej jeden pierwiastek.
+\end{thm}
+
+\begin{proof}
+To twierdzenie jest nazywane zasadniczym twierdzeniem algebry. Dowód \cite{leja} s. 105.
+\end{proof}
+
+\begin{wniosek}
+$| ker(W) | \leq n$, gdzie $n$ to stopień wielomianu $W$.	
+\end{wniosek}
+
+
+\subsection{Postać iloczynowa wielomianu i dzielenie wielomianu}
+
+
+\begin{definicja}
+Wielomian $W(x)$ nazywamy podzielnym przez wielomian $P(x)$, różny od wielomianu zerowego, wtedy i tylko wtedy, gdy istnieje taki wielomian $Q(x)$, że $W(x) = Q(x) * P(x)$. Wielomian $Q(x)$ nazywamy ilorazem wielomianu $W(x)$ przez $P(x)$. Mówimy, że wielomian $P(x)$ jest dzielnikiem wielomianu $W(x)$.
+\end{definicja}
+
+
+\begin{definicja}
+Dowolny wielomian $W(x)$ możemy zapisać jako $W(x) = P(x) \cdot Q(x) + R(x)$ dla pewnych wielomianów $P, Q, R$. Mówimy, że wielomian $W(x)$ jest podzielny przez $Q(x)$ jeżeli $R(x) = 0$. 
+\end{definicja}
+
+\begin{thm}
+Wielomian $W(x)$ jest podzielny przez wielomian $Q(x) = (x-a)$ wtedy i tylko wtedy, gdy $W(a) = 0$.	
+\end{thm}
+
+\begin{proof}
+W \cite{kostrikin}	
+\end{proof}
+
+Chcielibyśmy umieć w efektywny sposób realizować procedurę dzielenie wielomianu przez jednomiany postaci $x-a$. Służy do tego następujący algorytm:
+
+\begin{enumerate}
+\item $P(x) = a_0 + a_1 x + a_2 x^2 + \ldots + a_n x^n$
+\item Niech $\alpha = a_n$
+\item Kolejno dla $k = n-1, n-2, \ldots 0$ wykonaj $\alpha := a_k + x \alpha$.
+\item Wynik to $p(x) = \alpha$.
+\end{enumerate}
+
+Dokładny opis metody oraz jej analizę możemy znaleźć w \cite{kincaid} (s 103).\\
+
+\subsection{Pochodna wielomianu i jej obliczanie}
+
+TUTAJ DODAĆ OPIS DOTYCZĄCY POCHODNYCH I OBLICZANIA ICH DLA WIELOMIANU.
+
+\section{Metoda Newtona oraz wielowymiarowa metoda Newtona}
+
+\subsection{Opis klasycznej metody Newtona}
+
+Klasyczną metodą Newtona zastosowaną dla pewnego punktu startowego $p$ oraz funkcji $f : \mathbb{R} \mapsto \mathbb{R}$ klasy $C^{1}$ nazywać będziemy metodę iteracyjną postaci:
+
+$$
+x_n = \left\{\begin{matrix}
+p, & gdy \ n = 0\\ 
+x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}, & w.p.p. 
+\end{matrix}\right.
+$$
+
+Analizę klasycznej metody Newtona można znaleźć w \cite{kincaid} na stronach 71-81.
+
+\subsection{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}
+
+Jeśli mamy wielomian o współczynnikach i pierwiastkach rzeczywistych możemy policzyć jego pierwiastki za pomocą klasycznej metody Newtona. Podstawiamy za $f$ z poprzedniego opisu nasz wielomian, a $f'$ to jego pochodna. Po znalezieniu jednego pierwiastka (nazwijmy go $a$) dzielimy nasz wielomian przez $x-a$ i uruchamiamy program dla otrzymanego wielomianu. Proces kontynuujemy tak długo, aż dojdziemy do wielomianu o stopniu $0$.
+
+\begin{remark}
+Wartość w punkcie wielomianu i jego pochodnej możemy wyznaczyć z pomocą schematu Hornera, który był omówiony wcześniej (w kodzie przykładowym skorzystaliśmy z funkcji bibliotecznych dla większej czytelności).
+\end{remark}
+
+
+\lstset{language=Haskell, label=DescriptiveLabel, frame=shadowbox}
+\lstinputlisting{klasyczna_metoda_newtona.jl}
+
+\begin{remark}
+Powyższa metoda nie nadaje się do obliczania miejsc zerowych wielomianu, którego pierwiastki są zespolone (z powodu tego, że operujemy tutaj na tylko rzeczywistych przybliżeniach $x_n$).
+\end{remark}
+
+\subsection{Metoda Newtona dla funkcji wielu zmiennych}
+
+TODO
+
+\subsection{Metoda Newtona dla funkcji zespolonych}
+
+\begin{lemat}
+Dowolną funkcję $f : \mathbb{C} \mapsto \mathbb{C}$ możemy zapisać jako $$f(z) = f(x+yi) = P(x,y) + i Q(x,y),$$ gdzie $x,y \in \mathbb{R}$, $P(x,y) \in \mathbb{R}, Q(x,y) \in \mathbb{R}$	
+\end{lemat}
+
+\begin{przyklad}
+
+$$f(z) = z^3 - 2z = f(x+iy) = (x+iy)^3 - 2(x+iy) = (x^3 - 3xy^2 - 2x) + i(3x^2y - y^3 - 2y) = P(x,y) + iQ(x,y)$$
+
+\end{przyklad}
+
+
+Niech $f(z) = P(x,y) + iQ(x,y)$. Możemy teraz skorzystać z metody Newtona dla funkcji wielu zmiennych.
+
+$$v_{n+1} = v_n - \frac{f(v_n)}{f'(v_n)}$$
+
+$$
+\begin{pmatrix} x_{n+1}\\ y_{n+1}\\ \end{pmatrix} =  \begin{pmatrix} x_n\\ y_n\\ \end{pmatrix} - J^{-1} \begin{pmatrix} P(x_n, y_n)\\ Q(x_n, y_n)\\ \end{pmatrix} = 
+\begin{pmatrix} x_n\\ y_n\\ \end{pmatrix} - \begin{pmatrix}
+\frac{\partial P}{\partial x}(x_n, y_n) & \frac{\partial P}{\partial y} (x_n, y_n)\\ 
+\frac{\partial Q}{\partial x}(x_n, y_n) & \frac{\partial Q}{\partial y}(x_n, y_n)  
+\end{pmatrix}^{-1} \begin{pmatrix} P(x_n, y_n)\\ Q(x_n, y_n)\\ \end{pmatrix} $$
+
+
+Ponieważ wielomian jest funkcją holomorficzną, to zachodzi równanie Cauchy'ego-Riemanna:
+
+$$\frac{\partial P}{\partial x} = \frac{\partial Q}{\partial y}, \ - \frac{\partial P}{\partial y} =\frac{\partial Q}{\partial x}$$
+
+Oznaczając $P = P(x_n, y_n), Q = Q(x_n, y_n), P_x = \frac{\partial P}{\partial x}(x_n, y_n)$, $Q_x = \frac{\partial Q}{\partial x}(x_n, y_n)$ oraz korzystając ze wzoru na macierz odwrotną możemy uprościć wzór na metodę Newtona do postaci:
+
+$$
+\begin{pmatrix} x_{n+1}\\ y_{n+1}\\ \end{pmatrix} = \begin{pmatrix} x_n - \frac{ P P_x + Q Q_x}{Px^2 + Qx^2}\\ y_n - \frac{P P_y + Q Q_y}{Px^2 + Qx^2} \\ \end{pmatrix}
+$$
+
+\begin{thebibliography}{99}
+\bibitem{leja} Leja, Franciszek.
+\emph{Funkcje zespolone},
+Warszawa : PWN, 1976
+
+\bibitem{kostrikin} Aleksiej I., Kostrikin
+\emph{Wstęp do algebry. Podstawy algebry},
+Warszawa : PWN, 2008
+
+\bibitem{kincaid} David Kincaid, Ward Cheney
+\emph{Analiza numeryczna},
+Warszawa : WNT, 2006
+
+\bibitem{complexnewton} Lily Yau, Adi Ben-Israel
+\emph{The Newton and Halley Methods for Complex Roots},
+The American Mathematical Monthly 105(1998), 806–818
+
+
+\end{thebibliography}
+
+\end{document}

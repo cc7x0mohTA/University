@@ -1,0 +1,9 @@
+\contentsline {section}{Przegl\IeC {\k a}d podstawowych zagadnie\IeC {\'n} zwi\IeC {\k a}zanych z wielomianami}{1}{section*.2}
+\contentsline {subsection}{Postawowe definicje}{1}{section*.3}
+\contentsline {subsection}{Posta\IeC {\'c} iloczynowa wielomianu i dzielenie wielomianu}{2}{section*.4}
+\contentsline {subsection}{Pochodna wielomianu i jej obliczanie}{2}{section*.5}
+\contentsline {section}{Metoda Newtona oraz wielowymiarowa metoda Newtona}{2}{section*.6}
+\contentsline {subsection}{Opis klasycznej metody Newtona}{2}{section*.7}
+\contentsline {subsection}{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}{2}{section*.8}
+\contentsline {subsection}{Metoda Newtona dla funkcji wielu zmiennych}{3}{section*.9}
+\contentsline {subsection}{Metoda Newtona dla funkcji zespolonych}{3}{section*.10}

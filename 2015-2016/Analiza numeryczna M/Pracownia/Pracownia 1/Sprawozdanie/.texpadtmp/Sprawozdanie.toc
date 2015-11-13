@@ -5,5 +5,5 @@
 \contentsline {section}{Metoda Newtona oraz wielowymiarowa metoda Newtona}{2}{section*.6}
 \contentsline {subsection}{Opis klasycznej metody Newtona}{2}{section*.7}
 \contentsline {subsection}{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}{2}{section*.8}
-\contentsline {subsection}{Metoda Newtona dla funkcji wielu zmiennych}{3}{section*.9}
-\contentsline {subsection}{Metoda Newtona dla funkcji zespolonych}{3}{section*.10}
+\contentsline {subsection}{Metoda Newtona dla wielu funkcji wielu zmiennych}{3}{section*.9}
+\contentsline {subsection}{Metoda Newtona dla funkcji zespolonych}{4}{section*.10}

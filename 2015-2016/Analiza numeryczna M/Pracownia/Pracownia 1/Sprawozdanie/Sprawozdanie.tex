@@ -282,9 +282,56 @@ Wartość w punkcie wielomianu i jego pochodnej możemy wyznaczyć z pomocą sc
 Powyższa metoda nie nadaje się do obliczania miejsc zerowych wielomianu, którego pierwiastki są zespolone (z powodu tego, że operujemy tutaj na tylko rzeczywistych przybliżeniach $x_n$).
 \end{remark}
 
-\subsection{Metoda Newtona dla funkcji wielu zmiennych}
+\subsection{Metoda Newtona dla wielu funkcji wielu zmiennych}
 
-TODO
+Załóżmy, że mamy do rozwiązania układ równań:
+
+$$\left\{\begin{matrix}
+f_1(x_1, x_2, \ldots, x_n) = 0 \\ 
+f_2(x_1, x_2, \ldots, x_n) = 0 \\ 
+\ldots\\ 
+f_n(x_1, x_2, \ldots, x_n) = 0
+\end{matrix}\right.,$$
+
+gdzie $f_i \in \mathbb{R}^n \mapsto \mathbb{R}^n$ jest klasy $C^{1}$.
+
+Każdą z tych funkcji możemy rozpisać ze wzoru Taylora jako:
+
+$$0 = f_i(x_1 + h_1, x_2 + h_2, \ldots, x_n + h_n) \approx f_i(x_1, x_2, \ldots, x_n) + \sum_{j=1}^n h_j \cdot \frac{\partial f_i}{\partial x_j} (x_1, x_2, \ldots x_n)$$
+
+Powyższy układ możemy zapisać w postaci macierzowej:
+
+$$
+\begin{pmatrix}
+f_1(x_1, x_2, \ldots, x_n)\\ 
+f_2(x_1, x_2, \ldots, x_n)\\ 
+\ldots\\ 
+f_n(x_1, x_2, \ldots, x_n)\\ 
+
+\end{pmatrix} = \begin{pmatrix}
+\frac{\partial f_1}{\partial x_1}(x_1, x_2, \ldots x_n) & \frac{\partial f_1}{\partial x_2}(x_1, x_2, \ldots x_n) &  \ldots &  & \frac{\partial f_1}{\partial x_1}(x_1, x_2, \ldots x_n) \\ 
+\frac{\partial f_2}{\partial x_1}(x_1, x_2, \ldots x_n) & \frac{\partial f_2}{\partial x_2}(x_1, x_2, \ldots x_n) &  \ldots &  & \frac{\partial f_2}{\partial x_1}(x_1, x_2, \ldots x_n) \\ 
+ \ldots & \ldots &  \ \ldots & \\ 
+ \ldots & \ldots &  \ \ldots & \\ 
+\frac{\partial f_n}{\partial x_1}(x_1, x_2, \ldots x_n) & \frac{\partial f_n}{\partial x_2}(x_1, x_2, \ldots x_n) &  \ldots &  & \frac{\partial f_n}{\partial x_1}(x_1, x_2, \ldots x_n) \\ 
+\end{pmatrix} \begin{pmatrix}
+h_1\\ 
+h_2\\ 
+\ldots \\ 
+\ldots \\ 
+h_n\\ 
+
+\end{pmatrix}
+$$
+
+Aby nieco skrócić ten układ, będziemy go zapisywać jako $F(X) = -J \cdot H$.
+Jeśli macierz $J$ jest nieosobliwa, to układ ma rozwiązanie w postaci:
+$$ -J^{-1} \cdot F(X) = H$$
+
+Ostatecznie wzór Newtona dla układu funkcji wielu zmiennych możemy wzorem:
+
+$$ X_{k+1} = X_k + H_k = X_k - J^{-1}(X_k) F(X_k)$$
+
 
 \subsection{Metoda Newtona dla funkcji zespolonych}
 
@@ -299,7 +346,7 @@ $$f(z) = z^3 - 2z = f(x+iy) = (x+iy)^3 - 2(x+iy) = (x^3 - 3xy^2 - 2x) + i(3x^2y 
 \end{przyklad}
 
 
-Niech $f(z) = P(x,y) + iQ(x,y)$. Możemy teraz skorzystać z metody Newtona dla funkcji wielu zmiennych.
+Niech $f(z) = P(x,y) + iQ(x,y)$. Równanie $f(z) = 0$ możemy sprowadzić do układu równań $Q(x,y) = 0$ i $P(x,y) = 0$. Taki układ równań rozwiązujemy za pomocą metody Newtona dla funkcji wielu zmiennych.
 
 $$v_{n+1} = v_n - \frac{f(v_n)}{f'(v_n)}$$
 

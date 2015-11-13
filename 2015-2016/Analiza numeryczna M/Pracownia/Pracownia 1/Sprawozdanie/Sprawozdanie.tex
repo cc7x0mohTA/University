@@ -376,6 +376,14 @@ $$
 
 \subsection{Metoda Laguerre'a}
 
+Jedną z metod iteracyjnych wyszukiwania pierwiastków wielomianu używanych w nowoczesnych systemach informatycznych jest metoda Laguerre'a. 
+
+Niech $p(z)$ będzie wielomianem stopnia $n$, którego pierwiastki mamy znaleźć. Kolejne kroki w metodzie obliczamy za pomocą nastepujących wzorów:
+
+$$ A = \frac{-p'(z)}{p(z)}, \ B = A^2 - \frac{p''(z)}{p(z)}, \ C = \frac{A \pm \sqrt{(n-1)(nB - A^2}}{n}, \ z_{nowe} = z + \frac{1}{C}$$ 
+
+Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach pojedynczego pierwiastka wielomianu $p$ jest zbieżna sześciennie. Dokładną analizę tej metody pozostawiamy czytelnikowi do przeczytania w $\cite{kincaid}$ (s 112-116).
+
 \subsection{Metoda Mullera}
 
 \subsection{Poprawianie zer - (root polishing)}

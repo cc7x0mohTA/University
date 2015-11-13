@@ -264,7 +264,7 @@ x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}, & w.p.p.
 \end{matrix}\right.
 $$
 
-Analizę klasycznej metody Newtona można znaleźć w \cite{kincaid} na stronach 71-81.
+Można pokazać, że $x_n$ zbiega do pewnego pierwiastka funkcji $f$. Analizę klasycznej metody Newtona można znaleźć w \cite{kincaid} na stronach 71-81.
 
 \subsection{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}
 
@@ -367,6 +367,23 @@ Oznaczając $P = P(x_n, y_n), Q = Q(x_n, y_n), P_x = \frac{\partial P}{\partial 
 $$
 \begin{pmatrix} x_{n+1}\\ y_{n+1}\\ \end{pmatrix} = \begin{pmatrix} x_n - \frac{ P P_x + Q Q_x}{Px^2 + Qx^2}\\ y_n - \frac{P P_y + Q Q_y}{Px^2 + Qx^2} \\ \end{pmatrix}
 $$
+
+
+\lstset{language=Haskell, label=DescriptiveLabel, frame=shadowbox}
+\lstinputlisting{zespolony_newton.jl}
+
+\section{Wybrane metody wyszukiwania miejsc zerowych wielomianu}
+
+\subsection{Metoda Laguerre'a}
+
+\subsection{Metoda Mullera}
+
+\subsection{Poprawianie zer - (root polishing)}
+
+\section{Metoda Bairstowa}
+
+\section{Testy numeryczne}
+
 
 \begin{thebibliography}{99}
 \bibitem{leja} Leja, Franciszek.

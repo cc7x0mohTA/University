@@ -7,3 +7,9 @@
 \BOOKMARK [2][-]{section*.8}{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}{section*.6}% 7
 \BOOKMARK [2][-]{section*.9}{Metoda Newtona dla wielu funkcji wielu zmiennych}{section*.6}% 8
 \BOOKMARK [2][-]{section*.10}{Metoda Newtona dla funkcji zespolonych}{section*.6}% 9
+\BOOKMARK [1][-]{section*.11}{Wybrane metody wyszukiwania miejsc zerowych wielomianu}{}% 10
+\BOOKMARK [2][-]{section*.12}{Metoda Laguerre'a}{section*.11}% 11
+\BOOKMARK [2][-]{section*.13}{Metoda Mullera}{section*.11}% 12
+\BOOKMARK [2][-]{section*.14}{Poprawianie zer - \(root polishing\)}{section*.11}% 13
+\BOOKMARK [1][-]{section*.15}{Metoda Bairstowa}{}% 14
+\BOOKMARK [1][-]{section*.16}{Testy numeryczne}{}% 15

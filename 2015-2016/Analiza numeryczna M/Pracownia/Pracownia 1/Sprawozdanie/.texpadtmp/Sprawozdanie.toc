@@ -10,6 +10,5 @@
 \contentsline {section}{Wybrane metody wyszukiwania miejsc zerowych wielomianu}{5}{section*.11}
 \contentsline {subsection}{Metoda Laguerre'a}{5}{section*.12}
 \contentsline {subsection}{Metoda Mullera}{6}{section*.13}
-\contentsline {subsection}{Poprawianie zer - (root polishing)}{6}{section*.14}
-\contentsline {section}{Metoda Bairstowa}{6}{section*.15}
-\contentsline {section}{Testy numeryczne}{6}{section*.16}
+\contentsline {section}{Metoda Bairstowa}{6}{section*.14}
+\contentsline {section}{Testy numeryczne}{6}{section*.15}

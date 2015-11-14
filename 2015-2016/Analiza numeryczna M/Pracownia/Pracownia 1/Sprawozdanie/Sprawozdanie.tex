@@ -386,7 +386,18 @@ Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach poje
 
 \subsection{Metoda Mullera}
 
-\subsection{Poprawianie zer - (root polishing)}
+Metoda Newtona jest modyfikacją metody stycznych. Zamiast przybliżać nasz wielomian $f$ funkcją liniową będziemy go aproksymować funkcją kwadratową.
+
+Rozważmy trzy punkt $x_0, x_1, x_2$ wraz z wartościami funkcji $f$ w tych punktach. Przyjmujmy, że $x_2$ jest aktualnym przybliżeniem rozwiązania. Oznaczmy $z = x-x_2, \ h_0 = x_0 - x_2, \ h_1 = x_1-x_2$.
+
+Oznaczmy szukaną parabolę przez $g(z) = az^2 + bz + c$. Z definicji paraboli w punkcie $z - x_k$ dostajemy, że 
+
+$$2a = f''(x_k), \ b = f'(x_k), \ c = f(x_k),$$
+
+co prowadzi do wzoru
+
+$$x_{k+1} = x_k - \frac{2f(x_k)}{f'(x_k) + sgn(f'(x_k)) \cdot \sqrt{(f'(x_k))^2 - 2f(x_k)f''(x_k)}}$$
+
 
 \section{Metoda Bairstowa}
 

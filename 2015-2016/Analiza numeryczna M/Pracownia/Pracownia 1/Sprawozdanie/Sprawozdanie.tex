@@ -169,10 +169,10 @@ tabsize=2, % Number of spaces per tab in the code
 
 \section{Przegląd podstawowych zagadnień związanych z wielomianami}
 
-\subsection{Postawowe definicje}
+\subsection{Podstawowe definicje}
 
 \begin{definicja}
-Wielomianem stopnia $n \in \mathbb{N}$ nad ciałem $\mathbb{K}$ będziemy nazywać przekształcenie $\mathbb{K}^n \mapsto \mathbb{K}$ zadane wzorem $W(x) = a_0 + a_1x + \ldots + a_n x^n$, gdzie $a_i$ to pewne  współczynniki z ciała $\mathbb{K}$.
+Wielomianem stopnia $n \in \mathbb{N}$ nad ciałem $\mathbb{K}$ będziemy nazywać przekształcenie $\mathbb{K}^n \mapsto \mathbb{K}$ zadane wzorem $W(x) = a_0 + a_1x + \ldots + a_n x^n$, gdzie $a_i$ to pewne  współczynniki z ciała $\mathbb{K}$ oraz $a_n \neq 0$ .
 \end{definicja}
 
 \begin{definicja}
@@ -194,14 +194,14 @@ Podczas całego tego sprawozdania będziemy zajmować się następującym probl
 \node [draw={black}, fill=black!10, very thick, rectangle, rounded corners, inner sep=12pt, inner ysep=12pt] (box){%
     \begin{minipage}{.9\textwidth}
 
-	Niech $W$ będzie wielomianem. Celem jest znaleźć zbiór $ker(W) = \lbrace a \ | \ W(a) = 0 \rbrace $.
+	Niech $W$ będzie wielomianem. Znaleźć zbiór $ker(W) = \lbrace a \ | \ W(a) = 0 \rbrace $.
     \end{minipage}
 };
 \node[fill={black}, text=white, rounded corners, right=10pt] at (box.north west) {Problem znajdowania miejsc zerowych wielomianu};
 \end{tikzpicture}
 \end{center}
 
-Powyższy problem, choć pozornie prosty, jest sformułowany bardzo ogólnie. Na potrzeby tej pracy od tej pory ograniczymy się tylko do $\mathbb{R}$ oraz $\mathbb{C}$, choć nic nie staje na przeszkodzie by poeksperymentować z innymi ciałami. Aktualnie nie wiemy czy każdy wielomian ma pierwiastki, a jeśli ma to czy ich zbiór jest skończony. Nie znamy również żadnych metod rozwiązywania $W(x) = 0$. By lepiej zrozumieć podane zagadnienie przejdźmy przez ciąg różnych definicji, algorytmów, twierdzeń i lematów związanych z wielomianami (warto je zrozumieć, gdyż kolejne rozdziały będą z nich korzystać).
+Powyższy problem, choć pozornie prosty, jest sformułowany bardzo ogólnie. Na potrzeby tej pracy od tej pory ograniczymy się tylko do ciał $\mathbb{R}$ oraz $\mathbb{C}$, choć nic nie staje na przeszkodzie by poeksperymentować z innymi ciałami. Aktualnie nie wiemy czy każdy wielomian ma pierwiastki, a jeśli ma to czy ich zbiór jest skończony. Nie znamy również żadnych metod rozwiązywania $W(x) = 0$. By lepiej zrozumieć podane zagadnienie przejdźmy przez ciąg różnych definicji, algorytmów, twierdzeń i lematów związanych z wielomianami (warto je zrozumieć, gdyż kolejne rozdziały będą z nich korzystać).
 
 \begin{thm}
 Każdy wielomian $W(x)$ nad $\mathbb{C}$ stopnia $n \in \mathbb{N}_+$ ma co najmniej jeden pierwiastek.

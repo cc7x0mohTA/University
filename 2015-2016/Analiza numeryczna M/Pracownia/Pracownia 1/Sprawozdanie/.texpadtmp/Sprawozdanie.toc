@@ -1,5 +1,5 @@
 \contentsline {section}{Przegl\IeC {\k a}d podstawowych zagadnie\IeC {\'n} zwi\IeC {\k a}zanych z wielomianami}{1}{section*.2}
-\contentsline {subsection}{Postawowe definicje}{1}{section*.3}
+\contentsline {subsection}{Podstawowe definicje}{1}{section*.3}
 \contentsline {subsection}{Posta\IeC {\'c} iloczynowa wielomianu i dzielenie wielomianu}{2}{section*.4}
 \contentsline {subsection}{Pochodna wielomianu i jej obliczanie}{2}{section*.5}
 \contentsline {subsection}{Inne przydatne poj\IeC {\k e}cia matematyczne}{2}{section*.6}

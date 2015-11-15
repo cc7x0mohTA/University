@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.9)  15 NOV 2015 04:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.9)  15 NOV 2015 05:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -894,8 +894,9 @@ Overfull \hbox (70.2505pt too wide) in paragraph at lines 2--3
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
+[4]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -905,35 +906,39 @@ Overfull \hbox (148.2513pt too wide) in paragraph at lines 16--17
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[4]) [5] [6] [7] 
+) [5] [6]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7] 
 AED: lastpage setting LastPage
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 537.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 537.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 553.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 553.
  (/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 537.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 537.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 553.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 553.
 Package rerunfilecheck Info: File `Sprawozdanie.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 537.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 553.
  ) 
 Here is how much of TeX's memory you used:
- 20174 strings out of 493089
- 359593 string characters out of 6134842
- 579635 words of memory out of 5000000
- 23155 multiletter control sequences out of 15000+600000
+ 20181 strings out of 493089
+ 359652 string characters out of 6134842
+ 588066 words of memory out of 5000000
+ 23156 multiletter control sequences out of 15000+600000
  11598 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,54p,662b,1766s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plit.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plti10.pfb>
-Output written on "/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.pdf" (8 pages, 150314 bytes).
+Output written on "/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.pdf" (8 pages, 151000 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
- 121 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 355 PDF objects out of 1000 (max. 8388607)
+ 325 compressed objects within 4 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

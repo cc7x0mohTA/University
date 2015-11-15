@@ -2,16 +2,17 @@
 \BOOKMARK [2][-]{section*.3}{Postawowe definicje}{section*.2}% 2
 \BOOKMARK [2][-]{section*.4}{Postac iloczynowa wielomianu i dzielenie wielomianu}{section*.2}% 3
 \BOOKMARK [2][-]{section*.5}{Pochodna wielomianu i jej obliczanie}{section*.2}% 4
-\BOOKMARK [1][-]{section*.6}{Metoda Newtona oraz wielowymiarowa metoda Newtona}{}% 5
-\BOOKMARK [2][-]{section*.7}{Opis klasycznej metody Newtona}{section*.6}% 6
-\BOOKMARK [2][-]{section*.8}{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}{section*.6}% 7
-\BOOKMARK [2][-]{section*.9}{Metoda Newtona dla wielu funkcji wielu zmiennych}{section*.6}% 8
-\BOOKMARK [2][-]{section*.10}{Metoda Newtona dla funkcji zespolonych}{section*.6}% 9
-\BOOKMARK [1][-]{section*.11}{Wybrane metody wyszukiwania miejsc zerowych wielomianu}{}% 10
-\BOOKMARK [2][-]{section*.12}{Metoda Laguerre'a}{section*.11}% 11
-\BOOKMARK [2][-]{section*.13}{Metoda Mullera}{section*.11}% 12
-\BOOKMARK [1][-]{section*.14}{Metoda Bairstowa}{}% 13
-\BOOKMARK [2][-]{section*.15}{Opis metody Bairstowa}{section*.14}% 14
-\BOOKMARK [2][-]{section*.16}{Analiza teoretyczna metody Bairstowa}{section*.14}% 15
-\BOOKMARK [2][-]{section*.17}{Przyk\233ad rozbieznosci metody Bairstowa}{section*.14}% 16
-\BOOKMARK [1][-]{section*.18}{Testy numeryczne}{}% 17
+\BOOKMARK [2][-]{section*.6}{Inne przydatne pojecia matematyczne}{section*.2}% 5
+\BOOKMARK [1][-]{section*.7}{Metoda Newtona oraz wielowymiarowa metoda Newtona}{}% 6
+\BOOKMARK [2][-]{section*.8}{Opis klasycznej metody Newtona}{section*.7}% 7
+\BOOKMARK [2][-]{section*.9}{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}{section*.7}% 8
+\BOOKMARK [2][-]{section*.10}{Metoda Newtona dla wielu funkcji wielu zmiennych}{section*.7}% 9
+\BOOKMARK [2][-]{section*.11}{Metoda Newtona dla funkcji zespolonych}{section*.7}% 10
+\BOOKMARK [1][-]{section*.12}{Wybrane metody wyszukiwania miejsc zerowych wielomianu}{}% 11
+\BOOKMARK [2][-]{section*.13}{Metoda Laguerre'a}{section*.12}% 12
+\BOOKMARK [2][-]{section*.14}{Metoda Mullera}{section*.12}% 13
+\BOOKMARK [1][-]{section*.15}{Metoda Bairstowa}{}% 14
+\BOOKMARK [2][-]{section*.16}{Opis metody Bairstowa}{section*.15}% 15
+\BOOKMARK [2][-]{section*.17}{Analiza teoretyczna metody Bairstowa}{section*.15}% 16
+\BOOKMARK [2][-]{section*.18}{Przyk\233ad rozbieznosci metody Bairstowa}{section*.15}% 17
+\BOOKMARK [1][-]{section*.19}{Testy numeryczne}{}% 18

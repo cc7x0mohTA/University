@@ -2,16 +2,17 @@
 \contentsline {subsection}{Postawowe definicje}{1}{section*.3}
 \contentsline {subsection}{Posta\IeC {\'c} iloczynowa wielomianu i dzielenie wielomianu}{2}{section*.4}
 \contentsline {subsection}{Pochodna wielomianu i jej obliczanie}{2}{section*.5}
-\contentsline {section}{Metoda Newtona oraz wielowymiarowa metoda Newtona}{2}{section*.6}
-\contentsline {subsection}{Opis klasycznej metody Newtona}{2}{section*.7}
-\contentsline {subsection}{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}{3}{section*.8}
-\contentsline {subsection}{Metoda Newtona dla wielu funkcji wielu zmiennych}{3}{section*.9}
-\contentsline {subsection}{Metoda Newtona dla funkcji zespolonych}{4}{section*.10}
-\contentsline {section}{Wybrane metody wyszukiwania miejsc zerowych wielomianu}{5}{section*.11}
-\contentsline {subsection}{Metoda Laguerre'a}{5}{section*.12}
-\contentsline {subsection}{Metoda Mullera}{6}{section*.13}
-\contentsline {section}{Metoda Bairstowa}{6}{section*.14}
-\contentsline {subsection}{Opis metody Bairstowa}{6}{section*.15}
-\contentsline {subsection}{Analiza teoretyczna metody Bairstowa}{7}{section*.16}
-\contentsline {subsection}{Przyk\IeC {\l }ad rozbie\IeC {\.z}no\IeC {\'s}ci metody Bairstowa}{7}{section*.17}
-\contentsline {section}{Testy numeryczne}{7}{section*.18}
+\contentsline {subsection}{Inne przydatne poj\IeC {\k e}cia matematyczne}{2}{section*.6}
+\contentsline {section}{Metoda Newtona oraz wielowymiarowa metoda Newtona}{3}{section*.7}
+\contentsline {subsection}{Opis klasycznej metody Newtona}{3}{section*.8}
+\contentsline {subsection}{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}{3}{section*.9}
+\contentsline {subsection}{Metoda Newtona dla wielu funkcji wielu zmiennych}{3}{section*.10}
+\contentsline {subsection}{Metoda Newtona dla funkcji zespolonych}{4}{section*.11}
+\contentsline {section}{Wybrane metody wyszukiwania miejsc zerowych wielomianu}{6}{section*.12}
+\contentsline {subsection}{Metoda Laguerre'a}{6}{section*.13}
+\contentsline {subsection}{Metoda Mullera}{6}{section*.14}
+\contentsline {section}{Metoda Bairstowa}{6}{section*.15}
+\contentsline {subsection}{Opis metody Bairstowa}{6}{section*.16}
+\contentsline {subsection}{Analiza teoretyczna metody Bairstowa}{7}{section*.17}
+\contentsline {subsection}{Przyk\IeC {\l }ad rozbie\IeC {\.z}no\IeC {\'s}ci metody Bairstowa}{7}{section*.18}
+\contentsline {section}{Testy numeryczne}{8}{section*.19}

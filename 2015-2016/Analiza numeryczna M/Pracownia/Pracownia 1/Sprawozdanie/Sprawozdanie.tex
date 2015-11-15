@@ -249,7 +249,23 @@ Dokładny opis metody oraz jej analizę możemy znaleźć w \cite{kincaid} (s 10
 
 \subsection{Pochodna wielomianu i jej obliczanie}
 
-TUTAJ DODAĆ OPIS DOTYCZĄCY POCHODNYCH I OBLICZANIA ICH DLA WIELOMIANU.
+\begin{definicja}
+Pochodną wielomianu $p(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0$ będziemy nazywać wielomian $p'(x) = 	n \cdot a_n x^{n-1} + (n-1) a_{n-1}x^{n-2} + \ldots +  a_1$.
+\end{definicja}
+
+Wyznaczanie wielomianu w punkcie $x_0$ możemy zrealizować za pomocą schematu Hornera:
+
+\begin{enumerate}
+\item $P(x) = a_0 + a_1 x + a_2 x^2 + \ldots + a_n x^n$
+\item Niech $\alpha := a_n, \ \beta := 0$
+\item Kolejno dla $k = n-1, n-2, \ldots 0$ wykonaj $\beta := \alpha + x \beta, \ \alpha := a_k + x \alpha$
+
+\item Wynik to $p'(x) = \beta$.
+\end{enumerate}
+
+\subsection{Inne przydatne pojęcia matematyczne}
+
+Oprócz wymienionych w rozdziale pojęć związanych z wielomianami zakładać będziemy u czytelnika znajomości wielowymiarowego rachunku różniczkowego, znajomości definicji funkcji holomorficznej oraz podstawowych pojęć związanych z analizą błędów. 
 
 \section{Metoda Newtona oraz wielowymiarowa metoda Newtona}
 

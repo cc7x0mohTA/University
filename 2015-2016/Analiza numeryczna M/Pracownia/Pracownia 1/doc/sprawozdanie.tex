@@ -583,7 +583,145 @@ Metodę Bairstowa możemy zapisać w postaci listy kroków:
 
 Pseudokod zapożyczony z opisu metody Bairstowa z \cite{kincaid}.
 
+\subsection{Proponowane usprawnienia}
+
+\begin{itemize}
+\item W przypadku, kiedy po podanej liczbie iteracji nasz $(u, v)$ nie "wyzerował" dostatecznie współczynników $b_0$ oraz $b_1$ to możemy wylosować nowy punkt startowy $(u^{\star}, v^{\star})$ i zacząć metodę od początku. Ominiemy wtedy przypadek, że dla podanych początkowych punktów metoda się zapętla (patrz: s. $7$).
+
+\item Jeżeli w danej iteracji jakobian się zeruje, a $b_1, b_0$ nie są "wyzerowane", to możemy również wylosować nowy punkt i zacząć metodę od początku.
+	
+\end{itemize}
+
+
+
 \section{Testy numeryczne}
+
+\subsection{Porównanie opisanych metod}
+
+Poniższe wykresy prezentują obserwację zmiany błędu bezwzględnego pierwiastka wielomianu i przybliżenia zadanego przez opisaną metodą w kolejnych iteracjach na podstawie różnych danych wejściowych. Na wykresie oś Y przedstawia błąd bezwzględny w postaci $10^{-y}$.
+
+\includegraphics[scale=0.45]{W1.png}
+
+Wykres 1:
+Próba $100$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu $BigFloat$ (o precyzji $10^{-30}$) w zakresie $[-7;7]$ w zerowych punktach początkowych.
+
+\includegraphics[scale=0.45]{W2.png}
+
+Wykres 2:
+Próba $100$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu $BigFloat$ (o precyzji $10^{-30}$) w zakresie $[-7;7]$ w zerowych punktach początkowych.
+
+
+\includegraphics[scale=0.45]{W3.png}
+
+Wykres 3:
+Próba $50$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu  $BigFloat$ (o precyzji $10^{-30}$) w zakresie $[0;1)$ w zerowych punktach początkowych.
+
+\includegraphics[scale=0.45]{W4.png}
+
+Wykres 4:
+Próba $50$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu $Int64$ w zakresie $[-10;10]$ w zerowych punktach początkowych.
+
+\includegraphics[scale=0.45]{W5.png}
+
+Wykres 5:
+Próba $50$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu $Int64$ w zakresie $[-30,30]$ w zerowych punktach początkowych.
+
+\includegraphics[scale=0.45]{W6.png}
+
+Wykres 6:
+Próba $50$ wielomianów $3$-tego stopnia o losowych pierwiastkach typu $Int64$ w zakresie $[-30;30]$ w zerowych punktach początkowych.
+
+\pagebreak
+
+\begin{wniosek}
+Wykresy $1$ i $2$ oparte były na podobnych danych. Zauważamy, że funkcje na różnych wielomianach o tym samym typie zbiegają mniej-więcej w tej sam sposób. Widzimy, że metoda Bairstowa jest zdecydowanie wolniej zbieżna od dwóch pozostałych metod.\\
+
+Na wykresie $3$ widać, że pomimo pozornie bliskich pierwiastków wielomianu ($[0,1)$) metody są równie szybko zbieżne.\\
+
+Na wykresie $4$ widzimy, że bliskie pierwiastki są dużym utrudnieniem dla metod.
+Błąd bezwzględny przy $50$ iteracjach nie przekroczył $10^{-30}$, podczas gdy w poprzednich przykładach już po $30$ iteracjach metody osiągnęły maksymalną dokładność.\\
+
+Po zwiększeniu przedziału do $[-30;30]$ metody znów szybko osiągnęły dobrą dokładność.\\
+
+Ostatni wykres prezentuje zachowanie metod na bardzo małych danych wejściowych. Widać, że wszystkie metody są bardzo szybko zbieżne.
+
+\end{wniosek}
+
+\subsection{Przykład działania opisanych metod}
+
+\begin{przyklad}
+Metoda Bairstowa zastosowana do wielomianu $$168 + 10x - 37x^2 + 2x^3 + x^4 = (x+2)(x-3)(x+7)(x-4)$$
+
+\begin{enumerate}
+\item Iteracja nr $1$:
+
+$$-1.917879829307739159294843574606, \
+2.441230459404106839057630824421,$$
+$$-7.164414002968976450250192381454, \
+5.164414002968976450250192381454$$	
+
+\item Iteracja nr $2$:
+
+$$-2.009530033377617967339383794074, \
+2.900360110039499302979214698574
+$$$$-6.970374011038727308629332841661,  \ 
+4.447023380942359628866545591846
+$$
+
+\item Iteracja nr $3$:
+
+$$
+-2.001038440292382015085002297150, \
+2.994714506062211330442943300673
+$$
+$$
+-6.984875797781202526521865011540, \
+4.094045721119321190882034107040
+$$
+
+\item Iteracja nr $4$:
+
+$$
+-2.000004229190859710286686827364, \
+2.999983492821811977876729816709$$
+$$-6.998950445144011486784616660300, \
+4.005274379374182171426675656777$$
+
+
+\item Iteracja nr $5$:
+
+$$-2.000000000049071271087627181384, \ 
+2.999999999847921708048370785679$$
+$$-6.999996192489175048447504955397, \ 
+4.000016928858222780857461966052
+$$
+
+\item Iteracja nr $6$:
+
+$$-2.000000000000000000004928255436, \
+2.999999999999999999988240399011$$
+$$-6.999999999959408552863284228366, \
+4.000000000160558115902540624071$$
+
+\item Iteracja nr $7$:
+
+$$-2.000000000000000000000000000000, \
+3.000000000000000000000000000000$$
+$$-6.999999999999999999996242806036, \
+4.000000000000000000012930662461
+$$
+
+\item Iteracja nr $8$:
+
+$$-2.000000000000000000000000000000, \
+3.000000000000000000000000000000$$
+$$-7.000000000000000000000000000000, \
+4.000000000000000000000000000000$$
+
+\end{enumerate}
+
+\end{przyklad}
+
 
 
 \begin{thebibliography}{99}

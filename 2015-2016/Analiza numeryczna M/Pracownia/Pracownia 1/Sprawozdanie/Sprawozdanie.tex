@@ -382,7 +382,7 @@ Niech $p(z)$ będzie wielomianem stopnia $n$, którego pierwiastki mamy znaleź�
 
 $$ A = \frac{-p'(z)}{p(z)}, \ B = A^2 - \frac{p''(z)}{p(z)}, \ C = \frac{A \pm \sqrt{(n-1)(nB - A^2}}{n}, \ z_{nowe} = z + \frac{1}{C}$$ 
 
-Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach pojedynczego pierwiastka wielomianu $p$ jest zbieżna sześciennie. Dokładną analizę tej metody pozostawiamy czytelnikowi do przeczytania w $\cite{kincaid}$ (s 112-116).
+Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach pojedynczego pierwiastka wielomianu $p$ jest zbieżna sześcienne. Dokładną analizę tej metody pozostawiamy czytelnikowi do przeczytania w $\cite{kincaid}$ (s 112-116).
 
 \subsection{Metoda Mullera}
 
@@ -465,9 +465,35 @@ Załóżmy, że $P(z) = Q(z, u, v) (x^2 - u^{\star} z - v^{\star})$ i załóżmy
 Twierdzenia te zostały udowodnione przez autorów Tibora Fialę oraz Annę Krebsz w 1987 roku. Kompletne dowody można przeczytać w \cite{krebsz}.
 \end{proof}
 
-Analiza zbieżności oraz rozbieżności metody Bairstowa stanowiła podstawę do napisaniu kilku (choć niestety niewielu prac). Zainteresowanego czytelnika odsyłamy do \cite{krebsz}, \cite{Gabler} oraz \cite{Glasson}. 
+Analiza zbieżności oraz rozbieżności metody Bairstowa stanowiła podstawę do napisaniu kilku (choć niestety niewielu prac naukowych). Zainteresowanego czytelnika odsyłamy do \cite{krebsz}, \cite{Gabler} oraz \cite{Glasson}. 
 
-\subsection{Przykłady rozbieżności metody Bairstowa}
+\subsection{Przykład rozbieżności metody Bairstowa}
+
+Rozważmy wielomian postaci $P(x) = (x^2 + ux + v)(x^2 + ux + w) + (w-v)^2$
+Jakobian dla metody Bairstowa w punkcie $(u,v)$ będzie wyglądał następująco:
+$$
+J(u,v) = \begin{pmatrix}
+v-w & 0\\ 
+0 & v-w 
+\end{pmatrix}
+$$
+
+Jeśli uruchomimy metodę Bairstowa dla np. $u = 1, v = 1, w = 2$ to dostaniemy wielomian $x^4 + 6x^3 + 12x^2 + 9x +3 $ dla którego ciąg przybliżeń pierwiastka będzie cykliczny.
+
+\begin{table}[h!]
+\centering
+\caption{Metoda Bairstowa dla powyższej funkcji}
+\label{my-label}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Iteracja & $x_0$           & $x_1$               & $x_2$           & $x_3$              \\ \hline
+1        & -2.6180339884   & -3.8196601113e-01   & -2.6180339884   & -3.8196601113e-01   \\ \hline
+2        & -2.0            & -1.0                & -2.0            & -1.0                \\ \hline
+3        & -2.6180339884 & -3.8196601113e-01 & -2.6180339884 & -3.8196601113e-01 \\ \hline
+4       & -2.0            & -1.0                & -2.0            & -1.0                \\ \hline
+
+\end{tabular}
+\end{table}
 
 
 \section{Testy numeryczne}

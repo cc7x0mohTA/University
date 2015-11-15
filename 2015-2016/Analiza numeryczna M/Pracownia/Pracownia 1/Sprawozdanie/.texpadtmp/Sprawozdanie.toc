@@ -13,5 +13,5 @@
 \contentsline {section}{Metoda Bairstowa}{6}{section*.14}
 \contentsline {subsection}{Opis metody Bairstowa}{6}{section*.15}
 \contentsline {subsection}{Analiza teoretyczna metody Bairstowa}{7}{section*.16}
-\contentsline {subsection}{Przyk\IeC {\l }ady rozbie\IeC {\.z}no\IeC {\'s}ci metody Bairstowa}{7}{section*.17}
+\contentsline {subsection}{Przyk\IeC {\l }ad rozbie\IeC {\.z}no\IeC {\'s}ci metody Bairstowa}{7}{section*.17}
 \contentsline {section}{Testy numeryczne}{7}{section*.18}

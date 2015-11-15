@@ -172,11 +172,11 @@ tabsize=2, % Number of spaces per tab in the code
 \subsection{Podstawowe definicje}
 
 \begin{definicja}
-Wielomianem stopnia $n \in \mathbb{N}$ nad ciałem $\mathbb{K}$ będziemy nazywać przekształcenie $\mathbb{K} \mapsto \mathbb{K}$ zadane wzorem $W(x) = a_0 + a_1x + \ldots + a_n x^n$, gdzie $a_i$ to pewne  współczynniki z ciała $\mathbb{K}$ oraz $a_n \neq 0$ .
+Wielomianem stopnia $n \in \mathbb{N}$ nad ciałem $\mathbb{K}$ będziemy nazywać przekształcenie $\mathbb{K} \mapsto \mathbb{K}$ zadane wzorem $W(x) = a_0 + a_1x + \ldots + a_n x^n$, gdzie $a_i$ to pewne  współczynniki z ciała $\mathbb{K}$ oraz $a_n \neq 0$.
 \end{definicja}
 
 \begin{definicja}
-Niech $W$ będzie pewnym wielomianem (nad ciałem $\mathbb{K}$). Liczbę $a$, taką że $W(a) = 0$, będziemy nazywać pierwiastkiem wielomianu.
+Niech $W$ będzie pewnym wielomianem (nad ciałem $\mathbb{K}$). Liczbę $a$ taką, że $W(a) = 0$, będziemy nazywać pierwiastkiem wielomianu.
 \end{definicja}
 
 \begin{remark}
@@ -184,10 +184,10 @@ Z faktu, że wielomian $W$ ma współczynniki z ciała $\mathbb{K}$, nie wynika 
 \end{remark}
 
 \begin{remark}
-Istnieją takie ciała $\mathbb{K}$, że dla dowolnego wielomianu stopnia większego od $0$ wszystkie jego pierwiastki należą do $\mathbb{K}$. Ciała takie będziemy nazywać algebraicznie domkniętymi. Przykładem takiego ciała jest $\mathbb{C}$, czego nie będziemy dowodzić. 
+Istnieją takie ciała $\mathbb{K}$, że dla dowolnego wielomianu stopnia większego od $0$ wszystkie jego pierwiastki należą do $\mathbb{K}$. Ciała takie będziemy nazywać algebraicznie domkniętymi. Przykładem takiego ciała jest $\mathbb{C}$, czego nie będziemy dowodzić. 
 \end{remark}
 
-Podczas całego tego sprawozdania będziemy zajmować się następującym problemem:
+Podczas całego tego sprawozdania będziemy zajmować się następującym problemem:
 
 \begin{center}
 \begin{tikzpicture}
@@ -201,7 +201,7 @@ Podczas całego tego sprawozdania będziemy zajmować się następującym probl
 \end{tikzpicture}
 \end{center}
 
-Powyższy problem, choć pozornie prosty, jest sformułowany bardzo ogólnie. Na potrzeby tej pracy od tej pory ograniczymy się tylko do ciał $\mathbb{R}$ oraz $\mathbb{C}$, choć nic nie staje na przeszkodzie by poeksperymentować z innymi ciałami. Aktualnie nie wiemy czy każdy wielomian ma pierwiastki, a jeśli ma, to jaka jest moc ich zbioru. Nie znamy również żadnych metod rozwiązywania $W(x) = 0$. By lepiej zrozumieć podane zagadnienie przejdźmy przez ciąg różnych definicji, algorytmów, twierdzeń i lematów związanych z wielomianami (warto je zrozumieć, gdyż kolejne rozdziały będą z nich korzystać).
+Powyższy problem, choć pozornie prosty, jest sformułowany bardzo ogólnie. Na potrzeby tej pracy od tej pory ograniczymy się tylko do ciał $\mathbb{R}$ oraz $\mathbb{C}$, choć nic nie staje na przeszkodzie by poeksperymentować z innymi ciałami. Aktualnie nie wiemy czy każdy wielomian ma pierwiastki, a jeśli ma, to jaka jest moc ich zbioru. Nie znamy również żadnych metod rozwiązywania $W(x) = 0$. By lepiej zrozumieć podane zagadnienie, przejdźmy przez ciąg różnych definicji, algorytmów, twierdzeń i lematów związanych z wielomianami (warto je zrozumieć, gdyż kolejne rozdziały będą z nich korzystać).
 
 \begin{thm}
 Każdy wielomian $W(x)$ nad $\mathbb{C}$ stopnia $n \in \mathbb{N}_+$ ma co najmniej jeden pierwiastek.
@@ -225,7 +225,7 @@ Wielomian $W(x)$ nazywamy podzielnym przez wielomian $P(x)$, różny od wielomia
 
 
 \begin{thm}
-Dowolny wielomian $W(x)$ możemy zapisać jako $W(x) = P(x) \cdot Q(x) + R(x)$ dla pewnych wielomianów $P, Q, R$. Mówimy, że wielomian $W(x)$ jest podzielny przez $Q(x)$, jeżeli $R(x) = 0$. 
+Dowolny wielomian $W(x)$ możemy zapisać jako $W(x) = P(x) \cdot Q(x) + R(x)$ dla pewnych wielomianów $P, Q, R$. Mówimy, że wielomian $W(x)$ jest podzielny przez $Q(x)$, jeżeli $R(x) = 0$. 
 \end{thm}
 
 \begin{thm}
@@ -265,13 +265,13 @@ Wyznaczanie wielomianu w punkcie $x_0$ możemy zrealizować za pomocą schematu 
 
 \subsection{Inne przydatne pojęcia matematyczne}
 
-Oprócz wymienionych w rozdziale pojęć związanych z wielomianami, zakładać będziemy u czytelnika znajomość wielowymiarowego rachunku różniczkowego, definicji funkcji holomorficznej oraz podstawowych pojęć związanych z analiza błędów. Pojęcia te można doczytać w \cite{leja} i \cite{kincaid}. 
+Oprócz wymienionych w rozdziale pojęć związanych z wielomianami, zakładać będziemy u czytelnika znajomość wielowymiarowego rachunku różniczkowego, definicji funkcji holomorficznej oraz podstawowych pojęć związanych z analizą błędów. Pojęcia te można doczytać w \cite{leja} i \cite{kincaid}. 
 
 \section{Metoda Newtona oraz wielowymiarowa metoda Newtona}
 
 \subsection{Opis klasycznej metody Newtona}
 
-Klasyczną metodą Newtona zastosowaną dla pewnego punktu startowego $p$ oraz funkcji $f : \mathbb{R} \mapsto \mathbb{R}$ klasy $C^{1}$ nazywać będziemy metodę iteracyjną postaci:
+Klasyczną metodą Newtona zastosowaną dla pewnego punktu startowego $p$ oraz funkcji $f : \mathbb{R} \mapsto \mathbb{R}$ klasy $C^{1}$ nazywać będziemy metodę iteracyjną postaci:
 
 $$
 x_n = \left\{\begin{matrix}
@@ -284,10 +284,10 @@ Można pokazać, że $x_n$ zbiega do pewnego pierwiastka funkcji $f$. Analizę k
 
 \subsection{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}
 
-Jeśli mamy wielomian o współczynnikach i pierwiastkach rzeczywistych, możemy policzyć jego pierwiastki za pomocą klasycznej metody Newtona. Podstawiamy za $f$ z poprzedniego opisu nasz wielomian, a $f'$ to jego pochodna. Po znalezieniu jednego pierwiastka (nazwijmy go $a$) dzielimy nasz wielomian przez $x-a$ i uruchamiamy program dla otrzymanego wielomianu. Proces kontynuujemy tak długo, aż dojdziemy do wielomianu o stopniu $0$.
+Jeśli mamy wielomian o współczynnikach i pierwiastkach rzeczywistych, możemy policzyć jego pierwiastki za pomocą klasycznej metody Newtona. Podstawiamy za $f$ z poprzedniego opisu nasz wielomian, a $f'$ to jego pochodna. Po znalezieniu jednego pierwiastka (nazwijmy go $a$) dzielimy nasz wielomian przez $x-a$ i uruchamiamy program dla otrzymanego wielomianu. Proces kontynuujemy tak długo, aż dojdziemy do wielomianu o stopniu $0$.
 
 \begin{remark}
-Wartość w punkcie wielomianu i jego pochodnej możemy wyznaczyć z pomocą schematu Hornera, który był omówiony wcześniej (w kodzie przykładowym skorzystaliśmy z funkcji bibliotecznych dla większej czytelności).
+Wartość w punkcie wielomianu i jego pochodnej możemy wyznaczyć z pomocą schematu Hornera, który był omówiony wcześniej (w kodzie przykładowym skorzystaliśmy z funkcji bibliotecznych dla większej czytelności).
 \end{remark}
 
 
@@ -295,7 +295,7 @@ Wartość w punkcie wielomianu i jego pochodnej możemy wyznaczyć z pomocą sc
 \lstinputlisting{klasyczna_metoda_newtona.jl}
 
 \begin{remark}
-Powyższa metoda nie nadaje się do obliczania miejsc zerowych wielomianu, którego pierwiastki są zespolone (z powodu tego, że operujemy tutaj na tylko rzeczywistych przybliżeniach $x_n$).
+Powyższa metoda nie nadaje się do obliczania miejsc zerowych wielomianu, którego pierwiastki są zespolone (z powodu tego, że operujemy tutaj na tylko rzeczywistych przybliżeniach $x_n$).
 \end{remark}
 
 \subsection{Metoda Newtona dla wielu funkcji wielu zmiennych}
@@ -352,7 +352,7 @@ $$ X_{k+1} = X_k + H_k = X_k - J^{-1}(X_k) F(X_k)$$
 \subsection{Metoda Newtona dla funkcji zespolonych}
 
 \begin{lemat}
-Dowolną funkcję analityczną $f : \mathbb{C} \mapsto \mathbb{C}$ możemy zapisać jako $$f(z) = f(x+yi) = P(x,y) + i Q(x,y),$$ gdzie $x,y \in \mathbb{R}$, $P(x,y) \in \mathbb{R}, Q(x,y) \in \mathbb{R}$	
+Dowolną funkcję analityczną $f : \mathbb{C} \mapsto \mathbb{C}$ możemy zapisać jako $$f(z) = f(x+yi) = P(x,y) + i Q(x,y),$$ gdzie $x,y \in \mathbb{R}$, $P(x,y) \in \mathbb{R}, Q(x,y) \in \mathbb{R}$	
 \end{lemat}
 
 \begin{przyklad}
@@ -362,7 +362,7 @@ $$f(z) = z^3 - 2z = f(x+iy) = (x+iy)^3 - 2(x+iy) = (x^3 - 3xy^2 - 2x) + i(3x^2y 
 \end{przyklad}
 
 
-Niech $f(z) = P(x,y) + iQ(x,y)$. Równanie $f(z) = 0$ możemy sprowadzić do układu równań $Q(x,y) = 0$ i $P(x,y) = 0$. Taki układ równań rozwiązujemy za pomocą metody Newtona dla funkcji wielu zmiennych.
+Niech $f(z) = P(x,y) + iQ(x,y)$. Równanie $f(z) = 0$ możemy sprowadzić do układu równań $Q(x,y) = 0$ i $P(x,y) = 0$. Taki układ równań rozwiązujemy za pomocą metody Newtona dla funkcji wielu zmiennych.
 
 $$v_{n+1} = v_n - \frac{f(v_n)}{f'(v_n)}$$
 
@@ -374,7 +374,7 @@ $$
 \end{pmatrix}^{-1} \begin{pmatrix} P(x_n, y_n)\\ Q(x_n, y_n)\\ \end{pmatrix} $$
 
 
-Ponieważ wielomian jest funkcją holomorficzną, to zachodzi równanie Cauchy'ego-Riemanna:
+Ponieważ wielomian jest funkcją holomorficzną, to zachodzi równanie Cauchy'ego-Riemanna:
 
 $$\frac{\partial P}{\partial x} = \frac{\partial Q}{\partial y}, \ - \frac{\partial P}{\partial y} =\frac{\partial Q}{\partial x}$$
 
@@ -394,19 +394,19 @@ $$
 
 Jedną z metod iteracyjnych wyszukiwania pierwiastków wielomianu używanych w nowoczesnych systemach informatycznych jest metoda Laguerre'a. 
 
-Niech $p(z)$ będzie wielomianem stopnia $n$, którego pierwiastki mamy znaleźć. Kolejne kroki w metodzie wykonujemy za pomocą nastepujących wzorów:
+Niech $p(z)$ będzie wielomianem stopnia $n$, którego pierwiastki mamy znaleźć. Kolejne kroki w metodzie wykonujemy za pomocą nastepujących wzorów:
 
 $$ A = \frac{-p'(z)}{p(z)}, \ B = A^2 - \frac{p''(z)}{p(z)}, \ C = \frac{A \pm \sqrt{(n-1)(nB - A^2}}{n}, \ z_{nowe} = z + \frac{1}{C}$$ 
 
-Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach pojedynczego pierwiastka wielomianu $p$ jest zbieżna sześcienne. Dokładną analizę tej metody pozostawiamy czytelnikowi do przeczytania w \cite{kincaid}, s. 112-116.
+Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach pojedynczego pierwiastka wielomianu $p$ jest zbieżna sześcienne. Dokładną analizę tej metody pozostawiamy czytelnikowi do przeczytania w \cite{kincaid}, s. 112-116.
 
 \subsection{Metoda Mullera}
 
-Metoda Mullera jest modyfikacją metody stycznych. Zamiast przybliżać nasz wielomian $f$ funkcją liniową będziemy go aproksymować funkcją kwadratową.
+Metoda Mullera jest modyfikacją metody stycznych. Zamiast przybliżać nasz wielomian $f$ funkcją liniową, będziemy go aproksymować funkcją kwadratową.
 
 Rozważmy trzy punkty $x_0, x_1, x_2$ wraz z wartościami funkcji $f$ w tych punktach. Przyjmujmy, że $x_2$ jest aktualnym przybliżeniem rozwiązania. Oznaczmy $z = x-x_2, \ h_0 = x_0 - x_2, \ h_1 = x_1-x_2$.
 
-Oznaczmy szukaną parabolę przez $g(z) = az^2 + bz + c$. Z definicji paraboli w punkcie $z - x_k$ dostajemy, że 
+Oznaczmy szukaną parabolę przez $g(z) = az^2 + bz + c$. Z definicji paraboli w punkcie $z - x_k$ dostajemy, że 
 
 $$2a = f''(x_k), \ b = f'(x_k), \ c = f(x_k),$$
 
@@ -421,7 +421,7 @@ Więcej na temat tej metody oraz jej modyfikacji można poczytać w skrypcie \ci
 
 \subsection{Opis metody Bairstowa}
 
-Kolejną i zarazem najważniejsza metodą, którą omówimy w sprawozdaniu będzie metoda Bairstowa. Wiemy, że nawet jeśli wielomian ma współczynniki rzeczywiste, to może mieć pierwiastki zespolone (np. $x^2 + 1$). Metoda Bairstowa pozwala na obliczenie wszystkich pierwiastków bez użycia arytmetyki zespolonej.
+Ostatnią i zarazem najważniejsza metodą, którą omówimy w sprawozdaniu, będzie metoda Bairstowa. Wiemy, że nawet jeśli wielomian ma współczynniki rzeczywiste, to może mieć pierwiastki zespolone (np. $x^2 + 1$). Metoda Bairstowa pozwala na obliczenie wszystkich pierwiastków bez użycia arytmetyki zespolonej.
 
 
 \begin{lemat}
@@ -435,7 +435,7 @@ Udowodnione w \cite{kincaid}, s. 108.
 Zauważmy, że pierwiastki zespolone możemy wyszukiwać parami. Zamiast wyszukiwać pierwiastki pojedynczo, będziemy wyszukiwać dwumianu postaci $z^2 - uz - v$.
 
 \begin{lemat}
-Dowolny wielomian $p(z) = a_nx^n  + a_{n-1}x^{n-1} + \ldots a_0$ możemy zapisać w postaci 
+Dowolny wielomian $p(z) = a_nx^n  + a_{n-1}x^{n-1} + \ldots a_0$ możemy zapisać w postaci: 
 
 $$p(z) = \left(b_nx^{n-2} + b_{n-1}z^{n-3} + \ldots + b_3 z + b_2 \right) \left( z^2 - uz - v \right) + b_1(z-u) + b_0 $$	
 
@@ -457,7 +457,7 @@ b_1(u,v) = 0 &
 \end{matrix}\right.
 $$
 
-Podany układ możemy rozwiązać przedstawioną wcześniej metodą Newtona dla wielu funkcji wielu zmiennych. Po znalezieniu współczynników $u, v$ dzielimy wyjściowy wielomian przez otrzymany dwumian i kontynuujemy proces wyszukiwania pierwiastków dla mniejszego wielomianu (z uwzględnieniem tego, że przypadki dla wielomianu stopnia $0$ i $1$ traktujemy osobno).
+Podany układ możemy rozwiązać przedstawioną wcześniej metodą Newtona dla wielu funkcji wielu zmiennych. Po znalezieniu współczynników $u, v$ dzielimy wyjściowy wielomian przez otrzymany dwumian i kontynuujemy proces wyszukiwania pierwiastków dla mniejszego wielomianu (z uwzględnieniem tego, że przypadki dla wielomianu stopnia $0$ i $1$ traktujemy osobno).
 
 \subsection{Analiza teoretyczna metody Bairstowa}
 
@@ -496,7 +496,7 @@ v-w & 0\\
 \end{pmatrix}
 $$
 
-Jeśli uruchomimy metodę Bairstowa dla np. $u = 1, v = 1, w = 2$ to dostaniemy wielomian $x^4 + 6x^3 + 12x^2 + 9x +3 $ dla którego ciąg przybliżeń pierwiastka będzie cykliczny.
+Jeśli uruchomimy metodę Bairstowa dla np. $u = 1, v = 1, w = 2$ to dostaniemy wielomian $x^4 + 6x^3 + 12x^2 + 9x +3,$ dla którego ciąg przybliżeń pierwiastka będzie cykliczny.
 
 \begin{table}[h!]
 \centering
@@ -520,36 +520,39 @@ Iteracja & $x_0$           & $x_1$               & $x_2$           & $x_3$      
 \begin{thebibliography}{99}
 \bibitem{leja} Leja Franciszek,
 \emph{Funkcje zespolone},
-Warszawa : PWN, 1976
+Warszawa, PWN, 1976.
 
 \bibitem{kostrikin} Aleksiej I. Kostrikin, przekł. Jerzy Trzeciak,
 \emph{Wstęp do algebry. Podstawy algebry},
-Warszawa : PWN, 2008
+Warszawa, PWN, 2008.
 
 \bibitem{kincaid} David Kincaid, Ward Cheney, przekł. Stefan Paszkowski,
 \emph{Analiza numeryczna},
-Warszawa : WNT, 2006
+Warszawa, WNT, 2006.
 
-\bibitem{complexnewton} Lily Yau, Adi Ben-Israel,
+\bibitem{complexnewton} 
+Lily Yau, Adi Ben-Israel,
 \emph{The Newton and Halley Methods for Complex Roots},
-The American Mathematical Monthly 105(1998), 806–818
+The American Mathematical Monthly 105, 1998, s. 806–818.
 
-\bibitem{krebsz} Tibor Fiala, Anna Krebsz,
+\bibitem{krebsz} 
+Tibor Fiala, Anna Krebsz,
 \emph{On the Convergence and Divergence of Bairstow's Method},
-Journal Numerische Mathematik, Volume 50 Issue 4, FEB. 1987, 477 - 482
+Journal Numerische Mathematik, Volume 50 Issue 4, 1987, s. 477-482.
 
-\bibitem{Gabler} Wolfgang Gabler
+\bibitem{Gabler} 
+Wolfgang Gabler
 \emph{Invariances and convergence properties of Bairstow's method},
-International Journal of Pure and Applied Mathematics Volume 27 No. 4 2006, 523-576
+International Journal of Pure and Applied Mathematics Volume 27 No. 4, 2006, s. 523-576.
 
-\bibitem{Glasson} Sofo, Anthony and Glasson, Alan,
+\bibitem{Glasson} 
+Sofo, Anthony and Glasson, Alan,
 \emph{Singularities in Bairstow’s method},
-Gazette of the Australian Mathematical Society, 37 (2). pp. 93-100. ISSN 0311-0729 1326-2297
-
+Gazette of the Australian Mathematical Society, 37 (2), s. 93-100.
 \bibitem{tajewski}
 Piotr Tatjewski,
-\emph{Równania nieliniowe i zera wielomianów}
-Skrypt do wykładu Metody Numeryczne
+\emph{Równania nieliniowe i zera wielomianów,}
+Skrypt do wykładu Metody Numeryczne.
 
 \end{thebibliography}
 

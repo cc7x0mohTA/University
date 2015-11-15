@@ -208,7 +208,7 @@ Każdy wielomian $W(x)$ nad $\mathbb{C}$ stopnia $n \in \mathbb{N}_+$ ma co najm
 \end{thm}
 
 \begin{proof}
-To twierdzenie jest nazywane zasadniczym twierdzeniem algebry. Dowód \cite{leja}, s. 105.
+To twierdzenie jest nazywane zasadniczym twierdzeniem algebry. Udowodnione w \cite{leja}, s. 105.
 \end{proof}
 
 \begin{wniosek}
@@ -265,7 +265,7 @@ Wyznaczanie wielomianu w punkcie $x_0$ możemy zrealizować za pomocą schematu 
 
 \subsection{Inne przydatne pojęcia matematyczne}
 
-Oprócz wymienionych w rozdziale pojęć związanych z wielomianami zakładać będziemy u czytelnika znajomości wielowymiarowego rachunku różniczkowego, znajomości definicji funkcji holomorficznej oraz podstawowych pojęć związanych z analizą błędów. Pojęcia te można doczytać w \cite{leja} i \cite{kincaid}. 
+Oprócz wymienionych w rozdziale pojęć związanych z wielomianami, zakładać będziemy u czytelnika znajomość wielowymiarowego rachunku różniczkowego, definicji funkcji holomorficznej oraz podstawowych pojęć związanych z analiza błędów. Pojęcia te można doczytać w \cite{leja} i \cite{kincaid}. 
 
 \section{Metoda Newtona oraz wielowymiarowa metoda Newtona}
 
@@ -284,7 +284,7 @@ Można pokazać, że $x_n$ zbiega do pewnego pierwiastka funkcji $f$. Analizę k
 
 \subsection{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}
 
-Jeśli mamy wielomian o współczynnikach i pierwiastkach rzeczywistych możemy policzyć jego pierwiastki za pomocą klasycznej metody Newtona. Podstawiamy za $f$ z poprzedniego opisu nasz wielomian, a $f'$ to jego pochodna. Po znalezieniu jednego pierwiastka (nazwijmy go $a$) dzielimy nasz wielomian przez $x-a$ i uruchamiamy program dla otrzymanego wielomianu. Proces kontynuujemy tak długo, aż dojdziemy do wielomianu o stopniu $0$.
+Jeśli mamy wielomian o współczynnikach i pierwiastkach rzeczywistych, możemy policzyć jego pierwiastki za pomocą klasycznej metody Newtona. Podstawiamy za $f$ z poprzedniego opisu nasz wielomian, a $f'$ to jego pochodna. Po znalezieniu jednego pierwiastka (nazwijmy go $a$) dzielimy nasz wielomian przez $x-a$ i uruchamiamy program dla otrzymanego wielomianu. Proces kontynuujemy tak długo, aż dojdziemy do wielomianu o stopniu $0$.
 
 \begin{remark}
 Wartość w punkcie wielomianu i jego pochodnej możemy wyznaczyć z pomocą schematu Hornera, który był omówiony wcześniej (w kodzie przykładowym skorzystaliśmy z funkcji bibliotecznych dla większej czytelności).
@@ -306,8 +306,8 @@ $$\left\{\begin{matrix}
 f_1(x_1, x_2, \ldots, x_n) = 0 \\ 
 f_2(x_1, x_2, \ldots, x_n) = 0 \\ 
 \ldots\\ 
-f_n(x_1, x_2, \ldots, x_n) = 0
-\end{matrix}\right.,$$
+f_n(x_1, x_2, \ldots, x_n) = 0,
+\end{matrix}\right.$$
 
 gdzie $f_i \in \mathbb{R}^n \mapsto \mathbb{R}^n$ jest klasy $C^{1}$.
 
@@ -344,7 +344,7 @@ Aby nieco skrócić ten układ, będziemy go zapisywać jako $F(X) = -J \cdot H$
 Jeśli macierz $J$ jest nieosobliwa, to układ ma rozwiązanie w postaci:
 $$ -J^{-1} \cdot F(X) = H$$
 
-Ostatecznie wzór Newtona dla układu funkcji wielu zmiennych możemy wzorem:
+Ostatecznie wzór Newtona dla układu funkcji wielu zmiennych możemy wyrazić wzorem:
 
 $$ X_{k+1} = X_k + H_k = X_k - J^{-1}(X_k) F(X_k)$$
 
@@ -394,7 +394,7 @@ $$
 
 Jedną z metod iteracyjnych wyszukiwania pierwiastków wielomianu używanych w nowoczesnych systemach informatycznych jest metoda Laguerre'a. 
 
-Niech $p(z)$ będzie wielomianem stopnia $n$, którego pierwiastki mamy znaleźć. Kolejne kroki w metodzie obliczamy za pomocą nastepujących wzorów:
+Niech $p(z)$ będzie wielomianem stopnia $n$, którego pierwiastki mamy znaleźć. Kolejne kroki w metodzie wykonujemy za pomocą nastepujących wzorów:
 
 $$ A = \frac{-p'(z)}{p(z)}, \ B = A^2 - \frac{p''(z)}{p(z)}, \ C = \frac{A \pm \sqrt{(n-1)(nB - A^2}}{n}, \ z_{nowe} = z + \frac{1}{C}$$ 
 
@@ -404,7 +404,7 @@ Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach poje
 
 Metoda Mullera jest modyfikacją metody stycznych. Zamiast przybliżać nasz wielomian $f$ funkcją liniową będziemy go aproksymować funkcją kwadratową.
 
-Rozważmy trzy punkt $x_0, x_1, x_2$ wraz z wartościami funkcji $f$ w tych punktach. Przyjmujmy, że $x_2$ jest aktualnym przybliżeniem rozwiązania. Oznaczmy $z = x-x_2, \ h_0 = x_0 - x_2, \ h_1 = x_1-x_2$.
+Rozważmy trzy punkty $x_0, x_1, x_2$ wraz z wartościami funkcji $f$ w tych punktach. Przyjmujmy, że $x_2$ jest aktualnym przybliżeniem rozwiązania. Oznaczmy $z = x-x_2, \ h_0 = x_0 - x_2, \ h_1 = x_1-x_2$.
 
 Oznaczmy szukaną parabolę przez $g(z) = az^2 + bz + c$. Z definicji paraboli w punkcie $z - x_k$ dostajemy, że 
 
@@ -429,7 +429,7 @@ Jeżeli $w$ jest pierwiastkiem nierzeczywistym wielomianu $p(z)$, a $p(z)$ jest 
 \end{lemat}
 
 \begin{proof}
-Dowód w \cite{kincaid}, s. 108.	
+Udowodnione w \cite{kincaid}, s. 108.	
 \end{proof}
 
 Zauważmy, że pierwiastki zespolone możemy wyszukiwać parami. Zamiast wyszukiwać pierwiastki pojedynczo, będziemy wyszukiwać dwumianu postaci $z^2 - uz - v$.
@@ -449,7 +449,7 @@ $$b_{n+1} = b_{n+2} = 0, \ \ b_k = ub_{k+1} + vb_{k+2} \ (n \geq k \geq 0).$$
 Dowód w \cite{kincaid}, s. 109.	
 \end{proof}
 
-Chcemy by nasz wyjściowy wielomian był podzielny przez $z^2 - uz - v$. Zatem musi zachodzić $b_0 = b_1 = 0$. Potraktujmy podane współczynniki jako funkcje zmiennych $u,v$. Wtedy dostajemy do rozwiązania układ równań:
+Chcemy, by nasz wyjściowy wielomian był podzielny przez $z^2 - uz - v$. Zatem musi zachodzić $b_0 = b_1 = 0$. Potraktujmy podane współczynniki jako funkcje zmiennych $u,v$. Wtedy dostajemy do rozwiązania układ równań:
 $$
 \left\{\begin{matrix}
 b_0(u,v) = 0 & \\ 
@@ -472,11 +472,11 @@ Wynika to bezpośrednio z tego, że metoda Newtona jest zbieżna lokalnie.
 Głównym założeniem w lokalnej zbieżności metody Bairstowa jest to, że jakobian wyliczany przy metodzie Newtona się nie zeruje dla podanych wcześniej punktów startowych i kolejnych przybliżeń. Zastanówmy się w jaki sposób zerowanie się jakobianu zależy od punktów startowych oraz pierwiastków wielomianu.
 
 \begin{thm}
-Niech $u, v$ będą dowolnie wybranymi liczbami rzeczywistymi. Jakobian dla algorytmu Bairstowa jest macierzą odwracalną wtedy i tylko wtedy gdy $z^2 - uz - v$ oraz wielomian $Q(z,u,v)$ nie mają wspólnych pierwiastków. Rząd jakobianu jest jeden wtedy i tylko wtedy kiedy liczba wspólnych pierwiastków (z krotnościami) jest równa jeden. Jakobian się zeruje wtedy i tylko wtedy gdy $z^2 - uz - z$ dzieli $Q(z,u,v)$.
+Niech $u, v$ będą dowolnie wybranymi liczbami rzeczywistymi. Jakobian dla algorytmu Bairstowa jest macierzą odwracalną wtedy i tylko wtedy, gdy $z^2 - uz - v$ oraz wielomian $Q(z,u,v)$ nie mają wspólnych pierwiastków. Rząd jakobianu jest jeden wtedy i tylko wtedy, kiedy liczba wspólnych pierwiastków (z krotnościami) jest równa jeden. Jakobian się zeruje wtedy i tylko wtedy, gdy $z^2 - uz - z$ dzieli $Q(z,u,v)$.
 \end{thm}
 
 \begin{thm}
-Załóżmy, że $P(z) = Q(z, u, v) (x^2 - u^{\star} z - v^{\star})$ i załóżmy, że wyrażenia po prawej stronie nie mają wspólnego pierwiastka. Wtedy istnieje dodatnia liczba $d$ taka że ciąg $(u_k, v_k)$ generowany przez metodę Bairstowa jest zbieżny kwadratowo do $(u^{\star}, v^{\star})$, gdzie $|u_0 - u^{\star}| < d \wedge |v_0 - v^{\star}| < d$. 
+Załóżmy, że $P(z) = Q(z, u, v) (x^2 - u^{\star} z - v^{\star})$ i załóżmy, że wyrażenia po prawej stronie nie mają wspólnego pierwiastka. Wtedy istnieje dodatnia liczba $d$ taka, że ciąg $(u_k, v_k)$ generowany przez metodę Bairstowa jest zbieżny kwadratowo do $(u^{\star}, v^{\star})$, gdzie $|u_0 - u^{\star}| < d \wedge |v_0 - v^{\star}| < d$. 
 \end{thm}
 
 \begin{proof}
@@ -487,7 +487,7 @@ Analiza zbieżności oraz rozbieżności metody Bairstowa stanowiła podstawę d
 
 \subsection{Przykład rozbieżności metody Bairstowa}
 
-Rozważmy wielomian postaci $P(x) = (x^2 + ux + v)(x^2 + ux + w) + (w-v)^2$
+Rozważmy wielomian postaci $P(x) = (x^2 + ux + v)(x^2 + ux + w) + (w-v)^2.$
 Jakobian dla metody Bairstowa w punkcie $(u,v)$ będzie wyglądał następująco:
 $$
 J(u,v) = \begin{pmatrix}
@@ -518,23 +518,23 @@ Iteracja & $x_0$           & $x_1$               & $x_2$           & $x_3$      
 
 
 \begin{thebibliography}{99}
-\bibitem{leja} Leja, Franciszek.
+\bibitem{leja} Leja Franciszek,
 \emph{Funkcje zespolone},
 Warszawa : PWN, 1976
 
-\bibitem{kostrikin} Aleksiej I., Kostrikin
+\bibitem{kostrikin} Aleksiej I. Kostrikin, przekł. Jerzy Trzeciak,
 \emph{Wstęp do algebry. Podstawy algebry},
 Warszawa : PWN, 2008
 
-\bibitem{kincaid} David Kincaid, Ward Cheney
+\bibitem{kincaid} David Kincaid, Ward Cheney, przekł. Stefan Paszkowski,
 \emph{Analiza numeryczna},
 Warszawa : WNT, 2006
 
-\bibitem{complexnewton} Lily Yau, Adi Ben-Israel
+\bibitem{complexnewton} Lily Yau, Adi Ben-Israel,
 \emph{The Newton and Halley Methods for Complex Roots},
 The American Mathematical Monthly 105(1998), 806–818
 
-\bibitem{krebsz} Tibor Fiala, Anna Krebsz
+\bibitem{krebsz} Tibor Fiala, Anna Krebsz,
 \emph{On the Convergence and Divergence of Bairstow's Method},
 Journal Numerische Mathematik, Volume 50 Issue 4, FEB. 1987, 477 - 482
 
@@ -542,12 +542,12 @@ Journal Numerische Mathematik, Volume 50 Issue 4, FEB. 1987, 477 - 482
 \emph{Invariances and convergence properties of Bairstow's method},
 International Journal of Pure and Applied Mathematics Volume 27 No. 4 2006, 523-576
 
-\bibitem{Glasson} Sofo, Anthony and Glasson, Alan
+\bibitem{Glasson} Sofo, Anthony and Glasson, Alan,
 \emph{Singularities in Bairstow’s method},
 Gazette of the Australian Mathematical Society, 37 (2). pp. 93-100. ISSN 0311-0729 1326-2297
 
 \bibitem{tajewski}
-Piotr Tatjewski
+Piotr Tatjewski,
 \emph{Równania nieliniowe i zera wielomianów}
 Skrypt do wykładu Metody Numeryczne
 

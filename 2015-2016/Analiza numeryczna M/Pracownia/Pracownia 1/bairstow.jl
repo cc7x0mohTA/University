@@ -40,7 +40,7 @@ function bairstow(n, a, u, v, M)
   end
 
   if n == 1
-    @printf("%.16lf\n", -a[2]/a[1]) # x = -b/a
+    @printf("%.16lf\n", -a[1]/a[2]) # x = -b/a
     return
   end
 

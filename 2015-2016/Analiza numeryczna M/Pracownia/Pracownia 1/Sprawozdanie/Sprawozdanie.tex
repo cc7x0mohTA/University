@@ -421,6 +421,7 @@ Dowolny wielomian $p(z) = a_nx^n  + a_{n-1}x^{n-1} + \ldots a_0$ możemy zapisa�
 
 $$p(z) = \left(b_nx^{n-2} + b_{n-1}z^{n-3} + \ldots + b_3 z + b_2 \right) \left( z^2 - uz - v \right) + b_1(z-u) + b_0 $$	
 
+Wielomian $ \left(b_nx^{n-2} + b_{n-1}z^{n-3} + \ldots + b_3 z + b_2 \right) $ będziemy dalej oznaczać jako $Q(z, u, v)$.
 Powyższe współczynniki możemy obliczać rekurencyjnie według wzorów:
 $$b_{n+1} = b_{n+2} = 0, \ \ b_k = ub_{k+1} + vb_{k+2} \ (n \geq k \geq 0).$$
 
@@ -450,19 +451,23 @@ Metoda Bairstowa jest zbieżna lokalnie.
 Wynika to bezpośrednio z tego, że metoda Newtona jest zbieżna lokalnie.	
 \end{proof}
 
-Głównym założeniem w lokalnej zbieżności metody Bairstowa jest to, że Jakobian się nie zeruje dla podanych wcześniej punktów startowych i kolejnych przybliżeń. Zastanówmy się w jaki sposób zerowanie się jakobianu zależy od punktów startowych oraz pierwiastków wielomianu.
+Głównym założeniem w lokalnej zbieżności metody Bairstowa jest to, że jakobian wyliczany przy metodzie Newtona się nie zeruje dla podanych wcześniej punktów startowych i kolejnych przybliżeń. Zastanówmy się w jaki sposób zerowanie się jakobianu zależy od punktów startowych oraz pierwiastków wielomianu.
 
 \begin{thm}
-	
+Niech $u, v$ będą dowolnie wybranymi liczbami rzeczywistymi. Jakobian dla algorytmu Bairstowa jest macierzą odwracalną wtedy i tylko wtedy gdy $z^2 - uz - v$ oraz wielomian $Q(z,u,v)$ nie mają wspólnych pierwiastków. Rząd jakobianu jest jeden wtedy i tylko wtedy kiedy liczba wspólnych pierwiastków (z krotnościami) jest równa jeden. Jakobian się zeruje wtedy i tylko wtedy gdy $z^2 - uz - z$ dzieli $Q(z,u,v)$.
 \end{thm}
-
 
 \begin{thm}
-Metoda Bairstowa jest zbieżna kwadratowo w otoczeniu jednokrotnego pierwiastka.	
+Załóżmy, że $P(z) = Q(z, u, v) (x^2 - u^{\star} z - v^{\star})$ i załóżmy, że wyrażenia po prawej stronie nie mają wspólnego pierwiastka. Wtedy istnieje dodatnia liczba $d$ taka że ciąg $(u_k, v_k)$ generowany przez metodę Bairstowa jest zbieżny kwadratowo do $(u^{\star}, v^{\star})$, gdzie $|u_0 - u^{\star}| < d \wedge |v_0 - v^{\star}| < d$. 
 \end{thm}
 
+\begin{proof}
+Twierdzenia te zostały udowodnione przez autorów Tibora Fialę oraz Annę Krebsz w 1987 roku. Kompletne dowody można przeczytać w \cite{krebsz}.
+\end{proof}
 
+Analiza zbieżności oraz rozbieżności metody Bairstowa stanowiła podstawę do napisaniu kilku (choć niestety niewielu prac). Zainteresowanego czytelnika odsyłamy do \cite{krebsz}, \cite{Gabler} oraz \cite{Glasson}. 
 
+\subsection{Przykłady rozbieżności metody Bairstowa}
 
 
 \section{Testy numeryczne}
@@ -485,10 +490,17 @@ Warszawa : WNT, 2006
 \emph{The Newton and Halley Methods for Complex Roots},
 The American Mathematical Monthly 105(1998), 806–818
 
-\bibitem{complexnewton} Tibor Fiala, Anna Krebsz
+\bibitem{krebsz} Tibor Fiala, Anna Krebsz
 \emph{On the Convergence and Divergence of Bairstow's Method},
 Journal Numerische Mathematik, Volume 50 Issue 4, FEB. 1987, 477 - 482
 
+\bibitem{Gabler} Wolfgang Gabler
+\emph{Invariances and convergence properties of Bairstow's method},
+International Journal of Pure and Applied Mathematics Volume 27 No. 4 2006, 523-576
+
+\bibitem{Glasson} Sofo, Anthony and Glasson, Alan
+\emph{Singularities in Bairstow’s method},
+Gazette of the Australian Mathematical Society, 37 (2). pp. 93-100. ISSN 0311-0729 1326-2297
 
 \end{thebibliography}
 

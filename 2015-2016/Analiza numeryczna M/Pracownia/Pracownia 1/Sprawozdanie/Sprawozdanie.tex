@@ -265,7 +265,7 @@ Wyznaczanie wielomianu w punkcie $x_0$ możemy zrealizować za pomocą schematu 
 
 \subsection{Inne przydatne pojęcia matematyczne}
 
-Oprócz wymienionych w rozdziale pojęć związanych z wielomianami zakładać będziemy u czytelnika znajomości wielowymiarowego rachunku różniczkowego, znajomości definicji funkcji holomorficznej oraz podstawowych pojęć związanych z analizą błędów. 
+Oprócz wymienionych w rozdziale pojęć związanych z wielomianami zakładać będziemy u czytelnika znajomości wielowymiarowego rachunku różniczkowego, znajomości definicji funkcji holomorficznej oraz podstawowych pojęć związanych z analizą błędów. Pojęcia te można doczytać w \cite{leja}. 
 
 \section{Metoda Newtona oraz wielowymiarowa metoda Newtona}
 
@@ -402,7 +402,7 @@ Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach poje
 
 \subsection{Metoda Mullera}
 
-Metoda Newtona jest modyfikacją metody stycznych. Zamiast przybliżać nasz wielomian $f$ funkcją liniową będziemy go aproksymować funkcją kwadratową.
+Metoda Mullera jest modyfikacją metody stycznych. Zamiast przybliżać nasz wielomian $f$ funkcją liniową będziemy go aproksymować funkcją kwadratową.
 
 Rozważmy trzy punkt $x_0, x_1, x_2$ wraz z wartościami funkcji $f$ w tych punktach. Przyjmujmy, że $x_2$ jest aktualnym przybliżeniem rozwiązania. Oznaczmy $z = x-x_2, \ h_0 = x_0 - x_2, \ h_1 = x_1-x_2$.
 
@@ -413,6 +413,8 @@ $$2a = f''(x_k), \ b = f'(x_k), \ c = f(x_k),$$
 co prowadzi do wzoru
 
 $$x_{k+1} = x_k - \frac{2f(x_k)}{f'(x_k) + sgn(f'(x_k)) \cdot \sqrt{(f'(x_k))^2 - 2f(x_k)f''(x_k)}}$$
+
+Więcej na temat tej metody oraz jej modyfikacji można poczytać w skrypcie \cite{tajewski}.
 
 
 \section{Metoda Bairstowa}
@@ -543,6 +545,11 @@ International Journal of Pure and Applied Mathematics Volume 27 No. 4 2006, 523-
 \bibitem{Glasson} Sofo, Anthony and Glasson, Alan
 \emph{Singularities in Bairstow’s method},
 Gazette of the Australian Mathematical Society, 37 (2). pp. 93-100. ISSN 0311-0729 1326-2297
+
+\bibitem{tajewski}
+Piotr Tatjewski
+\emph{Równania nieliniowe i zera wielomianów}
+Skrypt do wykładu Metody Numeryczne
 
 \end{thebibliography}
 

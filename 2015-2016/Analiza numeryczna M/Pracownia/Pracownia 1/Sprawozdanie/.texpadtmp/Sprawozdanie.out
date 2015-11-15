@@ -1,18 +1,19 @@
-\BOOKMARK [1][-]{section*.2}{Przeglad podstawowych zagadnien zwiazanych z wielomianami}{}% 1
-\BOOKMARK [2][-]{section*.3}{Podstawowe definicje}{section*.2}% 2
-\BOOKMARK [2][-]{section*.4}{Postac iloczynowa wielomianu i dzielenie wielomianu}{section*.2}% 3
-\BOOKMARK [2][-]{section*.5}{Pochodna wielomianu i jej obliczanie}{section*.2}% 4
-\BOOKMARK [2][-]{section*.6}{Inne przydatne pojecia matematyczne}{section*.2}% 5
-\BOOKMARK [1][-]{section*.7}{Metoda Newtona oraz wielowymiarowa metoda Newtona}{}% 6
-\BOOKMARK [2][-]{section*.8}{Opis klasycznej metody Newtona}{section*.7}% 7
-\BOOKMARK [2][-]{section*.9}{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}{section*.7}% 8
-\BOOKMARK [2][-]{section*.10}{Metoda Newtona dla wielu funkcji wielu zmiennych}{section*.7}% 9
-\BOOKMARK [2][-]{section*.11}{Metoda Newtona dla funkcji zespolonych}{section*.7}% 10
-\BOOKMARK [1][-]{section*.12}{Wybrane metody wyszukiwania miejsc zerowych wielomianu}{}% 11
-\BOOKMARK [2][-]{section*.13}{Metoda Laguerre'a}{section*.12}% 12
-\BOOKMARK [2][-]{section*.14}{Metoda Mullera}{section*.12}% 13
-\BOOKMARK [1][-]{section*.15}{Metoda Bairstowa}{}% 14
-\BOOKMARK [2][-]{section*.16}{Opis metody Bairstowa}{section*.15}% 15
-\BOOKMARK [2][-]{section*.17}{Analiza teoretyczna metody Bairstowa}{section*.15}% 16
-\BOOKMARK [2][-]{section*.18}{Przyk\233ad rozbieznosci metody Bairstowa}{section*.15}% 17
-\BOOKMARK [1][-]{section*.19}{Testy numeryczne}{}% 18
+\BOOKMARK [1][-]{section*.2}{Kr\363tki opis sprawozdania}{}% 1
+\BOOKMARK [1][-]{section*.3}{Przeglad podstawowych zagadnien zwiazanych z wielomianami}{}% 2
+\BOOKMARK [2][-]{section*.4}{Podstawowe definicje}{section*.3}% 3
+\BOOKMARK [2][-]{section*.5}{Postac iloczynowa wielomianu i dzielenie wielomianu}{section*.3}% 4
+\BOOKMARK [2][-]{section*.6}{Pochodna wielomianu i jej obliczanie}{section*.3}% 5
+\BOOKMARK [2][-]{section*.7}{Inne przydatne pojecia matematyczne}{section*.3}% 6
+\BOOKMARK [1][-]{section*.8}{Metoda Newtona oraz wielowymiarowa metoda Newtona}{}% 7
+\BOOKMARK [2][-]{section*.9}{Opis klasycznej metody Newtona}{section*.8}% 8
+\BOOKMARK [2][-]{section*.10}{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}{section*.8}% 9
+\BOOKMARK [2][-]{section*.11}{Metoda Newtona dla wielu funkcji wielu zmiennych}{section*.8}% 10
+\BOOKMARK [2][-]{section*.12}{Metoda Newtona dla funkcji zespolonych}{section*.8}% 11
+\BOOKMARK [1][-]{section*.13}{Wybrane metody wyszukiwania miejsc zerowych wielomianu}{}% 12
+\BOOKMARK [2][-]{section*.14}{Metoda Laguerre'a}{section*.13}% 13
+\BOOKMARK [2][-]{section*.15}{Metoda Mullera}{section*.13}% 14
+\BOOKMARK [1][-]{section*.16}{Metoda Bairstowa}{}% 15
+\BOOKMARK [2][-]{section*.17}{Opis metody Bairstowa}{section*.16}% 16
+\BOOKMARK [2][-]{section*.18}{Analiza teoretyczna metody Bairstowa}{section*.16}% 17
+\BOOKMARK [2][-]{section*.19}{Przyk\233ad rozbieznosci metody Bairstowa}{section*.16}% 18
+\BOOKMARK [1][-]{section*.20}{Testy numeryczne}{}% 19

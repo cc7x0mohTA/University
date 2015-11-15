@@ -1,20 +1,7 @@
 using MultiPoly
-### a - lista wspolczynnikow wielomianu (np. [1,2,3] reprezentuje wielomian 1 + 2x + 3x^2)
-# Funkcja dzielaca wielomian przez pierwiastek uzywajac schematu Hornera
 
-function horner(a, x0)
-  n = length(a) - 1
-  b = Array(Complex{BigFloat}, n)
-  b[n] = a[n+1]
-  for _k in 0:(n-2)
-    i = n - _k
-    b[i-1] = a[i] + b[i]*x0
-  end
-  return b
-end
-
-# W - wspolczynniki wielomianu jw, n - stopien wielomianu, x0 + i y0 - punkt startowy, eps - dokladnosc
-function complex_newton(W, n::Int, x0::Float64, y0::Float64, eps::Float64)
+# a - tablica wspolczynnikow, x0+i*y0 -punkt startowy, eps - precyzja
+function complex_newton(a, n::Int, x0::Float64, y0::Float64, eps::Float64)
 
   if n == 0
     return
@@ -27,6 +14,7 @@ function complex_newton(W, n::Int, x0::Float64, y0::Float64, eps::Float64)
   x, y = generators(MPoly{Float64}, :x, :y) # zmienne w wielomianie
   p = zero(MPoly{Complex128})
 
+  # zamiana zespolonego wielomianu na funkcje dwu zmiennych
   for i in 1:(n+1)
     p = p + W[i] * (x+y*im)^(i-1)
   end
@@ -44,5 +32,5 @@ function complex_newton(W, n::Int, x0::Float64, y0::Float64, eps::Float64)
   end
 
   @printf("%.16lf +\t %.16lf i\n ", xn, yn)
-  complex_newton(horner(W, complex(xn, yn)), n-1, x0, y0, eps)
+  complex_newton(divide(W, complex(xn, yn)), n-1, x0, y0, eps)
 end

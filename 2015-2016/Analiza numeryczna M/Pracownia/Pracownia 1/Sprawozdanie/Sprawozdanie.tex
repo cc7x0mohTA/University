@@ -1,3 +1,6 @@
+% Bartosz Bednarczyk, Jan Góra
+% Analiza numeryczna sprawozdanie
+
 \documentclass{article}
 
 \usepackage{polski}
@@ -10,7 +13,7 @@
 \usepackage{graphicx} % Required to insert images
 \usepackage{listings} % Required for insertion of code
 \usepackage{courier} % Required for the courier font
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template\
+\usepackage{lipsum} 
 \usepackage{amsfonts}
 \usepackage{amsthm}
 \usepackage{hyperref}
@@ -20,9 +23,7 @@
 \usepackage{mathtools}
 \usepackage{amsthm}
 
-
 \DeclareUnicodeCharacter{00A0}{ }
-
 
 \newtheorem{thm}{Twierdzenie}
 \newtheorem{remark}{Uwaga}
@@ -144,7 +145,7 @@ tabsize=2, % Number of spaces per tab in the code
 \newcommand{\hmwkClass}{Analiza numeryczna} % Course/class
 \newcommand{\hmwkClassTime}{} % Class/lecture time
 \newcommand{\hmwkClassInstructor}{} % Teacher/lecturer
-\newcommand{\hmwkAuthorName}{Bartosz Bednarczyk, Jan Góra} % Your name
+\newcommand{\hmwkAuthorName}{Bartosz Bednarczyk, Jan Góra - Sprawozdanie z pracowni nr 1 - Zadanie 24} % Your name
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -167,6 +168,9 @@ tabsize=2, % Number of spaces per tab in the code
 
 \tableofcontents
 
+\section{Krótki opis sprawozdania}
+
+Najprostsze metody numeryczne bardzo często okazują się być mało wydajne, dlatego matematycy dążą do uzyskania metod o bardzo niskim czasie działania. Celem tego sprawozdania jest pokazanie jednej nich, którą jest iteracyjna metoda Bairstowa. Na podstawie odpowiednich testów numerycznych sprawdzone zostaną dokładność, stabilność i efektywność tej metody. Poza tym pobieżnie omówione zostaną różne warianty metody Newtona, metoda Laguerre'a oraz metoda Mullera, których wydajność porównamy z metodą Bairstowa.	
 \section{Przegląd podstawowych zagadnień związanych z wielomianami}
 
 \subsection{Podstawowe definicje}
@@ -287,7 +291,7 @@ Można pokazać, że $x_n$ zbiega do pewnego pierwiastka funkcji $f$. Analizę k
 Jeśli mamy wielomian o współczynnikach i pierwiastkach rzeczywistych, możemy policzyć jego pierwiastki za pomocą klasycznej metody Newtona. Podstawiamy za $f$ z poprzedniego opisu nasz wielomian, a $f'$ to jego pochodna. Po znalezieniu jednego pierwiastka (nazwijmy go $a$) dzielimy nasz wielomian przez $x-a$ i uruchamiamy program dla otrzymanego wielomianu. Proces kontynuujemy tak długo, aż dojdziemy do wielomianu o stopniu $0$.
 
 \begin{remark}
-Wartość w punkcie wielomianu i jego pochodnej możemy wyznaczyć z pomocą schematu Hornera, który był omówiony wcześniej (w kodzie przykładowym skorzystaliśmy z funkcji bibliotecznych dla większej czytelności).
+Poniżej przedstawiamy przykładową implementację metody Newtona w języku Julia. Wartość w punkcie wielomianu i jego pochodnej możemy wyznaczyć z pomocą schematu Hornera, który był omówiony wcześniej (w kodzie przykładowym skorzystaliśmy z funkcji bibliotecznych dla większej czytelności).
 \end{remark}
 
 
@@ -383,6 +387,10 @@ Oznaczając $P = P(x_n, y_n), Q = Q(x_n, y_n), P_x = \frac{\partial P}{\partial 
 $$
 \begin{pmatrix} x_{n+1}\\ y_{n+1}\\ \end{pmatrix} = \begin{pmatrix} x_n - \frac{ P P_x + Q Q_x}{Px^2 + Qx^2}\\ y_n - \frac{P P_y + Q Q_y}{Px^2 + Qx^2} \\ \end{pmatrix}
 $$
+
+
+\begin{remark}
+Implementacja zespolonej metody Newtona jest nieco problematyczna. Musimy potrafić zaimplementować operacje na funkcja wielu zmiennych oraz ich różniczkowanie. Przykładowy kod w języku Julia możemy otrzymać dzięki zastosowaniu biblioteki MultiPoly. Wymieniona biblioteka dostarcza nam sposobu na tworzenie nowych zmiennych wielomianu (metoda generators), obliczania wartości w danym punkcie (evaluate) oraz efektywnego różniczkowania wielomianu po zadanej zmiennej (diff).  \end{remark}
 
 
 \lstset{language=Haskell, label=DescriptiveLabel, frame=shadowbox}

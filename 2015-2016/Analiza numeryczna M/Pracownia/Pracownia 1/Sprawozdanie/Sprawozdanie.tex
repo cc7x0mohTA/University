@@ -172,7 +172,7 @@ tabsize=2, % Number of spaces per tab in the code
 \subsection{Podstawowe definicje}
 
 \begin{definicja}
-Wielomianem stopnia $n \in \mathbb{N}$ nad ciałem $\mathbb{K}$ będziemy nazywać przekształcenie $\mathbb{K}^n \mapsto \mathbb{K}$ zadane wzorem $W(x) = a_0 + a_1x + \ldots + a_n x^n$, gdzie $a_i$ to pewne  współczynniki z ciała $\mathbb{K}$ oraz $a_n \neq 0$ .
+Wielomianem stopnia $n \in \mathbb{N}$ nad ciałem $\mathbb{K}$ będziemy nazywać przekształcenie $\mathbb{K} \mapsto \mathbb{K}$ zadane wzorem $W(x) = a_0 + a_1x + \ldots + a_n x^n$, gdzie $a_i$ to pewne  współczynniki z ciała $\mathbb{K}$ oraz $a_n \neq 0$ .
 \end{definicja}
 
 \begin{definicja}
@@ -201,14 +201,14 @@ Podczas całego tego sprawozdania będziemy zajmować się następującym probl
 \end{tikzpicture}
 \end{center}
 
-Powyższy problem, choć pozornie prosty, jest sformułowany bardzo ogólnie. Na potrzeby tej pracy od tej pory ograniczymy się tylko do ciał $\mathbb{R}$ oraz $\mathbb{C}$, choć nic nie staje na przeszkodzie by poeksperymentować z innymi ciałami. Aktualnie nie wiemy czy każdy wielomian ma pierwiastki, a jeśli ma to czy ich zbiór jest skończony. Nie znamy również żadnych metod rozwiązywania $W(x) = 0$. By lepiej zrozumieć podane zagadnienie przejdźmy przez ciąg różnych definicji, algorytmów, twierdzeń i lematów związanych z wielomianami (warto je zrozumieć, gdyż kolejne rozdziały będą z nich korzystać).
+Powyższy problem, choć pozornie prosty, jest sformułowany bardzo ogólnie. Na potrzeby tej pracy od tej pory ograniczymy się tylko do ciał $\mathbb{R}$ oraz $\mathbb{C}$, choć nic nie staje na przeszkodzie by poeksperymentować z innymi ciałami. Aktualnie nie wiemy czy każdy wielomian ma pierwiastki, a jeśli ma, to jaka jest moc ich zbioru. Nie znamy również żadnych metod rozwiązywania $W(x) = 0$. By lepiej zrozumieć podane zagadnienie przejdźmy przez ciąg różnych definicji, algorytmów, twierdzeń i lematów związanych z wielomianami (warto je zrozumieć, gdyż kolejne rozdziały będą z nich korzystać).
 
 \begin{thm}
 Każdy wielomian $W(x)$ nad $\mathbb{C}$ stopnia $n \in \mathbb{N}_+$ ma co najmniej jeden pierwiastek.
 \end{thm}
 
 \begin{proof}
-To twierdzenie jest nazywane zasadniczym twierdzeniem algebry. Dowód \cite{leja} s. 105.
+To twierdzenie jest nazywane zasadniczym twierdzeniem algebry. Dowód \cite{leja}, s. 105.
 \end{proof}
 
 \begin{wniosek}
@@ -220,32 +220,32 @@ $| ker(W) | \leq n$, gdzie $n$ to stopień wielomianu $W$.
 
 
 \begin{definicja}
-Wielomian $W(x)$ nazywamy podzielnym przez wielomian $P(x)$, różny od wielomianu zerowego, wtedy i tylko wtedy, gdy istnieje taki wielomian $Q(x)$, że $W(x) = Q(x) * P(x)$. Wielomian $Q(x)$ nazywamy ilorazem wielomianu $W(x)$ przez $P(x)$. Mówimy, że wielomian $P(x)$ jest dzielnikiem wielomianu $W(x)$.
+Wielomian $W(x)$ nazywamy podzielnym przez wielomian $P(x)$, różny od wielomianu zerowego, wtedy i tylko wtedy, gdy istnieje taki wielomian $Q(x)$, że $W(x) = Q(x) \cdot P(x)$. Wielomian $Q(x)$ nazywamy ilorazem wielomianu $W(x)$ przez $P(x)$. Mówimy, że wielomian $P(x)$ jest dzielnikiem wielomianu $W(x)$.
 \end{definicja}
 
 
-\begin{definicja}
-Dowolny wielomian $W(x)$ możemy zapisać jako $W(x) = P(x) \cdot Q(x) + R(x)$ dla pewnych wielomianów $P, Q, R$. Mówimy, że wielomian $W(x)$ jest podzielny przez $Q(x)$ jeżeli $R(x) = 0$. 
-\end{definicja}
+\begin{thm}
+Dowolny wielomian $W(x)$ możemy zapisać jako $W(x) = P(x) \cdot Q(x) + R(x)$ dla pewnych wielomianów $P, Q, R$. Mówimy, że wielomian $W(x)$ jest podzielny przez $Q(x)$, jeżeli $R(x) = 0$. 
+\end{thm}
 
 \begin{thm}
 Wielomian $W(x)$ jest podzielny przez wielomian $Q(x) = (x-a)$ wtedy i tylko wtedy, gdy $W(a) = 0$.	
 \end{thm}
 
 \begin{proof}
-W \cite{kostrikin}	
+Udowodnione w \cite{kostrikin}, s. 198-199.
 \end{proof}
 
-Chcielibyśmy umieć w efektywny sposób realizować procedurę dzielenie wielomianu przez jednomiany postaci $x-a$. Służy do tego następujący algorytm:
+Chcielibyśmy umieć w efektywny sposób realizować procedurę dzielenia wielomianu przez jednomiany postaci $x-a$. Służy do tego następujący algorytm:
 
 \begin{enumerate}
-\item $P(x) = a_0 + a_1 x + a_2 x^2 + \ldots + a_n x^n$
-\item Niech $\alpha = a_n$
+\item $P(x) = a_0 + a_1 x + a_2 x^2 + \ldots + a_n x^n$.
+\item Niech $\alpha = a_n$.
 \item Kolejno dla $k = n-1, n-2, \ldots 0$ wykonaj $\alpha := a_k + x \alpha$.
 \item Wynik to $p(x) = \alpha$.
 \end{enumerate}
 
-Dokładny opis metody oraz jej analizę możemy znaleźć w \cite{kincaid} (s 103).\\
+Dokładny opis metody oraz jej analizę możemy znaleźć w \cite{kincaid}, s. 103.\\
 
 \subsection{Pochodna wielomianu i jej obliczanie}
 
@@ -256,16 +256,16 @@ Pochodną wielomianu $p(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots + a_1x + a_0$ będ
 Wyznaczanie wielomianu w punkcie $x_0$ możemy zrealizować za pomocą schematu Hornera:
 
 \begin{enumerate}
-\item $P(x) = a_0 + a_1 x + a_2 x^2 + \ldots + a_n x^n$
-\item Niech $\alpha := a_n, \ \beta := 0$
-\item Kolejno dla $k = n-1, n-2, \ldots 0$ wykonaj $\beta := \alpha + x \beta, \ \alpha := a_k + x \alpha$
+\item $P(x) = a_0 + a_1 x + a_2 x^2 + \ldots + a_n x^n$.
+\item Niech $\alpha := a_n, \ \beta := 0$.
+\item Kolejno dla $k = n-1, n-2, \ldots 0$ wykonaj $\beta := \alpha + x \beta, \ \alpha := a_k + x \alpha.$
 
 \item Wynik to $p'(x) = \beta$.
 \end{enumerate}
 
 \subsection{Inne przydatne pojęcia matematyczne}
 
-Oprócz wymienionych w rozdziale pojęć związanych z wielomianami zakładać będziemy u czytelnika znajomości wielowymiarowego rachunku różniczkowego, znajomości definicji funkcji holomorficznej oraz podstawowych pojęć związanych z analizą błędów. Pojęcia te można doczytać w \cite{leja}. 
+Oprócz wymienionych w rozdziale pojęć związanych z wielomianami zakładać będziemy u czytelnika znajomości wielowymiarowego rachunku różniczkowego, znajomości definicji funkcji holomorficznej oraz podstawowych pojęć związanych z analizą błędów. Pojęcia te można doczytać w \cite{leja} i \cite{kincaid}. 
 
 \section{Metoda Newtona oraz wielowymiarowa metoda Newtona}
 
@@ -280,7 +280,7 @@ x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}, & w.p.p.
 \end{matrix}\right.
 $$
 
-Można pokazać, że $x_n$ zbiega do pewnego pierwiastka funkcji $f$. Analizę klasycznej metody Newtona można znaleźć w \cite{kincaid} na stronach 71-81.
+Można pokazać, że $x_n$ zbiega do pewnego pierwiastka funkcji $f$. Analizę klasycznej metody Newtona można znaleźć w \cite{kincaid}, s.   71-81.
 
 \subsection{Zastosowanie klasycznej metody Newtona do szukania zer wielomianu}
 
@@ -398,7 +398,7 @@ Niech $p(z)$ będzie wielomianem stopnia $n$, którego pierwiastki mamy znaleź�
 
 $$ A = \frac{-p'(z)}{p(z)}, \ B = A^2 - \frac{p''(z)}{p(z)}, \ C = \frac{A \pm \sqrt{(n-1)(nB - A^2}}{n}, \ z_{nowe} = z + \frac{1}{C}$$ 
 
-Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach pojedynczego pierwiastka wielomianu $p$ jest zbieżna sześcienne. Dokładną analizę tej metody pozostawiamy czytelnikowi do przeczytania w $\cite{kincaid}$ (s 112-116).
+Metoda Laguerre'a jest bardzo efektywnym algorytmem, ponieważ w okolicach pojedynczego pierwiastka wielomianu $p$ jest zbieżna sześcienne. Dokładną analizę tej metody pozostawiamy czytelnikowi do przeczytania w \cite{kincaid}, s. 112-116.
 
 \subsection{Metoda Mullera}
 
@@ -429,7 +429,7 @@ Jeżeli $w$ jest pierwiastkiem nierzeczywistym wielomianu $p(z)$, a $p(z)$ jest 
 \end{lemat}
 
 \begin{proof}
-Dowód w \cite{kincaid} s. 108.	
+Dowód w \cite{kincaid}, s. 108.	
 \end{proof}
 
 Zauważmy, że pierwiastki zespolone możemy wyszukiwać parami. Zamiast wyszukiwać pierwiastki pojedynczo, będziemy wyszukiwać dwumianu postaci $z^2 - uz - v$.
@@ -446,7 +446,7 @@ $$b_{n+1} = b_{n+2} = 0, \ \ b_k = ub_{k+1} + vb_{k+2} \ (n \geq k \geq 0).$$
 \end{lemat}
 
 \begin{proof}
-Dowód w \cite{kincaid} s. 109.	
+Dowód w \cite{kincaid}, s. 109.	
 \end{proof}
 
 Chcemy by nasz wyjściowy wielomian był podzielny przez $z^2 - uz - v$. Zatem musi zachodzić $b_0 = b_1 = 0$. Potraktujmy podane współczynniki jako funkcje zmiennych $u,v$. Wtedy dostajemy do rozwiązania układ równań:
@@ -483,7 +483,7 @@ Załóżmy, że $P(z) = Q(z, u, v) (x^2 - u^{\star} z - v^{\star})$ i załóżmy
 Twierdzenia te zostały udowodnione przez autorów Tibora Fialę oraz Annę Krebsz w 1987 roku. Kompletne dowody można przeczytać w \cite{krebsz}.
 \end{proof}
 
-Analiza zbieżności oraz rozbieżności metody Bairstowa stanowiła podstawę do napisaniu kilku (choć niestety niewielu prac naukowych). Zainteresowanego czytelnika odsyłamy do \cite{krebsz}, \cite{Gabler} oraz \cite{Glasson}. 
+Analiza zbieżności oraz rozbieżności metody Bairstowa stanowiła podstawę do napisaniu kilku (choć niestety niewielu) prac naukowych. Zainteresowanego czytelnika odsyłamy do \cite{krebsz}, \cite{Gabler} oraz \cite{Glasson}. 
 
 \subsection{Przykład rozbieżności metody Bairstowa}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.9)  15 NOV 2015 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.9)  15 NOV 2015 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -928,17 +928,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 560.
  ) 
 Here is how much of TeX's memory you used:
  20183 strings out of 493089
- 359675 string characters out of 6134842
+ 359669 string characters out of 6134842
  588097 words of memory out of 5000000
  23157 multiletter control sequences out of 15000+600000
  11598 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,54p,668b,1766s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,54p,663b,1766s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plsc.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plme.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plit.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plti10.pfb>
-Output written on "/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.pdf" (8 pages, 151522 bytes).
+Output written on "/Users/bbednarczyk/Desktop/Github/University/2015-2016/Analiza numeryczna M/Pracownia/Pracownia 1/Sprawozdanie/.texpadtmp/Sprawozdanie.pdf" (8 pages, 151413 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
+ 359 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
  128 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

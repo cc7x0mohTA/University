@@ -187,7 +187,7 @@ Analiza numeryczna iteracyjnej metody Bairstowa}
 
 \tableofcontents
 
-\section{Krótki opis sprawozdania}
+\section*{Krótki opis sprawozdania}
 
 Najprostsze metody numeryczne bardzo często okazują się być mało wydajne, dlatego matematycy dążą do uzyskania metod o bardzo niskim czasie działania. Celem tego sprawozdania jest pokazanie jednej z nich, jaką jest iteracyjna metoda Bairstowa. Na podstawie odpowiednich testów numerycznych sprawdzone zostaną dokładność, stabilność i efektywność tej metody. Poza tym pobieżnie omówione zostaną różne warianty metody Newtona, metoda Laguerre'a oraz metoda Mullera, których wydajność porównamy z metodą Bairstowa.	
 \section{Przegląd podstawowych zagadnień związanych z wielomianami}
@@ -600,33 +600,33 @@ Pseudokod zapożyczony z opisu metody Bairstowa z \cite{kincaid}.
 
 Poniższe wykresy prezentują obserwację zmiany błędu bezwzględnego pierwiastka wielomianu i przybliżenia zadanego przez opisaną metodą w kolejnych iteracjach na podstawie różnych danych wejściowych. Na wykresie oś Y przedstawia błąd bezwzględny w postaci $10^{-y}$.
 
-\includegraphics[scale=0.45]{W1.png}
+\includegraphics[scale=0.45]{w1.png}
 
 Wykres 1:
 Próba $100$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu $BigFloat$ (o precyzji $10^{-30}$) w zakresie $[-7;7]$ w zerowych punktach początkowych.
 
-\includegraphics[scale=0.45]{W2.png}
+\includegraphics[scale=0.45]{w2.png}
 
 Wykres 2:
 Próba $100$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu $BigFloat$ (o precyzji $10^{-30}$) w zakresie $[-7;7]$ w zerowych punktach początkowych.
 
 
-\includegraphics[scale=0.45]{W3.png}
+\includegraphics[scale=0.45]{w3.png}
 
 Wykres 3:
 Próba $50$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu  $BigFloat$ (o precyzji $10^{-30}$) w zakresie $[0;1)$ w zerowych punktach początkowych.
 
-\includegraphics[scale=0.45]{W4.png}
+\includegraphics[scale=0.45]{w4.png}
 
 Wykres 4:
 Próba $50$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu $Int64$ w zakresie $[-10;10]$ w zerowych punktach początkowych.
 
-\includegraphics[scale=0.45]{W5.png}
+\includegraphics[scale=0.45]{w5.png}
 
 Wykres 5:
 Próba $50$ wielomianów $10$-tego stopnia o losowych pierwiastkach typu $Int64$ w zakresie $[-30,30]$ w zerowych punktach początkowych.
 
-\includegraphics[scale=0.45]{W6.png}
+\includegraphics[scale=0.45]{w6.png}
 
 Wykres 6:
 Próba $50$ wielomianów $3$-tego stopnia o losowych pierwiastkach typu $Int64$ w zakresie $[-30;30]$ w zerowych punktach początkowych.
@@ -721,6 +721,21 @@ $$-7.000000000000000000000000000000, \
 \end{enumerate}
 
 \end{przyklad}
+
+\section*{Podsumowanie}
+
+Na podstawie wykonanych obliczeń oraz analizy teoretycznej problemu doszliśmy do wniosku, iż metoda Bairstowa jest stabilna prawie zawsze, a po drobnych usprawnieniach, o których wspomnieliśmy wcześniej, można uzyskać niemalże całkowitą stabilność. Metoda nie jest globalnie zbieżna, jednak rozbieżność występuje stosunkowo rzadko. Porównując szybkość zbieżności opisanych metod wyciągnęliśmy wniosek, że metoda Bairstowa nie jest najszybsza i w praktycznych obliczeniach lepiej używać innych metod np. metody Laguerre'a.
+
+
+\section*{Uwagi techniczne}
+
+\begin{itemize}
+	\item W celu przetestowania naszej implementacji metody Bairstowa zalecamy używać funkcji \textbf{testBairstow(...)}. Przykładowy input: testBairstow("1 2 3 4 5", 0, 1, 100), gdzie "1 2 3 4 5" oznacza wielomian $1 + 2x + 3x^2 + 4x^3 + 5x^4$, kolejne dwie liczby oznaczają punkt startowy $(u,v)$, a ostatnia liczba to liczba iteracji metody.
+	\item W celu porównania metod (Lagguerre'a, Muller'a, Bairstow'a) korzystamy z funkcji \textbf{testAll(...)}. Przykładowy input: testAll$("1 2 3 4 5", 0, 1, 1, 100)$ - ostatnie $1, 100$ oznacza przedział iteracji, a pozostałe argumenty analogicznie jak w funkcji \textbf{testBairstow(...)}. 
+	\item Wszystkie zmienne rzutowane są na typ \textbf{BigFloat}. W pliku \textbf{program.jl} można ustawić precyzję arytmetyki BigFloat i różnicę błędu porównywania (EPS) według własnych potrzeb.
+	\item Do wykonania testów użyliśmy funkcji \textbf{toFile(...)}, a do porównania i wykonania wykresów funkcji \textbf{toTable(...)}.
+\end{itemize}
+
 
 
 

@@ -115,7 +115,7 @@ function test(data, N)
 end
 
 #funkcja tworzaca tabele bledow srednich
-function toTable(name, p, q)
+function toTable(name::ASCIIString, p, q)
   f = open(name*".wykres", "w")
   set_bigfloat_precision(1024)
   write(f, "Test: "*name*"\n")

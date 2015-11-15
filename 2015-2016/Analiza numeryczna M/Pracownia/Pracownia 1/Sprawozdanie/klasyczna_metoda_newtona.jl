@@ -5,7 +5,7 @@ function klasyczna_metoda_newtona(W, n, p, eps)
   dW = polyint(W)	# oblicza pochodna wielomianu
   x_n = p
   
-  while abs(polyval(W, x_n)) >= eps	# dopoki blad >= prezycja
+  while bigger(abs(polyval(W, x_n)), eps)
     x_n = x_n - (polyval(W, x_n)/polyval(dW, x_n))
   end
   

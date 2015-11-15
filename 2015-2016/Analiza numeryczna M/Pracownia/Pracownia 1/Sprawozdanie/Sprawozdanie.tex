@@ -37,6 +37,54 @@
 \newenvironment{prooff}{\paragraph{Dowód:}}{\hfill$\square$}
 \newenvironment{rozw}{\paragraph{Rozwiązanie:}}{\hfill}
 
+
+\usepackage{inconsolata} % very nice fixed-width font included with texlive-full
+\usepackage[usenames,dvipsnames]{color} % more flexible names for syntax highlighting colors
+\usepackage{listings}
+
+\lstset{
+basicstyle=\small\ttfamily, 
+columns=fullflexible, % make sure to use fixed-width font, CM typewriter is NOT fixed width
+numbers=left, 
+numberstyle=\small\ttfamily\color{Gray},
+stepnumber=1,              
+numbersep=10pt, 
+numberfirstline=true, 
+numberblanklines=true, 
+tabsize=4,
+lineskip=-1.5pt,
+extendedchars=true,
+breaklines=true,        
+keywordstyle=\color{Blue}\bfseries,
+identifierstyle=, % using emph or index keywords
+commentstyle=\sffamily\color{OliveGreen},
+stringstyle=\color{Maroon},
+showstringspaces=false,
+showtabs=false,
+upquote=false,
+texcl=true, % interpet comments as LaTeX
+    literate={á}{{\'a}}1 {ã}{{\~a}}1 {é}{{<}}1,
+inputencoding=utf8
+}
+
+\lstdefinelanguage{julia}
+{
+  keywordsprefix=\@,
+  morekeywords={
+    exit,whos,edit,load,is,isa,isequal,typeof,tuple,ntuple,uid,hash,finalizer,convert,promote,
+    subtype,typemin,typemax,realmin,realmax,sizeof,eps,promote_type,method_exists,applicable,
+    invoke,dlopen,dlsym,system,error,throw,assert,new,Inf,Nan,pi,im,begin,while,for,in,return,
+    break,continue,macro,quote,let,if,elseif,else,try,catch,end,bitstype,ccall,do,using,module,
+    import,export,importall,baremodule,immutable,local,global,const,Bool,Int,Int8,Int16,Int32,
+    Int64,Uint,Uint8,Uint16,Uint32,Uint64,Float32,Float64,Complex64,Complex128,Any,Nothing,None,
+    function,type,typealias,abstract
+  },
+  sensitive=true,
+  morecomment=[l]{\#},
+  morestring=[b]',
+  morestring=[b]" 
+}
+
 % Margins
 \topmargin=-0.45in
 \evensidemargin=0in
@@ -107,32 +155,6 @@
 \definecolor{DarkGreen}{rgb}{0.0,0.4,0.0} % Comment color
 \definecolor{highlight}{RGB}{255,251,204} % Code highlight color
 
-\lstdefinestyle{Style1}{ % Define a style for your code snippet, multiple definitions can be made if, for example, you wish to insert multiple code snippets using different programming languages into one document
-language=Perl, % Detects keywords, comments, strings, functions, etc for the language specified
-backgroundcolor=\color{highlight}, % Set the background color for the snippet - useful for highlighting
-basicstyle=\footnotesize\ttfamily, % The default font size and style of the code
-breakatwhitespace=false, % If true, only allows line breaks at white space
-breaklines=true, % Automatic line breaking (prevents code from protruding outside the box)
-captionpos=b, % Sets the caption position: b for bottom; t for top
-commentstyle=\usefont{T1}{pcr}{m}{sl}\color{DarkGreen}, % Style of comments within the code - dark green courier font
-deletekeywords={}, % If you want to delete any keywords from the current language separate them by commas
-%escapeinside={\%}, % This allows you to escape to LaTeX using the character in the bracket
-firstnumber=1, % Line numbers begin at line 1
-frame=single, % Frame around the code box, value can be: none, leftline, topline, bottomline, lines, single, shadowbox
-frameround=tttt, % Rounds the corners of the frame for the top left, top right, bottom left and bottom right positions
-keywordstyle=\color{Blue}\bf, % Functions are bold and blue
-morekeywords={}, % Add any functions no included by default here separated by commas
-numbers=left, % Location of line numbers, can take the values of: none, left, right
-numbersep=10pt, % Distance of line numbers from the code box
-numberstyle=\tiny\color{Gray}, % Style used for line numbers
-rulecolor=\color{black}, % Frame border color
-showstringspaces=false, % Don't put marks in string spaces
-showtabs=false, % Display tabs in the code as lines
-stepnumber=5, % The step distance between line numbers, i.e. how often will lines be numbered
-stringstyle=\color{Purple}, % Strings are purple
-tabsize=2, % Number of spaces per tab in the code
-}
-
 % Create a command to cleanly insert a snippet with the style above anywhere in the document
 \newcommand{\insertcode}[2]{\begin{itemize}\item[]\lstinputlisting[caption=#2,label=#1,style=Style1]{#1}\end{itemize}} % The first argument is the script location/filename and the second is a caption for the listing
 
@@ -151,26 +173,23 @@ tabsize=2, % Number of spaces per tab in the code
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title{
-\vspace{2in}
-\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
-\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
-\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
-\vspace{3in}
-}
+\title{Analiza numeryczna (M) - Pracownia 1 - Zadanie P1.24\\
+Analiza numeryczna iteracyjnej metody Bairstowa}
+\date{Listopad 15, 2015}
+\author{Bartosz Bednarczyk\\ \and Jan Góra}
 
-\author{\textbf{\hmwkAuthorName}}
-\date{} % Insert date here if you want it to appear below your name
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
+\maketitle
+
 \tableofcontents
 
 \section{Krótki opis sprawozdania}
 
-Najprostsze metody numeryczne bardzo często okazują się być mało wydajne, dlatego matematycy dążą do uzyskania metod o bardzo niskim czasie działania. Celem tego sprawozdania jest pokazanie jednej nich, którą jest iteracyjna metoda Bairstowa. Na podstawie odpowiednich testów numerycznych sprawdzone zostaną dokładność, stabilność i efektywność tej metody. Poza tym pobieżnie omówione zostaną różne warianty metody Newtona, metoda Laguerre'a oraz metoda Mullera, których wydajność porównamy z metodą Bairstowa.	
+Najprostsze metody numeryczne bardzo często okazują się być mało wydajne, dlatego matematycy dążą do uzyskania metod o bardzo niskim czasie działania. Celem tego sprawozdania jest pokazanie jednej z nich, jaką jest iteracyjna metoda Bairstowa. Na podstawie odpowiednich testów numerycznych sprawdzone zostaną dokładność, stabilność i efektywność tej metody. Poza tym pobieżnie omówione zostaną różne warianty metody Newtona, metoda Laguerre'a oraz metoda Mullera, których wydajność porównamy z metodą Bairstowa.	
 \section{Przegląd podstawowych zagadnień związanych z wielomianami}
 
 \subsection{Podstawowe definicje}
@@ -295,7 +314,7 @@ Poniżej przedstawiamy przykładową implementację metody Newtona w języku Jul
 \end{remark}
 
 
-\lstset{language=Haskell, label=DescriptiveLabel, frame=shadowbox}
+\lstset{language=Julia, label=DescriptiveLabel, frame=shadowbox}
 \lstinputlisting{klasyczna_metoda_newtona.jl}
 
 \begin{remark}
@@ -390,10 +409,10 @@ $$
 
 
 \begin{remark}
-Implementacja zespolonej metody Newtona jest nieco problematyczna. Musimy potrafić zaimplementować operacje na funkcja wielu zmiennych oraz ich różniczkowanie. Przykładowy kod w języku Julia możemy otrzymać dzięki zastosowaniu biblioteki MultiPoly. Wymieniona biblioteka dostarcza nam sposobu na tworzenie nowych zmiennych wielomianu (metoda generators), obliczania wartości w danym punkcie (evaluate) oraz efektywnego różniczkowania wielomianu po zadanej zmiennej (diff).  \end{remark}
+Implementacja zespolonej metody Newtona jest nieco problematyczna. Musimy potrafić zaimplementować operacje na funkcjach wielu zmiennych oraz ich różniczkowanie. Przykładowy kod w języku Julia możemy otrzymać dzięki zastosowaniu biblioteki MultiPoly. Wymieniona biblioteka dostarcza nam sposobu na tworzenie nowych zmiennych wielomianu (metoda generators), obliczania wartości w danym punkcie (evaluate) oraz efektywnego różniczkowania wielomianu po zadanej zmiennej (diff).  \end{remark}
 
 
-\lstset{language=Haskell, label=DescriptiveLabel, frame=shadowbox}
+\lstset{language=Julia, label=DescriptiveLabel, frame=shadowbox}
 \lstinputlisting{zespolony_newton.jl}
 
 \section{Wybrane metody wyszukiwania miejsc zerowych wielomianu}
@@ -460,8 +479,8 @@ Dowód w \cite{kincaid}, s. 109.
 Chcemy, by nasz wyjściowy wielomian był podzielny przez $z^2 - uz - v$. Zatem musi zachodzić $b_0 = b_1 = 0$. Potraktujmy podane współczynniki jako funkcje zmiennych $u,v$. Wtedy dostajemy do rozwiązania układ równań:
 $$
 \left\{\begin{matrix}
-b_0(u,v) = 0 & \\ 
-b_1(u,v) = 0 & 
+b_0(u + h_1, v + h_1) = 0 & \\ 
+b_1(u + h_2, v + h_2) = 0 & 
 \end{matrix}\right.
 $$
 
@@ -504,7 +523,7 @@ v-w & 0\\
 \end{pmatrix}
 $$
 
-Jeśli uruchomimy metodę Bairstowa dla np. $u = 1, v = 1, w = 2$ to dostaniemy wielomian $x^4 + 6x^3 + 12x^2 + 9x +3,$ dla którego ciąg przybliżeń pierwiastka będzie cykliczny.
+Jeśli uruchomimy metodę Bairstowa dla np. $u = 3, v = 1, w = 2$ to dostaniemy wielomian $x^4 + 6x^3 + 12x^2 + 9x +3,$ dla którego ciąg przybliżeń pierwiastka będzie cykliczny.
 
 \begin{table}[h!]
 \centering
@@ -521,6 +540,48 @@ Iteracja & $x_0$           & $x_1$               & $x_2$           & $x_3$      
 \end{tabular}
 \end{table}
 
+\subsection{Implementacja metody Bairstowa}
+
+Jeżeli oznaczymy sobie $c_k := \frac{\partial b_k}{\partial u}, \ d_k := \frac{\partial b_{k-1}}{\partial v}$ to dostajemy związki:
+
+$c_k = d_{k+1} + uc_{k+1} + vc_{j+2} \ (c_{n+1} = c_n = 0)$ oraz $d_k = b_{k+1} + u d_{k+1} + v d_{k+2} (d_{n+1} = d_n = 0)$.
+
+Rozwiązujemy układ równań
+
+$$
+\left\{\begin{matrix}
+b_0(u, v) + \frac{\partial b_0}{\partial u} \delta u + \frac{\partial b_0}{\partial v} \delta v  = 0 & \\ 
+b_1(u, v) + \frac{\partial b_1}{\partial u} \delta u + \frac{\partial b_1}{\partial v} \delta v  = 0 & \\ \end{matrix}\right.
+$$
+
+Rozwiązaniem powyższego układu jest 
+$$\delta u = (c_1b_1 - c_2b_0)/J, \ \delta v = (c_1 b_0 - c_0 b_1)/J, \ J = c_0c_2 - c_1^2$$
+
+Metodę Bairstowa możemy zapisać w postaci listy kroków:
+
+\begin{enumerate}
+\item $b_n := a_n$
+\item $c_n := 0$
+\item $c_{n-1} := a_n$
+\item for $j = 1$ to $M$ do
+	\begin{enumerate}
+	\item $b_{n-1} := a_{n-1} + ub_n$
+	\item for $k = n-2$ to $0$ step $-1$ do
+		\begin{enumerate}
+		\item $b_k := a_k + ub_{k+1} + vb_{k+2}$
+		\item $c_k := b_{k+1} + uc_{k+1} + vc_{k+2}$
+		\end{enumerate}
+	\item end do
+
+\item $J := c_0c_2 - c_1^2$
+\item $u := u + (c_1b_1 - c_2b_0)/J$
+\item $v := v + (c_1b_0 - c_0b_1)/J$
+\item output $j, u, v, b_0, b_1$
+\end{enumerate}
+\item end do	
+\end{enumerate}
+
+Pseudokod zapożyczony z opisu metody Bairstowa z \cite{kincaid}.
 
 \section{Testy numeryczne}
 

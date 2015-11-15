@@ -1,4 +1,4 @@
-using MultiPoly
+using MultiPoly # biblioteka dla wielomianow wielu zmiennych
 
 # a - tablica wspolczynnikow, x0+i*y0 -punkt startowy, eps - precyzja
 function complex_newton(a, n::Int, x0::Float64, y0::Float64, eps::Float64)
@@ -10,25 +10,20 @@ function complex_newton(a, n::Int, x0::Float64, y0::Float64, eps::Float64)
     @printf("%.16lf +\t %.16lf i\n ", real(w), imag(w))
     return
   end
+  # x, y - zmienne w wielomianie
+  x, y = generators(MPoly{Float64}, :x, :y);p = zero(MPoly{Complex128})
 
-  x, y = generators(MPoly{Float64}, :x, :y) # zmienne w wielomianie
-  p = zero(MPoly{Complex128})
-
-  # zamiana zespolonego wielomianu na funkcje dwu zmiennych
-  for i in 1:(n+1)
+  for i in 1:(n+1) # zamiana zespolonego wielomianu na funkcje dwu zmiennych
     p = p + W[i] * (x+y*im)^(i-1)
   end
 
   xn = x0; yn = y0; P = real(p); Q = imag(p-P)
-  Px = diff(P, :x); Py = diff(P, :y)
-  Qx = diff(Q, :x); Qy = diff(Q, :y)
+  Px = diff(P, :x); Py = diff(P, :y); Qx = diff(Q, :x); Qy = diff(Q, :y)
 
-  while( abs( evaluate(p, xn, yn) ) >= eps )
-    eP = evaluate(P, xn, yn); eQ = evaluate(Q, xn, yn)
-    ePx = evaluate(Px, xn, yn); eQy = evaluate(Qy, xn, yn)
-    ePy = evaluate(Py, xn, yn); eQx = evaluate(Qx, xn, yn)
-    xn = xn - (eP * ePx + eQ * eQx)/(ePx^2 + eQx^2)
-    yn = yn - (eP * ePy + eQ * eQy)/(ePx^2 + eQx^2)
+  while( bigger(abs( evaluate(p, xn, yn) ),eps )
+    eP = evaluate(P, xn, yn); eQ = evaluate(Q, xn, yn); ePx = evaluate(Px, xn, yn);
+    eQy = evaluate(Qy, xn, yn); ePy = evaluate(Py, xn, yn); eQx = evaluate(Qx, xn, yn)
+    xn = xn - (eP * ePx + eQ * eQx)/(ePx^2 + eQx^2); yn = yn - (eP * ePy + eQ * eQy)/(ePx^2 + eQx^2)
   end
 
   @printf("%.16lf +\t %.16lf i\n ", xn, yn)

@@ -401,6 +401,70 @@ $$x_{k+1} = x_k - \frac{2f(x_k)}{f'(x_k) + sgn(f'(x_k)) \cdot \sqrt{(f'(x_k))^2 
 
 \section{Metoda Bairstowa}
 
+\subsection{Opis metody Bairstowa}
+
+Kolejną i zarazem najważniejsza metodą, którą omówimy w sprawozdaniu będzie metoda Bairstowa. Wiemy, że nawet jeśli wielomian ma współczynniki rzeczywiste, to może mieć pierwiastki zespolone (np. $x^2 + 1$). Metoda Bairstowa pozwala na obliczenie wszystkich pierwiastków bez użycia arytmetyki zespolonej.
+
+
+\begin{lemat}
+Jeżeli $w$ jest pierwiastkiem nierzeczywistym wielomianu $p(z)$, a $p(z)$ jest wielomianem o współczynnikach rzeczywistych, to pierwiastkiem $p(z)$ jest również $\overline{w}$. Iloczyn $(x-w)(x-\overline{w})$ jest czynnikiem kwadratowym o współczynnikach rzeczywistych.
+\end{lemat}
+
+\begin{proof}
+Dowód w \cite{kincaid} s. 108.	
+\end{proof}
+
+Zauważmy, że pierwiastki zespolone możemy wyszukiwać parami. Zamiast wyszukiwać pierwiastki pojedynczo, będziemy wyszukiwać dwumianu postaci $z^2 - uz - v$.
+
+\begin{lemat}
+Dowolny wielomian $p(z) = a_nx^n  + a_{n-1}x^{n-1} + \ldots a_0$ możemy zapisać w postaci 
+
+$$p(z) = \left(b_nx^{n-2} + b_{n-1}z^{n-3} + \ldots + b_3 z + b_2 \right) \left( z^2 - uz - v \right) + b_1(z-u) + b_0 $$	
+
+Powyższe współczynniki możemy obliczać rekurencyjnie według wzorów:
+$$b_{n+1} = b_{n+2} = 0, \ \ b_k = ub_{k+1} + vb_{k+2} \ (n \geq k \geq 0).$$
+
+\end{lemat}
+
+\begin{proof}
+Dowód w \cite{kincaid} s. 109.	
+\end{proof}
+
+Chcemy by nasz wyjściowy wielomian był podzielny przez $z^2 - uz - v$. Zatem musi zachodzić $b_0 = b_1 = 0$. Potraktujmy podane współczynniki jako funkcje zmiennych $u,v$. Wtedy dostajemy do rozwiązania układ równań:
+$$
+\left\{\begin{matrix}
+b_0(u,v) = 0 & \\ 
+b_1(u,v) = 0 & 
+\end{matrix}\right.
+$$
+
+Podany układ możemy rozwiązać przedstawioną wcześniej metodą Newtona dla wielu funkcji wielu zmiennych. Po znalezieniu współczynników $u, v$ dzielimy wyjściowy wielomian przez otrzymany dwumian i kontynuujemy proces wyszukiwania pierwiastków dla mniejszego wielomianu (z uwzględnieniem tego, że przypadki dla wielomianu stopnia $0$ i $1$ traktujemy osobno).
+
+\subsection{Analiza teoretyczna metody Bairstowa}
+
+\begin{lemat}
+Metoda Bairstowa jest zbieżna lokalnie.	
+\end{lemat}
+
+\begin{proof}
+Wynika to bezpośrednio z tego, że metoda Newtona jest zbieżna lokalnie.	
+\end{proof}
+
+Głównym założeniem w lokalnej zbieżności metody Bairstowa jest to, że Jakobian się nie zeruje dla podanych wcześniej punktów startowych i kolejnych przybliżeń. Zastanówmy się w jaki sposób zerowanie się jakobianu zależy od punktów startowych oraz pierwiastków wielomianu.
+
+\begin{thm}
+	
+\end{thm}
+
+
+\begin{thm}
+Metoda Bairstowa jest zbieżna kwadratowo w otoczeniu jednokrotnego pierwiastka.	
+\end{thm}
+
+
+
+
+
 \section{Testy numeryczne}
 
 
@@ -420,6 +484,10 @@ Warszawa : WNT, 2006
 \bibitem{complexnewton} Lily Yau, Adi Ben-Israel
 \emph{The Newton and Halley Methods for Complex Roots},
 The American Mathematical Monthly 105(1998), 806–818
+
+\bibitem{complexnewton} Tibor Fiala, Anna Krebsz
+\emph{On the Convergence and Divergence of Bairstow's Method},
+Journal Numerische Mathematik, Volume 50 Issue 4, FEB. 1987, 477 - 482
 
 
 \end{thebibliography}

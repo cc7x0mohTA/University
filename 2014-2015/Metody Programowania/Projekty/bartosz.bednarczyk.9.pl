@@ -169,7 +169,7 @@ wyczyscPodliste([H|T]) :-
 % zwracamy listę ich współrzędnych). Ponadto oblicza również długość wspomnianej listy
 % oraz informację o liczbę bomb w okolicy.
 % Dlaczego jest tego tyle naraz?
-% Poniważ predykat findall jest jest zbyt szybki i nie opłaca się używać go dwukrotnie
+% Poniważ predykat findall nie jest zbyt szybki i nie opłaca się używać go dwukrotnie
 % go generowania listy bomb oraz listy wolnych miejsc (wzrost wydajność aż o 246% !!!).
 
 generowanie( (M, N), (X, Y), Plansza, ListaWolnychMiejsc, IleWolnych, IleBomb) :-

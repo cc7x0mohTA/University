@@ -1,0 +1,5 @@
+a:link { color: indianred}
+a:visited { color: darkorange }
+a:hover { color: bisque}
+a:active { color: greenyellow}
+a:focus {color: lightsteelblue}

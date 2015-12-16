@@ -1,6 +1,6 @@
 # Metoda bairstowa
 
-# a-> Lista wspolczynnikow wielomianu, np [1, 2, 3], (u, v) -> punkty poaczatkowe, M -> ilosc operacji
+# a-> Lista wspolczynnikow wielomianu, np [1, 2, 3], (u, v) -> punkty poczatkowe, M -> liczba operacji
 function bairstow(a, u, v, M)
   n = length(a)-1
   a = map(x->parse(BigFloat, string(x)), a)

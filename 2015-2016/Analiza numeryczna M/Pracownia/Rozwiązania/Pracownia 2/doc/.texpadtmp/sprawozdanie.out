@@ -1,0 +1,17 @@
+\BOOKMARK [1][-]{section*.2}{Kr\363tki wstep}{}% 1
+\BOOKMARK [1][-]{section*.3}{Bazy dualne i metody ich wyznaczania}{}% 2
+\BOOKMARK [2][-]{section*.4}{Definicja i podstawowe w\233asnosci}{section*.3}% 3
+\BOOKMARK [2][-]{section*.5}{Metody konstrukcji baz dualnych}{section*.3}% 4
+\BOOKMARK [3][-]{section*.6}{Wyliczanie baz dualnych z definicji}{section*.5}% 5
+\BOOKMARK [3][-]{section*.7}{Zastosowanie baz ortonormalnych}{section*.5}% 6
+\BOOKMARK [3][-]{section*.8}{Nowe metody wyznaczania baz dualnych}{section*.5}% 7
+\BOOKMARK [3][-]{section*.9}{Usprawniony algorytm}{section*.5}% 8
+\BOOKMARK [1][-]{section*.10}{O kilku ciekawych problemach \(z bazami dualnymi w tle\)}{}% 9
+\BOOKMARK [2][-]{section*.11}{Konstrukcja dualnej funkcji B-sklejanej}{section*.10}% 10
+\BOOKMARK [2][-]{section*.12}{Wielomiany Bernsteina}{section*.10}% 11
+\BOOKMARK [2][-]{section*.13}{Obnizanie stopnia krzywych Beziera}{section*.10}% 12
+\BOOKMARK [2][-]{section*.14}{Wyszukiwanie wielomianu optymalnego w sensie normy sredniokwadratowej}{section*.10}% 13
+\BOOKMARK [1][-]{section*.15}{Testy numeryczne}{}% 14
+\BOOKMARK [2][-]{section*.16}{Uwagi techniczne}{section*.15}% 15
+\BOOKMARK [2][-]{section*.17}{Wyniki test\363w komputerowych}{section*.15}% 16
+\BOOKMARK [2][-]{section*.18}{Obliczenie baz dualnych}{section*.15}% 17

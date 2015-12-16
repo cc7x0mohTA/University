@@ -194,8 +194,3 @@ end
 function testAll(a::ASCIIString, u::Int, v::Int, M::Int)
   testAll(a, u, v, M, M)
 end
-
-
-
-
-

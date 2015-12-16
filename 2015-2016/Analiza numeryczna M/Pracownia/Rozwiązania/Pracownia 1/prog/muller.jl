@@ -1,5 +1,6 @@
 
-# a-> lista wspolczynnikow, M->ilosc iteracji
+# a-> lista wspolczynnikow, M->liczba iteracji
+
 function muller(a, M)
   x0 = Complex(BigFloat(0))
   n = length(a) - 1
@@ -43,5 +44,3 @@ end
 function muller(a::ASCIIString, M)
   muller(strb(a), M)
 end
-
-

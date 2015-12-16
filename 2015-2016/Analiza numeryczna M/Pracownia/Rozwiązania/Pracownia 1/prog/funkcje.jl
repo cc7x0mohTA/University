@@ -30,7 +30,7 @@ function strb(a::ASCIIString)
   return a
 end
 
-#funkcja dzileaca wielomian przez czynnik (x-x0)
+#funkcja dzielaca wielomian przez czynnik (x-x0)
 function horner(a, x0)
   n = length(a) - 1
   b = Array(Complex{BigFloat}, n)

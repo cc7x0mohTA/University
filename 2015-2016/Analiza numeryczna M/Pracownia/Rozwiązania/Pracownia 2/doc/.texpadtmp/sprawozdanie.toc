@@ -1,0 +1,17 @@
+\contentsline {section}{Kr\IeC {\'o}tki wst\IeC {\k e}p}{1}{section*.2}
+\contentsline {section}{Bazy dualne i metody ich wyznaczania}{2}{section*.3}
+\contentsline {subsection}{Definicja i podstawowe w\IeC {\l }asno\IeC {\'s}ci}{2}{section*.4}
+\contentsline {subsection}{Metody konstrukcji baz dualnych}{2}{section*.5}
+\contentsline {subsubsection}{Wyliczanie baz dualnych z definicji}{2}{section*.6}
+\contentsline {subsubsection}{Zastosowanie baz ortonormalnych}{3}{section*.7}
+\contentsline {subsubsection}{Nowe metody wyznaczania baz dualnych}{3}{section*.8}
+\contentsline {subsubsection}{Usprawniony algorytm}{4}{section*.9}
+\contentsline {section}{O kilku ciekawych problemach (z bazami dualnymi w tle)}{5}{section*.10}
+\contentsline {subsection}{Konstrukcja dualnej funkcji B-sklejanej}{5}{section*.11}
+\contentsline {subsection}{Wielomiany Bernsteina}{5}{section*.12}
+\contentsline {subsection}{Obni\IeC {\.z}anie stopnia krzywych Beziera}{5}{section*.13}
+\contentsline {subsection}{Wyszukiwanie wielomianu optymalnego w sensie normy \IeC {\'s}redniokwadratowej}{6}{section*.14}
+\contentsline {section}{Testy numeryczne}{6}{section*.15}
+\contentsline {subsection}{Uwagi techniczne}{6}{section*.16}
+\contentsline {subsection}{Wyniki test\IeC {\'o}w komputerowych}{6}{section*.17}
+\contentsline {subsection}{Obliczenie baz dualnych}{10}{section*.18}

@@ -1,0 +1,41 @@
+
+Za nieprecyzyjne treści zdań reklamacji nie przyjmuje, nie mam aparatu w głowie. 
+Zadania: 
+1. 
+a)Właściwości natrualnych funkcji sklejanych(natural cubic spline) stopnia 3 
+b)Koszt znalezienia NFSI3 w n+1 węzła 
+c)Koszt obliczenia 100 wartości NFSI3 
+d)Zalety i wady NFSI3 
+
+2. 
+a)Co to znaczy, że metoda ma wykładnik zbieżności p. Co znaczy, że jest liniowa, a co, że kwadratowa. 
+b)Zaproponuj efektywny algorytm obliczania pierwiastka z liczby w postaci a = m2 
+
+3. 
+a)Podać postać Barycentryczną wielomianu Lagrange'a 
+b)Omówić przypadek, kiedy węzły są równoodległe 
+
+4. 
+Mamy jakąś funkcję o ciągłej f(n+1) pochodnej, i jeszcze dwie funkcje, wykazać, że funkcja f będzie pomiędzy L I M. 
+
+5. 
+Sprawdzić, czy w(x) = x jest najlepszą aproksymacją drugiego stopnia wielomianu x + sin(2x) 
+
+6. 
+a)Wykazać, że jak funkcja wagowa jest parzysta, to wielomiany ortogonalne są parzyste/nieparzyste 
+
+7. 
+a)Tablica Romberga, obliczenie wartości funkcji kosztuje 1zł, podać koszt obliczenia całej tablicy Romberga. 
+b)Uzasadnić 
+
+8. 
+Wykazać że po odjęciu od siebie dwóch wielomianów Beziera błąd będzie <= od max|a-b| gdzie a i b to są współćzynniki tych wielomianów 
+
+9. 
+a)Znaleźć krótki sposób na obliczenie s = det(coś) + det(coś)+ det(coś)... 
+bez odwracania tabelki 
+b)Oszacować złożoność obliczeniową tego sposobu 
+
+10. 
+a)Omówić metodę Jacobiego, warunki potrzebne na zbieżność 
+b)Udowodnić, że jeśli mamy macierz dominującą przekątniowo, to metoda Jacobiego będzie zbieżna.

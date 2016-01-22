@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Bardzo nieformalny wst\IeC {\k e}p}{1}{section.1}
+\contentsline {section}{\numberline {2}Ca\IeC {\l }kowanie korzystaj\IeC {\k a}ce z interpolacji funkcji}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Wielomiany interpolacyjne a ca\IeC {\l }kowanie}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Wielokrotne zastosowanie metody trapez\IeC {\'o}w}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Wielokrotne zastosowanie metody Simpsona}{3}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Zastosowanie kwadratur o wy\IeC {\.z}szym stopniu}{4}{subsection.2.4}
+\contentsline {section}{\numberline {3}Testy numeryczne}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Ca\IeC {\l }kowanie wielomianu $\DOTSI \intop \ilimits@ _{-1}^{1} 7x^5 + 2x^4 + 3x^3 - 12x - 2 \ dx.$}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Ca\IeC {\l }ka z funkcjami trygonometrycznymi $\DOTSI \intop \ilimits@ _{-1}^{1} \qopname \relax o{sin}(x^2) - \qopname \relax o{cos}(\qopname \relax o{sin}(x)) + 1 \ dx.$}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Ca\IeC {\l }ka z funkcji Rungego $\DOTSI \intop \ilimits@ _{-1}^{1} \frac {1}{1+25x^2} \ dx$ }{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Ca\IeC {\l }ka z wielomianu o niskim stopniu $\DOTSI \intop \ilimits@ _{0}^{10} -x^2 + 5 \ dx $.}{9}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Ca\IeC {\l }ka z funkcji tworz\IeC {\k a}cej ci\IeC {\k a}gu Fibonacciego $\DOTSI \intop \ilimits@ _{-1}^{1/2} \frac {1}{1-x-x^2} \ dx$.}{10}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Ca\IeC {\l }ka z funkcji $\DOTSI \intop \ilimits@ _{-1}^{1} \qopname \relax o{exp}(x^7) + \qopname \relax o{cos}(2x)+ \qopname \relax o{arctan}(5x) \ dx$.}{11}{subsection.3.6}
+\contentsline {section}{\numberline {4}Podsumowanie}{12}{section.4}

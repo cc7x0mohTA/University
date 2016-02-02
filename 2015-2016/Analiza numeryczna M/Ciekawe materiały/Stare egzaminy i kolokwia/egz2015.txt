@@ -1,0 +1,8 @@
+1) x jest double w IEEE754. Pokaż, że fl(x * fl(1/x)) przyjmuje najwyżej 2 wartości niezależnie od x.
+2) Napisz czym jest metoda Bairstowa i jak jej używać.
+3) Pokaż, że m! f[0,1, ..., m] =  sum (-1)^(m-j) (m nad j) f(j)
+4) Mamy wielomian o stopniu max n+1 o takiej własności, że f(-x) = (-1)^{n+1} f(x). Pokaż, że przy aproksymacji jednostajnej n-ty i n-1-wszy wielomian optymalny sa takie same.
+5) Kwadratury Gaussa. Podaj wzory. Oszacuj resztę.
+6) Co to jest okresowa, zupełna, naturalna funkcja sklejana III-stopnia. Wymień zady i walety. Jak się przyda w aproksymacji?
+7) Policz drugi wielomian optymalny przy aproksymacji jednostajnej dla f(x) =  4x^2 + 3x + sin(2x)
+8) Metoda Richardsona. Pokaż, że 0 < tau < 2/ norma_2(A).

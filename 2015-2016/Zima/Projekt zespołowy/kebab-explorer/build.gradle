@@ -1,0 +1,61 @@
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.7'
+}
+
+// Global setting for whole project
+
+allprojects {
+  group 'com.januszsoft'
+  version '0.0.2'
+
+  apply plugin: 'java'
+
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+
+    compile(
+      ['org.projectlombok:lombok:1.16.6'],
+      ['com.google.guava:guava:19.0-rc2']
+    )
+
+    testCompile(
+      ['org.testng:testng:6.9.6'],
+      ['org.mockito:mockito-all:2.0.2-beta'])
+  }
+
+  test {
+    useTestNG()
+
+    testLogging {
+      events 'started', 'passed'
+    }
+  }
+}
+
+subprojects {
+
+/** Dynamic groovy decorating for every subproject **/
+
+  if (file('src/main').listFiles().count { it.toString().endsWith("groovy") }) {
+    apply plugin: 'groovy'
+
+    dependencies {
+      compile('org.codehaus.groovy:groovy-all:2.4.5')
+    }
+
+    sourceSets.main.java.srcDirs = []
+    sourceSets.main.groovy.srcDirs += ["src/main/java"]
+
+    sourceSets.test.java.srcDirs = []
+    sourceSets.test.groovy.srcDirs += ["src/test/java"]
+  }
+
+/** Dynamic groovy decorating for every subproject **/
+
+}

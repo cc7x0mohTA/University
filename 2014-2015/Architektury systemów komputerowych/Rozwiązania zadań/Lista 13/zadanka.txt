@@ -1,3 +1,0 @@
-
-By znaleźć jakie są wymiary cacha trzeba wpisać:
-sysctl hw

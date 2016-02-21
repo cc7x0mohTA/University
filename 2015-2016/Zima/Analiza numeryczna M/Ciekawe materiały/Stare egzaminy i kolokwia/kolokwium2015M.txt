@@ -1,0 +1,17 @@
+Zadania są spisane dość luźno, bo nie pamiętamy dokładnych treści.
+
+1. 
+Xk = [2^k,2^k+1]
+Jakie największe k, co to sa reprezentowalne w iee754 (double).
+Udowodnij, że w tym przedziale są równoodległe.
+Podaj odległosć kolejnych liczb.
+
+2. Podaj szybki algorytm wyznaczania 1 / sqrt3 (c) dla c > 1. Twój algorytm powinien być zbieżny co najmniej kwadratowo w okolicach rozwiązania. Można używać tylko +, -, /, *.
+
+3. Opisz metodę regula-falsi. Jak szybko jest zbieżna? Udowodnij. Podaj przykład dla którego metoda regula-falsi jest rozbieżna.
+
+4. Funkcje f(x) = sin(2x) przybliżamy wielomianem L w punktach 0,1,2. Udowodnij, że abs(f(x) - L(x)) < 0.52 na przedziale [0,2].
+
+5. Masz wielomiany interpolacyjne M(x) i L(x) pierwsze jest w punktach od 0 do n, a drugie od 1 do n+1. Pokaz, że funkcja leży pomiędzy nimi (na przedziale [x_0, x_{n+1}]).
+
+6. Oblicz naturalną funkcję sklejaną dla podanych danych.

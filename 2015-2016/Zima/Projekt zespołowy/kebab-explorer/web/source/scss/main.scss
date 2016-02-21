@@ -1,0 +1,81 @@
+.angular-google-map,
+.angular-google-map-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#restaurantInfoPanel {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  left: 65%;
+  display: inline-block;
+}
+
+.card-block {
+  background-color: white;
+}
+
+.comments {
+  max-height: 200px;
+  overflow-x: auto;
+}
+
+.tall-block {
+  max-height: 400px;
+  overflow-x: auto;
+}
+
+.gallery {
+  padding-top: 50px;
+  .carousel {
+    max-height: 300px;
+    overflow: hidden;
+  }
+}
+
+#dropdownMenuLogin {
+  padding: 12px;
+  width: 450px;
+}
+
+.star-rating {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+  .star {
+    padding: 1px;
+    color: #ddd;
+    font-size: 20px;
+    text-shadow: .05em .05em #aaa;
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .filled {
+    color: #fd0;
+  }
+}
+
+.rating-panel {
+  padding: 10px;
+  display: inline-block;
+  border-style: outset;
+  background-color: lightblue;
+  border-radius: 10px;
+
+  .textarea {
+    border-radius: 10px;
+    background-color: lightgray;
+    display: inline-block;
+    padding: 1px;
+  }
+}
+
+.centered {
+  position: absolute;
+  left: 30%;
+  text-align: center;
+  margin: auto;
+}

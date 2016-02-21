@@ -1,4 +1,0 @@
-Uwagi:
-
-Zad 15 - źle policzone - błędy rachunkowe i błędna treść polecenia
-Zad 8 - idea dobra, ale błędy rachunkowe

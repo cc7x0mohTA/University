@@ -1,0 +1,36 @@
+{
+  "address": {
+    "city": "Wrocław",
+    "postcode": "53-004",
+    "street": "Grabiszyńska 281"
+  },
+  "email": "przemek2727@gmail.com",
+  "fullname": "Kavos",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      16.9802059,
+      51.0953103
+    ]
+  },
+  "menu": [
+    {
+      "dishName": "Zestaw Gyros Duży",
+      "dishPrice": 15.9
+    },
+    {
+      "dishName": "Zestaw Gyros Mały",
+      "dishPrice": 12.9
+    }
+  ],
+  "name": "kavos",
+  "phone": [
+    "123 456 789", "987 654 321"
+  ],
+  "pictures": [
+    "http://img.grouponcdn.com/deal/aQFmfJRR6UKdfYtZes3i/fS-960x576/v1/c700x420.jpg",
+    "http://img.grouponcdn.com/deal/iyfzUcGetcZVxHthLETS7y/shutterstock_105984821_1_-2048x1229/v1/c700x420.jpg",
+    "http://panoramafirm.pl/images/4/4/029773044.jpg",
+    "https://image.yourdelivery.de/pyszne.pl/service/8819/categories/128556/Zestawy+gyros-722-0.jpg"
+  ]
+}

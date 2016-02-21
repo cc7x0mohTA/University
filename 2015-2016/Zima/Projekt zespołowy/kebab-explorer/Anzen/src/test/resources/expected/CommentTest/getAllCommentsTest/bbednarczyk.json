@@ -1,0 +1,23 @@
+[
+  {
+    "_id": 1,
+    "author": "bbednarczyk",
+    "restaurant": "kavos",
+    "text": "Nie wiem. Nie bylem.",
+    "rating" : 3
+  },
+  {
+    "_id": 2,
+    "author": "bbednarczyk",
+    "restaurant": "le_gyros",
+    "text": "Bardzo slaby kebab. Nie polecam",
+    "rating" : 1
+  },
+  {
+    "_id": 3,
+    "author": "bbednarczyk",
+    "restaurant": "arslan_kebab",
+    "text": "Dobra kuchnia. Wykwintny kebab. Polecam.",
+    "rating" : 5
+  }
+]

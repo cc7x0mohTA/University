@@ -1,0 +1,8 @@
+{
+  "login": "test5",
+  "fullname": "Janusz Maj",
+  "email": "janusz.maj@puchalke.com",
+  "city": "Sosnowiec",
+  "age": -23,
+  "password_hash" : "32ot2bt7824t23w8b"
+}

@@ -1,0 +1,44 @@
+I czesc: 
+wasyl napisał(a):
+Zadania: 
+1. (KMR) Jak numerować słowa 17-literowe mając numerację 16-literowych 
+2. Jak uogólnić wykładowy algorytm szukania izomorfizmów drzew ukorzenionych na drzewa nieukorzenione. Jaką ma złożoność nowy algorytm? 
+3. Maksymalna liczba rotacji przy usuwaniu klucza z drzewa AVL 
+4. Po co rozróżnienie na pola nieużywane/usunięte przy haszowaniu z mapowaniem otwartym 
+5. Złożoność funkcji pi (z KMP) 
+6. Jak powinna wyglądać struktura wierzchołka w drzewie dwumianowym (jakie pola ma zawierać) 
+7. Przykłady dwóch problemów NP-zupełnych (innych niż cykl hamiltona) 
+8. Pseudokod dla operacji `insert` w drzewcu 
+9. Wskazać i uzasadnić błąd w opisie FFT 
+10. Ile może być maksymalnie drzew w kopcu dwumianowym eager/lazy 
+11. W algorytmie wyznaczania mediany przez próbkowanie ze zbioru S wybiera się najpierw zbiór R. Jaki jest jego maksymalny rozmiar (procentowo względem S) 
+12. Jaka jest oczekiwana maksymalna długość listy w haszowaniu liniowym (albo łańcuchowym?) w słowniku o N miejscach jeśli haszujemy N kluczy 
+13. Maksymalna liczba odwołań do pamięci zewnętrznej przy B-drzewie 1000/2000 
+14. Jak i po co stosuje się zaokrąglanie rozwiązania programu liniowego 
+15. Dolna granica liczby porównań dla scalenia dwóch ciągów n-elementowych 
+16. Do czego służy algorytm Strassena i jaka jest jego złożoność? 
+17. Jak szybko można znaleźć najdłuższy rosnący podciąg 
+18. Jakiego rodzaju kopca użyć dla asymptotycznie najefektywniejszego zaimplementowania algorytmu a) Prima, b) Dijkstry 
+19. Jak działą sieć półczyszcząca (i jej wykorzystanie) w sortowaniu ciągów bitonicznych 
+20. Jak równolegle mnożyć liczby binarne w czasie O(log n) 
+
+II czesc: 
+1. Uloz algorytm ktory dla danego slowa w znajdzie najkrotsze slowo x takie ze wx jest palindromem, tj. takim slowem ktore czytane wprost i wspak jest takie same. Uzasadnij poprawnosc swojego algorytmu. Podaj jego zlozonosc. 
+2.Rozwaz nastepujacy problem ktory pojawia sie podczas automatycznej analizy programow. Dla zbioru zmiennych x1...xn dane sa pewne rownosci postaci xi = xj oraz nierownosci x1 != x2. Zadanie polega na znalezieniu odpowiedzi na pytanie, czy mozliwe jest spelnienie wszystkich warunkow. Uloz efektywny algorytm znajdujacy odpowiedz na to pytanie. Uzasadnij jego poprawnosc. Jaka jest jego zlozonosc? Jako rozmiar danych przyjmij m - liczbe warunkow oraz n - liczbe zmiennych. 
+3. Rozwazamy nastepujaca wersje problemu przejscia przez tablice liczbowa nxn: 
+* przechodzimy z lewa na prawo 
+* mozemy wykonac pewna liczeb ruchow pionowych, nie wiecej niz k (k jest liczba naturalna) 
+* suma liczb z pol, przez ktore przejdziemy ma byc mozliwie najmniejsza 
+Podaj algorytm rozwiazujacy ten problem. Uzasadnij jego poprawnosc. 
+III czesc: 
+1.Rozwazmy cialo F_2 liczb calkowitych modulo 2. 
+* Uloz algorytm ktory mnozy macierze nxn nad F_2 w czasie O( n^log2(7) / (logn)^0.4 ) 
+* Czy Twoj algorytm mozna uogolnic na ciala mod q, gdzie q jest liczba pierwsza wieksza od 2? Jesli tak, to jaka on osiaga zlozonosc? 
+2. Uloz algorytm klasy NC dla problemu znajdowania porzadku topologicznego w acyklicznym grafie skierowanym. Uzasadnij jego poprawnosc. Oszacuj zlozonosc(czas,liczbe procesorow,prace). 
+3. Dany jest zbior A = { (x1,y1) ... (xn,yn) } punktow na plaszczyznie. Uloz algorytm znajdujacy najkrotsza sciezke, ktora: 
+* startuje z punktu P o najmniejszej wartosci wspolrzednej x 
+* idac ciagle na prawo(tj. przez punkty o coraz wiekszej wartosci wspolrzednej x) dochodzi do punktu Q o najwiekszej mozliwej wspolrzednej x 
+* idac ciagne na lewo wraca z punktu Q do P 
+* przechodzi przez wszystkie punkty ze zbioru A 
+Mozesz zalozyc ze wszystkie punkty ze zbioru A maja rozne wartosci wspolrzednej x 
+Uzasadnij poprawnosc swojego algorytmu i oszacuj jego zlozonosc. 

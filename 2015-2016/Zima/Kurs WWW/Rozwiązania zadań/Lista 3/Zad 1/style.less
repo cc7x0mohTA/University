@@ -1,0 +1,150 @@
+@background_color:  #E8E8E8;
+@header_color :	 #666666;
+@border_radius_px : 12px;
+@box_color :#c2c6c7;
+@marginTop : 20px;
+body {
+  background-color: @background_color;
+  padding: 20px 130px 10px 130px;
+
+}
+#logo {
+  position: relative;
+  left:550px;
+}
+#headerBox {
+  padding: 10px 0px 0px 0px;
+  background-image: linear-gradient(
+    to right,
+    @background_color, @box_color
+  );
+  border-radius: @border_radius_px;
+  width: 910px;
+  height: 35px;
+  color:  @header_color;
+  font-family: Arial, sans-serif;
+  font-size: 19pt;
+  font-weight: bold;
+
+}
+#centerLeftBox {
+  align: left;
+  margin-top: @marginTop;
+  border-radius: @border_radius_px;
+  width: 600px;
+  height: 300px;
+  background-color: @box_color;
+  font-family: Arial, sans-serif;
+  font-size: 19pt;
+  font-weight: bold;
+
+}
+#centerRightBox {
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+  position: relative;
+  top: -350px;
+  left:610px;
+  border-radius: @border_radius_px;
+  width: 300px;
+  height: 280px;
+  background-color: @box_color;
+  font-family: Arial, sans-serif;
+  font-size: 15pt;
+  font-weight: bold;
+  margin-top: 50px;
+}
+#auto {
+  border-radius: @border_radius_px;
+  box-shadow: 10px 10px 5px #888888;
+  margin-top: 25px;
+  width: 200px;
+  height: 180px;
+}
+
+#topCenterLeftBox {
+  margin-left: 20px;
+  padding: 20px 0px 0px 0px;
+  font-family: Arial, sans-serif;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+a {
+  &:link {
+    color: @header_color;
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+    color: @header_color;
+  }
+  &:hover {
+    color: @header_color;
+    text-decoration: none;
+  }
+  &:active {
+    color: @header_color;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  color:  @header_color;
+}
+#exploreVolvoGroup {
+  width: 200px;
+  position: relative;
+  left: 150px;
+}
+#bottomCenterLeftBox {
+  padding: 20px 20px 20px 20px;
+  width: 550px;
+  height: 210px;
+}
+div.square {
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+  width: 173px;
+  background-color: #FFFFFF;
+  border-radius: @border_radius_px;
+  box-shadow: 10px 10px 5px #888888;
+}
+div.square:hover {
+  opacity: 0.5;
+}
+img.images {
+  border-radius: @border_radius_px;
+  height: 70px;
+  width: 173px;
+}
+p.images {
+  font-size: 10px;
+  position: relative;
+  top: -12px;
+  left: 15px;
+}
+
+#text{
+  position: relative;
+  top: -320px;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  text-align: center;
+  line-height: 15pt;
+}
+
+#privacy{
+
+  font-size: 8pt;
+  opacity: 0.7;
+}
+#sport1 {
+  position: relative;
+  top: -340px;
+}
+#sport2 {
+  position: relative;
+  top: -330px;
+}

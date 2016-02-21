@@ -1,0 +1,16 @@
+{
+  "fullname": "Kebab King",
+  "menu": [
+    {
+      "dishName": "Talerz kebab z kurczaka",
+      "dishPrice": 22.0
+    },
+    {
+      "dishName": "Talerz kebab mieszany",
+      "dishPrice": 22.0
+    }
+  ],
+  "phone": [
+    "223 163 737"
+  ]
+}

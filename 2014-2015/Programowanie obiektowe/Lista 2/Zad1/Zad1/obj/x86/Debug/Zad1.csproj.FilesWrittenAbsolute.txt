@@ -1,5 +1,0 @@
-/Users/bartoszbednarczyk/Desktop/Zad1/Zad1/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/bartoszbednarczyk/Desktop/Zad1/Zad1/bin/Debug/Zad1.exe.mdb
-/Users/bartoszbednarczyk/Desktop/Zad1/Zad1/bin/Debug/Zad1.exe
-/Users/bartoszbednarczyk/Desktop/Zad1/Zad1/obj/x86/Debug/Zad1.exe
-/Users/bartoszbednarczyk/Desktop/Zad1/Zad1/obj/x86/Debug/Zad1.exe.mdb

@@ -1,0 +1,30 @@
+{
+  "address": {
+    "city": "Wrocław",
+    "postcode": "50-068",
+    "street": "Swidnicka 24/26"
+  },
+  "fullname": "Kebab King",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      51.1065599,
+      17.032065
+    ]
+  },
+
+  "menu": [
+    {
+      "dishName": "Talerz kebab z kurczaka",
+      "dishPrice": 22.0
+    },
+    {
+      "dishName": "Talerz kebab mieszany",
+      "dishPrice": 22.0
+    }
+  ],
+  "name": "kebab_king",
+  "phone": [
+    "223 163 737"
+  ]
+}

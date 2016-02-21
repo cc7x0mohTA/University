@@ -1,0 +1,28 @@
+<div id="{{galleryid}}" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#{{galleryid}}" ng-repeat="photo in photos" data-slide-to="$index" ng-class="{active: $first}"></li>
+
+        <li data-target="#{{galleryid}}" data-slide-to="0" class="active" ng-show="!photos.length"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item" ng-repeat="photo in photos" ng-class="{active : $first}">
+            <img ng-src="{{getPhotoUrl(photo)}}" alt="Picture">
+            <div class="carousel-caption" ng-show="extras">
+                <h4>{{photo.description}}</h4>
+                <p>Added by: {{photo.username}}</p>
+            </div>
+        </div>
+
+        <div class="carousel-item active" ng-show="!photos.length">
+            <img src="https://www.medidirect.com.au/MEDIstores/_images/no-thumb.png">
+        </div>
+    </div>
+    <a class="left carousel-control" href="#{{galleryid}}" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#{{galleryid}}" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

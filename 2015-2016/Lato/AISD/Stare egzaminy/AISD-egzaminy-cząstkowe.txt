@@ -1,0 +1,65 @@
+EGZAMIN 1 (12 marca, wykłady 1-4) - dawno to było i nie mamy wszystkich
+1. Napisz algorytm Karatsuby.
+2. Dlaczego algorytm Boruvki nie działa dla grafów, w których wagi wierzchołków się powtarzają? Jak można sobie z tym poradzić?
+3. Profesor znalazł sposób na scalanie w czasie stałym. Jaki będzie czas mergesorta?
+4. Jakieś zadanie podobne do obliczania n-tej liczby Fibonacciego algorytmem "macierzowym". (jak zadanie 4 z listy 1)
+5. Algorytm zachłanny dla Set Cover.
+6. Było podane kilka algorytmów sortowania i trzeba było napisać czy są stabilne i w miejscu.
+
+
+EGZAMIN 2 (26 marca, wykłady 5-8)
+1. Para najbliższych punktów. Czy algorytm będzie działał poprawnie jeśli 90% punktów będzie leżeć na tej samej współrzędnej x?
+2. Dolne i górne ograniczenie na głębokość sieci permutacji.
+3. Dowód LCS.
+4. Rysunek przełączników.
+5. Profesor z algorytmem wykonującym n^2 działań dla problemu P. Czy udowodnił on dolne i górne ograniczenie na złożoność problemu?
+6. Drzewo 3-arne - liczba porównań.
+7. Gramatyki Chomsky'ego.
+
+
+EGZAMIN 3 (16 kwietnia, wykłady 9-12 + AVL)
+1. Dowód MinMax.
+2. Izomorfizm drzew.
+3. Dowód sortowania leksykograficznego
+4. 
+5. Dowód drzew AVL o trzech synach.
+6. Dowód magicznych trójek.
+7. Dowód wydawania reszt nominałami 2^0, 2^1, 2^2, ...
+8. Dowód zadania z monetami z listy ćwiczeń.
+
+
+EGZAMIN 4 (14 maja, wykłady 13-17)
+1. Udowodnij, że w każdym drzewie o n wierzchołkach istnieje taki wierzchołek, którego usunięcie powoduje rozpad drzewa na spójne składowe, z których każda ma nie więcej niż 2/3 n wierzchołków. W jakim czasie można znaleźć taki wierzchołek? Odpowiedź koniecznie uzasadnij.
+2. Podaj definicję i przykład uniwersalnej rodziny funkcji haszujących.
+3. Podaj najlepsze znane Ci górne ograniczenie na wysokość drzewa czerwono-czarnego o n wierzchołkach. Odpowiedź uzasadnij.
+4. Załóżmy, że do tablicy haszującej rozmiaru n (z nawlekaniem na listy) wstawiamy kolejno n elementów. Jaka jest oczekiwana długość najdłuższej listy? Przedstaw ideę obliczenia tej wartości (pomiń rachunki).
+5. Podaj definicję słownika statycznego oraz ideę jego konstrukcji opartą na wykorzystaniu haszowania.
+6. O ile może zmienić się liczba drzew w kopcu dwumianowym (wersja eager) zawierającym n elementów, jeśli wykonamy na nim operację deletemin?
+7. Podaj definicję macierzy Toeplitza oraz najszybszy znany Ci algorytm obliczania iloczynu takiej macierzy i wektora. Jaka jest złożoność tego algorytmu?
+
+
+EGZAMIN 5 (28 maja, wykłady 18-22)
+1. Union-Find bez zbalansowania. Ile będzie wynosić operacja Find?
+2. Kopce Fibonacciego. Ile drzew po wykonaniu operacji decrease-key?
+3. Definicja log*n. Czym różni się log*n od log*(logn)?
+4. Algorytm czterech Rosjan.
+5. Zbiór wierzchołków niezależnych w gragie G o n wierzchołkach z cyklem.
+6. Definicja algorytmu pseudowielomianowego i jego przykład.
+7. Drzewo splay - find(k).
+
+
+EGZAMIN 6 i 7 (11 czerwca, wykłady 23-28)
+1. Narysować drzewiec dla wierzchołków a,b,...,h z priorytetami 1,2,...,8.
+2. Pseudokod delete() dla drzewca.
+3. Sformułować program liniowy dla problemu set cover.
+4. Definicja ciągu bitonicznego.
+5. Narysować sieć półczyszczącą dla n=8, podać jej głębokość.
+6. Definicja klasy NC.
+7. Czy mergowanie dwóch tablic jest w NC?
+8. Obliczyć funkcję pi dla słowa abaabaaba.
+9. Czemu algorytm Shift-And jest stosowany tylko dla krótkich wzorców?
+10. Jak algorytm KMR ponumeruje 13-literowe słowa korzystając z numeracji 8-literowych?
+11. Algorytm FFT. Opisz wielomiany, z których korzysta FFT.
+12. Jak i dlaczego liczy się transformację odwrotną do FFT
+13. Udowodnij, że w kolejce priorytetowej przynajmniej jedna z operacji min, deleteMin, insert musi mieć omega(logn)
+14. Jak wykorzystać sumy prefiksowe w równoległym dodawaniu dwóch liczb?

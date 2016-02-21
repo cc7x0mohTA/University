@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Bardzo nieformalny wstep}{}% 1
+\BOOKMARK [1][-]{section.2}{Ca\233kowanie korzystajace z interpolacji funkcji}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Wielomiany interpolacyjne a ca\233kowanie}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Wielokrotne zastosowanie metody trapez\363w}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Wielokrotne zastosowanie metody Simpsona}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Zastosowanie kwadratur o wyzszym stopniu}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Testy numeryczne}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Ca\233kowanie wielomianu -11 7x5 + 2x4 + 3x3 - 12x - 2 \040dx.}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Ca\233ka z funkcjami trygonometrycznymi -11 sin\(x2\) - cos\(sin\(x\)\) + 1 \040dx.}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Ca\233ka z funkcji Rungego -11 11+25x2 \040dx }{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.4}{Ca\233ka z wielomianu o niskim stopniu 010 -x2 + 5 \040dx .}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.5}{Ca\233ka z funkcji tworzacej ciagu Fibonacciego -11/2 11-x-x2 \040dx.}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.6}{Ca\233ka z funkcji -11 exp\(x7\) + cos\(2x\)+ arctan\(5x\) \040dx.}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Podsumowanie}{}% 14

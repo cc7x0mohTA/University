@@ -1,0 +1,33 @@
+{
+  "address": {
+    "city": "Wrocław",
+    "postcode": "50-541",
+    "street": "Aleja Armii Krajowej 14C/1"
+  },
+  "fullname": "Kalimera",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      17.03979,
+      51.0836739
+    ]
+  },
+  "menu": [
+    {
+      "dishName": "Zestaw Gyros Duży",
+      "dishPrice": 16.0
+    },
+    {
+      "dishName": "Zestaw Gyros Mały",
+      "dishPrice": 10.0
+    }
+  ],
+  "name": "kalimera",
+  "phone": [
+    "717 882 252"
+  ],
+  "pictures": [
+    "http://dobrazabawa.pl/photo/89134-08f8e0260c64418510cefb2b06eee5cd.jpg",
+    "http://img.grouponcdn.com/deal/iqm69JiBg86kYwynVKNE/sL-960x576/v1/c700x420.jpg"
+  ]
+}

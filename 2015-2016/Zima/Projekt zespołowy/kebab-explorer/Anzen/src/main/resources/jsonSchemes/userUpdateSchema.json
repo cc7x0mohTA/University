@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "User Update Schema",
+  "type": "object",
+  "properties": {
+    "fullname" : {
+      "type" : "string"
+    },
+    "email" : {
+      "type": "string",
+      "format": "email"
+    },
+    "age" : {
+      "type": "integer",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "pictures" : {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

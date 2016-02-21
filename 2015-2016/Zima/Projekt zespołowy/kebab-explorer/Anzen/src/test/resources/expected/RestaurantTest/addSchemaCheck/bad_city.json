@@ -1,0 +1,12 @@
+{
+  "address": {
+    "city": "Sosnowiec",
+    "postcode": "50-068",
+    "street": "Swidnicka 24/26"
+  },
+  "location": [
+    51.1065599,
+    17.032065
+  ],
+  "name": "kebab_king"
+}

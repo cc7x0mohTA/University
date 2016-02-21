@@ -1,0 +1,10 @@
+1.
+2.
+3.
+I - zbiór odcinków {<a1,b1>, ... , <am,bm>}, P - zbiór punktów {p1, ... pn}
+ZnajdŸ...
+4.
+Stwórz strukturê z nastêpuj¹cymi metodami:
+- init(S) - tworz pusty ci¹g
+- insert(S, x, i) - wstaw element x na pozycji i (i <= |S| + 1)
+- sum(S, i, j) - zwróæ sumê elementów z S na pozycjach od i do j

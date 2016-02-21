@@ -1,0 +1,8 @@
+{
+  "login": "test2",
+  "fullname": "Mikolaj Kopernik",
+  "email": "kopernik@mikolaj.pl",
+  "city": "Wrocław",
+  "age": 17,
+  "password_hash" : "avfsaji2141mv"
+}

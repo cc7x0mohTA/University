@@ -1,5 +1,0 @@
-/Users/bartoszbednarczyk/Desktop/Zadanie3/Zadanie3/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/bartoszbednarczyk/Desktop/Zadanie3/Zadanie3/bin/Debug/Zadanie3.exe.mdb
-/Users/bartoszbednarczyk/Desktop/Zadanie3/Zadanie3/bin/Debug/Zadanie3.exe
-/Users/bartoszbednarczyk/Desktop/Zadanie3/Zadanie3/obj/x86/Debug/Zadanie3.exe
-/Users/bartoszbednarczyk/Desktop/Zadanie3/Zadanie3/obj/x86/Debug/Zadanie3.exe.mdb

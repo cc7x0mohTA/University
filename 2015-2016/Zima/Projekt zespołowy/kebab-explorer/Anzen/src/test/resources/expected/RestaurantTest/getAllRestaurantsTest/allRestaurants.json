@@ -1,0 +1,140 @@
+[
+  {
+    "address": {
+      "city": "Wrocław",
+      "postcode": "50-541",
+      "street": "Aleja Armii Krajowej 14C/1"
+    },
+    "fullname": "Kalimera",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        17.03979,
+        51.0836739
+      ]
+    },
+    "menu": [
+      {
+        "dishName": "Zestaw Gyros Duży",
+        "dishPrice": 16
+      },
+      {
+        "dishName": "Zestaw Gyros Mały",
+        "dishPrice": 10
+      }
+    ],
+    "pictures": [
+      "http://dobrazabawa.pl/photo/89134-08f8e0260c64418510cefb2b06eee5cd.jpg",
+      "http://img.grouponcdn.com/deal/iqm69JiBg86kYwynVKNE/sL-960x576/v1/c700x420.jpg"
+    ],
+    "name": "kalimera",
+    "phone": [
+      "717 882 252"
+    ]
+  },
+  {
+    "address": {
+      "city": "Wrocław",
+      "postcode": "53-004",
+      "street": "Grabiszyńska 281"
+    },
+    "email": "przemek2727@gmail.com",
+    "fullname": "Kavos",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        16.9802059,
+        51.0953103
+      ]
+    },
+    "menu": [
+      {
+        "dishName": "Zestaw Gyros Duży",
+        "dishPrice": 15.9
+      },
+      {
+        "dishName": "Zestaw Gyros Mały",
+        "dishPrice": 12.9
+      }
+    ],
+    "name": "kavos",
+    "phone": [
+      "533 373 322"
+    ],
+    "pictures": [
+      "http://img.grouponcdn.com/deal/aQFmfJRR6UKdfYtZes3i/fS-960x576/v1/c700x420.jpg",
+      "http://img.grouponcdn.com/deal/iyfzUcGetcZVxHthLETS7y/shutterstock_105984821_1_-2048x1229/v1/c700x420.jpg",
+      "http://panoramafirm.pl/images/4/4/029773044.jpg",
+      "https://image.yourdelivery.de/pyszne.pl/service/8819/categories/128556/Zestawy+gyros-722-0.jpg"
+    ]
+  },
+  {
+    "address": {
+      "city": "Wrocław",
+      "postcode": "50-305",
+      "street": "Jaracza 75A"
+    },
+    "email": "biuro@legyros.com.pl",
+    "fullname": "Le Gyros",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        17.056937,
+        51.127751
+      ]
+    },
+    "pictures": [
+      "http://www.allrestaurants.eu/img/af/20137/13124130394184.jpg",
+      "http://www.allrestaurants.eu/img/af/20137/13124130413315.jpg",
+      "http://www.allrestaurants.eu/userdata/newsletter/le_gyros/3.jpg"
+    ],
+    "menu": [
+      {
+        "dishName": "Zestaw Gyros drobiowy",
+        "dishPrice": 18.49
+      },
+      {
+        "dishName": "Zestaw Kebab baranina",
+        "dishPrice": 18.49
+      }
+    ],
+    "name": "le_gyros",
+    "phone": [
+      "513 118 000"
+    ]
+  },
+  {
+    "address": {
+      "city": "Wrocław",
+      "postcode": "50-335",
+      "street": "Sienkiewicza 44"
+    },
+    "email": "gyrosramzes@gmail.com",
+    "fullname": "Ramzes I",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        17.050707,
+        51.117165
+      ]
+    },
+    "menu": [
+      {
+        "dishName": "Zestaw kebab duży",
+        "dishPrice": 14.9
+      },
+      {
+        "dishName": "Zestaw falafel",
+        "dishPrice": 13
+      }
+    ],
+    "name": "ramzes_I",
+    "phone": [
+      "666 360 085"
+    ],
+    "pictures": [
+      "http://gyros-ramzes.pl/media/img/slide02.jpg",
+      "https://image.yourdelivery.de/pyszne.pl/service/325/categories/3082/Zestawy-722-0.jpg"
+    ]
+  }
+]

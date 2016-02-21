@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "User Add Schema",
+  "type": "object",
+  "properties": {
+    "login" : {
+      "type" : "string"
+    },
+    "fullname" : {
+      "type" : "string"
+    },
+    "email" : {
+      "type": "string",
+      "format": "email"
+    },
+    "city" : {
+      "type" : "string"
+    },
+    "age" : {
+      "type": "integer",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "password_hash" : {
+      "type" : "string"
+    },
+    "pictures" : {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "login",
+    "password_hash"
+  ]
+}

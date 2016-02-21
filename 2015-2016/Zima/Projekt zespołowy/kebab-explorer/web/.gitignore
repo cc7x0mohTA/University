@@ -1,0 +1,10 @@
+# Dependencies
+/node_modules
+/bower_components
+
+# Vagrant
+/.vagrant
+/vagrant/_local.sh
+
+# Build
+/dist

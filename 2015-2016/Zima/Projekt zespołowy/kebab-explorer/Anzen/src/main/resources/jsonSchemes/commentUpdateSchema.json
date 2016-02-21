@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Comment Add Schema",
+  "type": "object",
+  "properties": {
+
+    "_id" : {
+      "type" : "number"
+    },
+
+    "text" : {
+      "type" : "string"
+    },
+    "restaurant" : {
+      "type" : "string"
+    },
+    "author" : {
+      "type" : "string"
+    },
+    "rating" : {
+      "type": "integer",
+      "minimum": 1,
+      "maximum" : 5
+    }
+  },
+  "required": [
+    "text",
+    "restaurant",
+    "author",
+    "rating"
+  ]
+}

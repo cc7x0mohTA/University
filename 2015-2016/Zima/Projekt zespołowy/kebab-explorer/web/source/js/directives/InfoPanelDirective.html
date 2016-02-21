@@ -1,0 +1,80 @@
+<div class="card" id="restaurantInfoPanel" ng-show="mainController.shouldShowInfoPanel">
+    <div class="card-header">
+        <h3>{{mainController.currentRestaurantInfo.fullname}}</h3>
+    </div>
+
+    <div class="card-block">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#" class="nav-link" ng-class="{active: mainController.isTabSet(0)}"
+                   ng-click="mainController.setTab(0)">Informacje</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link" ng-class="{active: mainController.isTabSet(1)}"
+                   ng-click="mainController.setTab(1)">Menu</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link" ng-class="{active: mainController.isTabSet(2)}"
+                   ng-click="mainController.setTab(2)">Opinie</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link" ng-class="{active: mainController.isTabSet(3)}"
+                   ng-click="mainController.showDriveInfo(mainController.currentRestaurantInfo.location.coordinates)">Dojazd</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link" ng-class="{active: mainController.isTabSet(4)}"
+                   ng-click="mainController.setTab(4)">Galeria</a>
+            </li>
+        </ul>
+        <br/>
+
+        <div class="card-text" ng-show="mainController.isTabSet(0)">
+            {{mainController.currentRestaurantInfo.address.street}} <br/>
+            {{mainController.currentRestaurantInfo.address.postcode}}
+            {{mainController.currentRestaurantInfo.address.city}} <br/>
+            Tel.: <i ng-repeat="phoneNumber in mainController.currentRestaurantInfo.phone">{{phoneNumber}}{{$last ? '' :
+            ', '}}</i>
+
+            <div class="gallery">
+                <gallery galleryid="mainGallery" ng-model="mainController.currentRestaurantInfo.pictures" extras="false"></gallery>
+            </div>
+        </div>
+
+        <table style="width: 100%;" class="card-text" ng-show="mainController.isTabSet(1)">
+            <tr ng-repeat="dish in mainController.currentRestaurantInfo.menu">
+                <td>{{dish.dishName}}</td>
+                <td align="right">{{dish.dishPrice | number: 2}} zł</td>
+            </tr>
+        </table>
+
+        <div class="card-text" ng-show="mainController.isTabSet(2)" ng-controller="CommentController as commentController">
+            <div class="comments">
+                <div ng-repeat="comment in commentController.getCommentsForRestaurant(mainController.currentRestaurantInfo.name)">
+                    <i>~{{comment.author}}</i> <star-rating ng-model="comment.rating" max="5" readonly="true"></star-rating> <br/>
+                    {{comment.text}}
+                    <hr>
+                </div>
+            </div>
+            <br />
+            <div ng-controller="AuthenticationController as authController">
+                <div class="rating-panel" ng-show="authController.isAuthenticated()">
+                    <strong>Twoja ocena:</strong> <star-rating max="5" readonly="false" ng-model="ratingValue"></star-rating>
+                    <textarea class="textarea" rows="4" cols="30" placeholder="Ocena opisowa!" ng-model="ratingText"></textarea><br/>
+                    <button type="submit" ng-click="commentController.addComment(ratingValue, ratingText, authController.getLogin())">Wyślij!</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="drive-info" class="tall-block" ng-show="mainController.isTabSet(3)"></div>
+
+        <div class="card-text" ng-show="mainController.isTabSet(4)">
+            <div class="gallery">
+                <gallery galleryid="userGallery" ng-model="mainController.currentRestaurantInfo.userGallery" extras="true"></gallery>
+            </div>
+        </div>
+    </div>
+</div>

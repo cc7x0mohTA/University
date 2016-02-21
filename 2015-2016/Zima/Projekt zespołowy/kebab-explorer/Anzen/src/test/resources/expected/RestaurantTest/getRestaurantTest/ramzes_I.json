@@ -1,0 +1,34 @@
+{
+  "address": {
+    "city": "Wrocław",
+    "postcode": "50-335",
+    "street": "Sienkiewicza 44"
+  },
+  "email": "gyrosramzes@gmail.com",
+  "fullname": "Ramzes I",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      17.050707,
+      51.117165
+    ]
+  },
+  "menu": [
+    {
+      "dishName": "Zestaw kebab duży",
+      "dishPrice": 14.9
+    },
+    {
+      "dishName": "Zestaw falafel",
+      "dishPrice": 13
+    }
+  ],
+  "name": "ramzes_I",
+  "phone": [
+    "666 360 085"
+  ],
+  "pictures": [
+    "http://gyros-ramzes.pl/media/img/slide02.jpg",
+    "https://image.yourdelivery.de/pyszne.pl/service/325/categories/3082/Zestawy-722-0.jpg"
+  ]
+}

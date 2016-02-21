@@ -1,0 +1,35 @@
+{
+  "address": {
+    "city": "Wrocław",
+    "postcode": "50-305",
+    "street": "Jaracza 75A"
+  },
+  "email": "biuro@legyros.com.pl",
+  "fullname": "Le Gyros",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      17.056937,
+      51.127751
+    ]
+  },
+  "menu": [
+    {
+      "dishName": "Zestaw Gyros drobiowy",
+      "dishPrice": 18.49
+    },
+    {
+      "dishName": "Zestaw Kebab baranina",
+      "dishPrice": 18.49
+    }
+  ],
+  "name": "le_gyros",
+  "phone": [
+    "513 118 000"
+  ],
+  "pictures": [
+    "http://www.allrestaurants.eu/img/af/20137/13124130394184.jpg",
+    "http://www.allrestaurants.eu/img/af/20137/13124130413315.jpg",
+    "http://www.allrestaurants.eu/userdata/newsletter/le_gyros/3.jpg"
+  ]
+}

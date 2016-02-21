@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<html>
+<head>
+    <title>Miasta</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#city").change(function(){
+                $.ajax({url: "cities.html", success: function(response){
+                    var result = $(response).filter( '#' + $('#city').val() )
+                    $("#div1").html(result);
+                }});
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+    <select id="city" onchange="get_details()">
+        <option value="0">Wybierz miasto</option>
+        <option value="1">Wrocław</option>
+        <option value="2">Warszawa</option>
+        <option value="3">Opole</option>
+    </select>
+
+
+    <div id="div1"></div>
+
+</body>
+</html>

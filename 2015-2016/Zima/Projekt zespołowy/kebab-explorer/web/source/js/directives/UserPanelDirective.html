@@ -1,0 +1,165 @@
+<div id="userPanel" class="modal fade" role="dialog" data-backdrop="static" ng-controller="RestaurantController as restaurantController">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Panel użytkownika</h4>
+            </div>
+
+            <div class="modal-body">
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" ng-class="{active: restaurantController.isTabSet(0)}"
+                           ng-click="restaurantController.setTab(0)">Dane użytkownika</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" ng-class="{active: restaurantController.isTabSet(1)}"
+                           ng-click="restaurantController.setTab(1)">Dodawanie restauracji</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" ng-class="{active: restaurantController.isTabSet(2)}"
+                           ng-click="restaurantController.setTab(2)">Dodawanie zdjęć</a>
+                    </li>
+                </ul>
+
+                <div class="modal-body" ng-controller="AuthenticationController as authController" ng-show="restaurantController.isTabSet(0)">
+                    <table>
+                        <tr>
+                            <td style="padding-right: 20px"><b>Login:</b></td>
+                            <td>{{userInfo.login}}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 20px"><b>Imię i nazwisko:</b></td>
+                            <td>{{userInfo.fullname}}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 20px"><b>E-mail:</b></td>
+                            <td>{{userInfo.email}}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 20px"><b>Miasto:</b></td>
+                            <td>{{userInfo.city}}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 20px"><b>Wiek:</b></td>
+                            <td>{{userInfo.age}}</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="modal-body" ng-show="restaurantController.isTabSet(1)">
+                    <form ng-submit="restaurantController.submitForm()">
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Nazwa:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Nazwa" ng-model="restaurantController.fullname">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Adres:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Ulica Nr_Budynku" ng-model="restaurantController.street">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Kod pocztowy:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="xx-xxx" ng-model="restaurantController.postcode">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Miasto:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="Miasto" ng-model="restaurantController.city">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" placeholder="Email" ng-model="restaurantController.email">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Telefon:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="xxx xxx xxx" ng-model="restaurantController.phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label"><i class="fa fa-plus" ng-click="restaurantController.addDish()"></i> Menu:</label>
+
+                            <div class="form-group row col-sm-offset-2" ng-repeat="dish in restaurantController.dishes">
+                                <div class="col-xs-7">
+                                    <input type="text" class="form-control" placeholder="Nazwa dania" ng-model="dish.dishName">
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <input type="number" step="0.01" class="form-control" placeholder="Cena dania" ng-model="dish.dishPrice">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Zdjęcia:</label>
+                            <div class="col-sm-10">
+                                <input type="file" id="images" class="form-control" placeholder="Zdjęcia" multiple>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <input type="submit" class="btn btn-secondary" value="Dodaj!">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-body" ng-show="restaurantController.isTabSet(2)" ng-controller="AuthenticationController as authController">
+                    <div style="font-style: italic; padding-bottom: 15px;">Tutaj możesz dodać własne zdjęcia posiłków!</div>
+
+                    <form ng-submit="restaurantController.addUserPhotos()">
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Nazwa restauracji:</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" ng-model="restaurantController.chosenRestaurant">
+                                    <option ng-repeat="restaurant in restaurantController.restaurants" value="{{restaurant.name}}">{{restaurant.fullname}}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Opis zdjęcia:</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="description" class="form-control" placeholder="Description" ng-model="restaurantController.userPhotoDesc">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-2 form-control-label">Zdjęcie:</label>
+                            <div class="col-sm-10">
+                                <input type="file" id="userImage" class="form-control" placeholder="Zdjęcie">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <input type="submit" class="btn btn-secondary" value="Dodaj!">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+[
+  {
+    "login": "test1",
+    "fullname": "Jan Kowalski",
+    "email": "abc@def.com",
+    "city": "Wrocław",
+    "age": 69
+  },
+  {
+    "login": "test2",
+    "fullname": "Mikolaj Kopernik",
+    "email": "kopernik@mikolaj.pl",
+    "city": "Wrocław",
+    "age": 17
+  },
+  {
+    "login": "test3",
+    "fullname": "Gal Anonim",
+    "email": "anonymus@hack.me",
+    "city": "Wrocław",
+    "age": 55
+  }
+]

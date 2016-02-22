@@ -1,0 +1,77 @@
+Czątkowe:
+
+8 kwietnia
+1. Idea algorytmu, który sprawdza czy krawędź należy do jakiegoś MST.
+2. Algorytm plecakowy dla dziwnych danych wejściowych
+3. Kolejność mnożenia macierzy przy nieco zmienionym koszcie
+4. Drabina w wersji o 3 rzędach
+5. Schemat dowodu dolnej granicy element uniqueness
+6. Kolejność sortowania (od początku/od końca) w leksykograficznym
+7. Sens kubełków w sortowaniu leksykograficzym (i dlaczego da się szybko)
+
+5 maja
+1. Przerobić zadane B-drzewo na czerw-czarne
+2. Magiczne trójki/siódemki (czy mają sens)
+3. Pseudokod quickselecta
+4. Ile porównań robi insert w AVL
+5. Idea lazy selecta
+6. Uporządkować drzewa zbalans. wg max głębokości
+7. Ręczna symulacja przeglądania drzewca
+
+13 maja
+1. Koszt zamortyzowany operacji Dod1 Dod2 Dod3
+2. Zdefiniować odległość edycyjną
+3. Pseudokod deletemin (eager)
+4. Dlaczego drzewa w kopcu fib są wykładniczo wielkie
+5. Ile bitów potrzeba na j.k.
+6. Kwadrat macierzy Toeplitza
+7. Symulacja inserta w splayu
+
+27 maja
+1. Prawdopodobieństwo w sieci Banesa-Waksmana
+2. Stokrotka z ograniczeniem na ruchy w pionie
+3. Porządkowanie 2 tablic minimalizując swapy i porównania
+
+3 czerwca
+1. Co to są rząd, grupa rzędu
+2. log*(4^k)
+3. Rozbalansowany union-find
+4. Idea FFT
+5. Pierwiastki z 1 w ciele mod 7
+6. Moc zbioru {w^2 | w jest pierwiastkiem n-go stopnia z 1}
+7. Ręczna symulacja open-addressing
+8. Oszacowanie górne w. oczekiwanej długości najdłuższej listy w słowniku
+9. Definicja rodziny uniwersalnej
+10. Co to jest słownik statyczny
+11. Obliczenia kosztu słownika o n kluczach z m = n^2
+
+10 czerwca
+1. Tablica R_a (ShiftAnd) dla zadanego wzorca
+2. Czy KMR może szukać najdłuższe słowo występujące 3 razy
+3. Policzyć funkcję pi dla zadanego wzorca
+4. D-d że KMP działa liniowo
+5. Sortowanie n liczb [0,n^10) w O(n)
+6. Czy 2logn j.k. starcza na delmin w kopcu fib
+7. Podaj wzór Stirlinga
+8. Podaj wzór Markova
+9. Wartość oczwekiwana sumy i*X_i
+10. Zmiana rzędu v przy find(v)
+11. Wartość "size (poddrzewa)" dodana do AVL (ile wierzchołków trzeba aktualizować)
+12. Zdefiniuj/rozwiąż problem plecakowy
+13. Symulacja Bayera-Moore'a
+14. Rozwiązywanie rekurencji przez potęgowanie macierzy
+
+
+Końcowy:
+
+Cz I:
+1 - 20: ???
+
+Cz 2:
+1 - 4: ???
+
+Cz 3:
+1. Szukanie maksymalnego sparowania/dominowania punktów białych/czarnych na płaszczyźnie.
+2. Sprawdzanie,czy ciąg Z jest przeplotem X i Y.
+3. Podawanie w O(1) optymalnych ruchów w grze, która polega na zdjmowaniu wybranej skrajnej karty z ciągu i sumowaniu wartości kart jako wyniku.
+4. LCS dla 3 ciągów.

@@ -36,7 +36,7 @@ Zima 2015/2016:
 Lato 2015/2016:
 
  - Algorytmy i struktury danych (M) (w: Krzysztof Loryś, ćw: Krzysztof Loryś)
- - Języki formalne i złożoność obliczeniowa (w: Jerzy Marcinkowski, ćw: Jerzy Marcinkowski)
+ - Języki formalne i złożoność obliczeniowa (w: Jerzy Marcinkowski, ćw: Antoni Kościelski)
  - Bazy danych (w: Piotr Wieczorek, ćw: Jakub Michaliszyn)
  - Sieci komputerowe (w: Marcin Bieńkowski, ćw: Michał Różański)
 
